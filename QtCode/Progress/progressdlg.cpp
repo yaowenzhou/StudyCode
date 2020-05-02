@@ -1,4 +1,5 @@
 ﻿//此案例充分证明了槽函数的阻塞性
+//案例解析见 Qt5 开发及实例 —— 第4版 P102—4.8 进度条 的讲解
 #include "progressdlg.h"
 #include <QProgressDialog>
 #include <QFont>
