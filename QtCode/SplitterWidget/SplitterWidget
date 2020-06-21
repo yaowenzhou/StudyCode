@@ -1,0 +1,33 @@
+﻿#ifndef SPLITTERWIDGET
+#define SPLITTERWIDGET
+
+#include <QWidget>
+#include <QSettings>
+
+QT_BEGIN_NAMESPACE
+namespace Ui { class SplitterWidget; }
+QT_END_NAMESPACE
+
+class SplitterWidget : public QWidget
+{
+    Q_OBJECT
+
+public:
+    SplitterWidget(QWidget *parent = nullptr);
+    ~SplitterWidget();
+
+protected:
+    //重写关闭事件
+    void closeEvent(QCloseEvent* e);
+
+private slots:
+    void on_checkBox_toggled(bool checked);
+
+    void on_checkBox_2_toggled(bool checked);
+
+private:
+    Ui::SplitterWidget *ui;
+    QByteArray state;
+    QSettings settings;
+};
+#endif // SPLITTERWIDGET
