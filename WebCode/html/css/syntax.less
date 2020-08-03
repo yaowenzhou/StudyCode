@@ -1,0 +1,36 @@
+// less中的单行注释，注释用的内容不会被解析到css中
+/* css注释风格，此种写法的注释会被解析到css文件中 */ 
+body {
+    background-color: #bbffaa;
+}
+
+// 变量，可以在变量中存储一个任意的值，并且我们可以在需要时任意的修改变量的值
+// 变量的语法 @varName:varValue
+@a:100px;
+.box5 {
+    // 使用变量时，如果是直接使用，则以 @varName 的形式使用即可
+    width: @a;
+}
+// 作为类名或者一部分值使用时， @{varName} 的形式使用
+@c:box6;
+.@{c} {
+    width: @a;
+    background-color: url("@{c}/1.png");
+}
+
+@d:200px;
+@d:300px;
+div {
+    // 变量发生重名时，会优先使用比较近的变量
+    @d:115px;
+    width: @d;
+    height: @e;
+}
+// 可以在变量声明前就使用该变量
+@e:335px;
+
+div {
+    width: 300px;
+    // 新版语法
+    height: $width;
+}

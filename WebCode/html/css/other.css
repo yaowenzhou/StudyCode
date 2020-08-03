@@ -1,0 +1,32 @@
+.box1 .box2 {
+  color: red;
+}
+.box1 > .box3 {
+  color: chocolate;
+}
+.box1hover {
+  color: orange;
+}
+.p1,
+.p2 {
+  width: 100px;
+  height: 200px;
+}
+.p2 {
+  color: red;
+}
+.p3 {
+  width: 100px;
+  height: 200px;
+}
+.p5 {
+  width: 100px;
+  height: 100px;
+  background-color: #bbffaa;
+}
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: chocolate;
+}
+/*# sourceMappingURL=./other.css.map */

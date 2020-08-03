@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>表单按钮</title>
+</head>
+
+<body>
+    <form action="./target.html">
+        <!-- 
+            浏览器会自动记住输入框中曾经输入过的内容，下次再使用该输入框时，会有自动补全提示
+            通过设置 autocomplete='off'可以关闭自动补全，当它卸载form中时，所有输入框的自动补全都会关闭
+            readonly 将表单项设为只读，数据会提交
+            disabled 将表单项设为禁用，数据不会提交
+            autofocus   设置表单项自动获取焦点
+         -->
+        <input type="text" name='UserName' value='Hello HTML' autocomplete='off'>
+        <input type="text" name='UserName' autofocus>
+        <br>
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value='按钮'>
+        <br>
+        <button type='submit'>提交</button>
+        <button type='reset'>重置</button>
+        <button type='button'>按钮</button>
+        <br>
+        <input type='color'></form>
+</body>
+
+</html>

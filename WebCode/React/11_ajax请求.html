@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组件的生命周期</title>
+</head>
+
+<body>
+    <div id="example"></div>
+    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/prop-types@15.6.2/prop-types.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/axios/0.17.1/axios.js"></script>
+    <script type="text/babel">
+        /*
+        需求：
+            根据指定关键字在github上搜索匹配的最受关注的库
+            返回查询结果之前，显示`Loading...`
+            显示库名，点击链接查看库
+            接口：https://api.github.com/search/repositories?q=r&sort=stars
+        */
+        class MostStarRepo extends React.Component {
+            state = {
+                repoName:'',
+                repoUrl:''
+            }
+            componentDidMount(){
+                // 使用axios发送异步的ajax请求
+                const url = 'https://api.github.com/search/repositories?q=r&sort=stars'
+                axios.get(url)
+                .then(response => {
+                    const result = response.data
+                    const {name, html_url} = result.items[0]
+                    this.setState({repoName:name, repoUrl:html_url})
+                })
+                // 错误处理
+                .catch((error) => {
+                    alert(error.message)
+                })
+                // fetch(url)
+                // .then(response => {
+                //     return response.json()
+                // })
+                // .then(data => {
+                //     const {name, html_url} = data.items[0]
+                //     this.setState({repoName:name, repoUrl:html_url})
+                // })
+            }
+            render() {
+                const {repoName, repoUrl} = this.state
+                if(!repoName) {
+                    return <h2>LOADING...</h2>
+                } else {
+                    return <h2>Most start repo is <a href={repoUrl}>{repoName}</a></h2>
+                }
+            }
+        }
+        ReactDOM.render(<MostStarRepo />, document.getElementById('example'))
+    </script>
+</body>
+
+</html>

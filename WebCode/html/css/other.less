@@ -1,0 +1,18 @@
+// @import可以将其它less引入到当前文件
+@import "syntax2.less";
+
+.box1 {
+    // 在less中所有的数值都可以进行运算
+    // +    -   *   /
+    width: 100px + 100px;
+    height: 100px * 2;
+    background-color: chocolate;
+}
+
+// 由less文件编译成的css文件不方便进行调试，因此可以设置 Easy Less 的配置文件，使得可以再生成一个less和css的映射关系的文件
+// 将下面的代码添加到less配置文件相应的位置上，然后保存即可
+// "less.compile": {
+        // "compress": false,
+        // "sourceMap": true,
+        // "out": true,
+// },

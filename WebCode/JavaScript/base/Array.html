@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Array</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr = new Array();
+        console.log(typeof arr);
+        arr[0] = 10;
+        arr[1] = 33;
+        console.log(arr);
+        // 如果读取不存在的索引，不会报错，而是返回undefined
+        console.log(arr[3]);
+        // 可以使用arr.length属性来获取数组的长度
+        console.log(arr.length)
+        // 对于非连续的数组，使用length会获取到数组的最大索引值+1，尽量不要使用非连续的数组
+        arr[100] = 100; //arr.length == 101
+        // 可以修改length，如果修改的length大于原长度，则多出的部分会空出来
+        arr.length = 1000;
+        // 如果修改的length小于原长度，则多出的元素会被删除。
+        arr.length = 2;
+        function fun() {
+            alert('我是func函数!');
+        }
+
+        fun.call();
+        fun.apply();
+        fun();
+    </script>
+</body>
+</html>
