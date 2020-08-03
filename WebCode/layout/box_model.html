@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>盒模型</title>
+    <style>
+        .box1 {
+            /* content的大小由width和height设置 */
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /* 
+                border的设置需要最少三个样式
+                    border的大小会影响整个box-model的大小
+                    border-width
+                    border-color
+                    border-style
+             */
+            border-width: 10px;
+            border-color: red;
+            border-style: dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        css将所有元素都设置为了一个个矩形
+        每一个盒子都有以下几个部分组成
+            - content：内容区
+            - padding：内边距
+            - border：边框
+            - margin：外边距
+    -->
+    <div class="box1"></div>
+</body>
+
+</html>

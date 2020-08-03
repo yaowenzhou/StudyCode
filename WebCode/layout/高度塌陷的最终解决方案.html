@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>高度塌陷的最终解决方案</title>
+    <style>
+        .box1 {
+            border:10px red solid;
+            /* overflow: hidden; */
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+            float:left;
+        }
+
+        .box3 {
+            clear:left;
+        }
+
+        /*
+            表现的问题，应该由负责表现的部分来解决
+            使用css添加伪元素，然后对该伪元素设置clear属性
+            由此可以完美解决高度塌陷的问题
+        */
+        .box1::after {
+            display:table;
+            content:"";
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- 高度塌陷属于表现问题，不应该让结构来处理它，因此这种方式虽然看起来很完美，但是违反了某些约定俗成的规则 -->
+        <!-- <div class="box3"></div> -->
+    </div>
+</body>
+</html>

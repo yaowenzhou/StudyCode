@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>颜色单位</title>
+    <style>
+        /*
+            在html中，可以直接使用颜色名来表示颜色，但是这其实是很不方便的，因为很多颜色无法用名字表示
+            因此可以使用RGB值来表示颜色
+            RGB:
+                - RGB通过三种颜色的不同浓度来调配出不同的颜色
+                - R：red、G：green、B：blue
+                - 每一种颜色的范围都在 0~255(0%~100%) 之间
+            RGBA:
+                - 就是在RGB的基础上增加了一个透明度(0~1)。
+
+            16进制的RGB值:
+                - 跟RGB差不多
+                - 语法 #RedGreenBlue
+                - 颜色浓度通过00~ff表示
+                - 如果颜色两两重复，可以简写(前提是三种颜色都是重复的)
+                    例如：#aabbcc 可以简写成 #abc
+
+            HSL值:
+                H 色相(0~360)
+                S 饱和度(0%~100%)
+                L 亮度(0%~100%)
+        */
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #bbffaa;
+            background-color: hsl(0, 100%, 0%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+</body>
+
+</html>

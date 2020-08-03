@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>伪元素</title>
+    <style>
+        /* 
+            伪元素：表示页面中某一些特殊的并不真实存在的元素(特殊的位置)
+                伪元素使用“::”开头
+                ::before    表示起始位置(不是第一个字符，而是第一个字符之前的位置)
+                ::after     表示结束为止(不是最后一个字符，而是最后一个字符之后的位置)
+                ::before和::after必须结合content属性来使用
+                    - 在::before和::after中使用content添加的文本是无法被选中的
+        */
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        p::first-line {
+            background-color: yellow;
+        }
+
+        p::selection {
+            background-color: violet;
+        }
+        div::before{
+            content:"before";
+            color:red;
+        }
+        div::after{
+            content:"after";
+            color:violet;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis obcaecati non laborum earum
+        dignissimos, consectetur, blanditiis voluptates recusandae ut error ipsam eius dolor eaque aperiam mollitia
+        maiores, rerum quis?</p>
+    <div>Hello world</div>
+</body>
+
+</html>

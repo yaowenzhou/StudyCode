@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>让javascript的代码在整个文档加载完成之后再执行</title>
+    <script type="text/javascript">
+        // var btn = document.getElementById('btn');
+        // btn.onclick = function () {
+        //     alert('你竟然真的敢点我？');
+        // };
+        /*
+         *  window对象的 onload 事件会在整个页面加载完成之后触发
+         */
+        window.onload = function () {
+            // alert('整个页面已经加载完成');
+            var btn = document.getElementById('btn');
+            btn.onclick = function () {
+                alert('你竟然真的敢点我？');
+            };
+        };
+    </script>
+</head>
+
+<body>
+    <button id="btn">你点我试试？</button>
+</body>
+
+</html>

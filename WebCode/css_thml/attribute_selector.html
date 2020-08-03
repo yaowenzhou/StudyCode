@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>属性选择器</title>
+    <style>
+        /*
+            [属性名]选择含有指定属性的元素
+            [属性名=属性值]选择含有指定属性名，且该属性名的属性值等于指定属性值的元素
+            [属性名^=属性值]选择属性值以指定值开头的元素
+            [属性值$=属性值]选择属性值以指定值结尾的元素
+            [属性值*=属性值]选择属性值中含有指定值的元素
+        */
+        p[title] {
+            color:tomato;
+        }
+        p[title*=b] {
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>回乡偶书</h1>
+    <p title="abc">少小离家老大回；</p> <!--鼠标放上去会显示title中的文字-->
+    <p title="bc">乡音无改鬓毛衰；</p>
+    <p title="abcd">儿童相见不相识；</p>
+    <p title="efg">笑问客从何处来。</p>
+    <p>落霞与孤鹜齐飞；</p>
+    <p>秋水共长天一色。</p>
+</body>
+</html>

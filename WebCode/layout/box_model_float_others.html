@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>浮动的其他特点</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+            /*
+                浮动元素不会盖住文字，文字会自动环绕在浮动元素周围
+                    所以我们可以利用浮动来设置文字环绕图片的效果。
+                    其实浮动机制设计之初就是为了达到文字环绕图片的效果
+            */
+            float: left;
+        }
+
+        .box2 {
+            background-color: yellowgreen;
+        }
+
+        .box3 {
+            background-color: yellowgreen;
+            /*
+                元素设置浮动以后，将会从文档流中脱离，从文档流中脱离以后，元素的一些特点也会发生变化
+                脱离文档流的特点(不单是浮动的特点，所有脱离文档流的行为都具有以下特点):
+                    - 块元素：
+                        1. 块元素不再独占页面的一行
+                        2. width和height都被内容撑开
+                    - 行内元素:
+                        行内元素脱离文档流以后，特点和块元素一样
+                    脱离文档流易后，不需要再区分行内元素和块元素
+            */
+            float: left
+        }
+
+        .box4 {
+            background-color: red;
+        }
+        .s1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box1"></div>
+    <p>
+        观自在菩萨，行深般若波罗蜜多时，照见五蕴皆空，度一切苦厄。舍利子，色不异空，空不异色，色即是空，空即是色，受想行识亦复如是。舍利子，是诸法空相，不生不灭，不垢不净，不增不减。是故空中无色，无受想行识，无眼耳鼻舌身意，无色声香味触法，无眼界乃至无意识界，无无明亦无无明尽，乃至无老死，亦无老死尽，无苦集灭道，无智亦无得。以无所得故，菩提萨埵；依般若波罗蜜多故，心无挂碍。无挂碍故，无有恐怖，远离颠倒梦想，究竟涅槃。三世诸佛，依般若波罗蜜多故，得阿耨多罗三藐三菩提。故知般若波罗蜜多，是大神咒，是大明咒，是无上咒，是无等等咒，能除一切苦，真实不虚。故说般若波罗蜜多咒，即说咒曰：揭谛揭谛，波罗揭谛，波罗僧揭谛，菩提萨婆诃。
+    </p> -->
+    <div class="box2"></div>
+    <span class="s1">我是一个span</span>
+    <div class="box3">Hello</div>
+    <div class="box4">Hello</div>
+</body>
+
+</html>

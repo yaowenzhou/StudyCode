@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>toString</title>
+    <script type="text/javascript">
+        function Person(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+        }
+        Person.prototype.toString = function(){
+            return "我是一个快乐的小person";
+        };
+        var per = new Person("孙悟空", 18, "男");
+        // per.toString = function(){
+        //     return "我是一个快乐的小person";
+        // };
+
+        var result = per.toString();
+        console.log(per);
+        console.log(result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

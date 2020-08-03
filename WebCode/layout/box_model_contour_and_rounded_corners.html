@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>盒子的轮廓和圆角</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            border: 10px red solid;
+            /*
+                box-shadow 用来设置元素的阴影效果，阴影不会影响页面布局
+                默认情况下，阴影在元素的正下方，和元素一样大
+                可以对其设置偏移量来显示
+                第1个值：水平偏移量，正值向右移动，负值向左移动
+                第2个值：垂直偏移量，正值向下移动，负值向上移动
+                第3个值，阴影的模糊半径
+                第4个值：阴影的颜色
+            */
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1:hover {
+            /*
+                outline 用来设置元素的轮廓线，用法和border一致
+                轮廓不会影响可见框的大小和位置，用的很少，一般用来设置鼠标移动效果
+            */
+            outline: 10px blue solid;
+        }
+        .box2 {
+            width: 200px;
+            height:200px;
+            background-color: chocolate;
+            /*
+                border-radius 用来设置圆角
+                同时还有：
+                    border-top-left-radius
+                    border-top-right-radius
+                    border-bottom-left-radius
+                    border-bottom-right-radius
+ 
+                圆角设置圆的半径大小(只设置一个值)
+                    还可以设置椭圆半径(设置两个值)
+
+                border-radius：
+                    - 4个值：左上 右上 右下 左下
+                    - 3个值：左上 右上/左下 右下
+                    - 2个值：左上/右下 右上/左下
+
+                将元素设置为圆形：
+                    border-radius: 50%;
+            */
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+       }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box1"></div> -->
+    <div class="box2"></div>
+</body>
+
+</html>

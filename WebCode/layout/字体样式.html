@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>字体的样式</title>
+    <style>
+        div {
+            width: 500px;
+            border: 1px red solid;
+            /*
+                text-align 文本的对齐水平
+                    可选值：
+                        left    左对齐
+                        right   右对齐
+                        center  居中对齐
+                        justify 两端对齐
+            */
+            /* text-align: justify; */
+            font-size: 50px;
+        }
+        span {
+            font-size: 20px;
+            border:1px blue solid;
+            /*
+                vertical-align  设置元素的垂直对齐方式
+                    可选值：
+                        baseline    默认值，基线对齐
+                        top         顶部对齐
+                        bottom      底部对齐
+                        middle      居中对齐
+            */
+            vertical-align: middle;
+        }
+
+        p {
+            border: 1px red solid;
+        }
+        img {
+            /*
+                图片的默认对齐方式也是基线对齐，导致图片和边框之间有缝隙，可以根据需求设置成一个非基线对齐的方式即可消除这种缝隙
+            */
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div>今天<span>天气<span>真不错</span></span></div>
+    <!-- <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique vel sint corrupti fugit officiis, animi atque labore! Quibusdam quas inventore, sapiente dolor nobis ad doloremque tempora. Quas, facilis. Facilis?
+    </div> -->
+    <p>
+        <img src="../html/sources/微信图片_20200710163028.jpg" alt="">
+    </p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>盒模型之边框</title>
+    <style>
+        .box1 {
+            /* content的大小由width和height设置 */
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /* 
+                border的设置需要最少三个样式
+                    border的大小会影响整个box-model的大小
+                    border-width
+                    border-color    
+                    border-style
+             */
+            /* 
+                border-width:
+                    默认值一般为3px;
+                    可以同时为四个边框设置宽度(空格隔开)
+                        4个值:  上、右、下、左
+                        3个值:  上、左右、下
+                        2个值:  上下、左右
+                        1个值:  上下左右
+                    
+                    除了border-width还有一组border-xxx-width，用来单独指定某一个边框
+
+             */
+            border-width: 30px;
+            /* border-width: 10px 20px 30px 40px; */
+            /* 
+                border-color 用来指定四个边框的颜色，规则和 border-width 一样
+                border-color 如果不写，默认使用color，color的默认值为黑色。
+             */
+            color:red;
+            /* border-color: orange red yellow green; */
+
+            /* 
+                border-style 指定四个边框的样式，用法和 border-width 一致
+                border-style 的默认值是none，表示没有边框
+             */
+            border-style: solid;
+
+            /* border 简写属性，并且没有顺序要求(空格隔开) */
+            /* 除了 border，还有border-xxx，用法类似 */
+            /* border:20px orange solid */
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        css将所有元素都设置为了一个个矩形
+        每一个盒子都有以下几个部分组成
+            - content：内容区
+            - padding：内边距
+            - border：边框
+            - margin：外边距
+    -->
+    <div class="box1"></div>
+</body>
+
+</html>

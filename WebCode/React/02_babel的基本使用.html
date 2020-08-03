@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>babel的基本使用</title>
+</head>
+
+<body>
+    <div id="test1"></div>
+    <div id="test2"></div>
+    
+    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/javascript" src="./js/babel.js"></script>
+    
+    <script type="text/javascript">
+        const msg = 'I Like You!'
+        const myId = 'XiaoYao'
+        // 1. 创建虚拟DOM
+        const vDom1 = React.createElement('h2', {
+            id: myId.toLowerCase()
+        }, msg.toUpperCase())
+        // 2. 渲染虚拟DOM
+        ReactDOM.render(vDom1, document.getElementById('test1'))
+    </script>
+
+    <script type='text/babel'>
+        const vDom2 = <h3 id={myId.toUpperCase()}>{msg.toLowerCase()}</h3>
+        ReactDOM.render(vDom2, document.getElementById('test2'))
+    </script>
+</body>
+
+</html>

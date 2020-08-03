@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>样式的继承</title>
+    <style>
+        /* 
+            样式的继承：我们为一个元素设置的样式同时也会应用到其后代上。
+            继承的设计主要是为了方便开发
+                利用继承我们可以将一些通用的样式统一设置到共同的祖先元素上
+                只需设置一遍，即可让所有元素均具备该样式。
+
+            并不是所有的样式都会被继承，比如背景和布局等相关的样式
+                想知道某个样式是否会被继承，只需要在zeal软件中搜索该样式，然后就会有张表格，里面的Inherited值为no则为不会被继承，yes则表示该样式会被继承
+        */
+        p {
+            color: red;
+        }
+
+        div {
+            color: blue;
+            background-color: yellowgreen;
+            /*
+                从执行结果看，“我是div元素中的span元素”和 “我是div元素中的span元素中的em元素”
+                好像是继承了background-color属性，其实不然，原因是因为默认的background-color是透明的，因此div元素的背景色透过来了。
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        我是一个p元素
+        <span>我是p元素中的span元素</span>
+    </p>
+    <div>
+        我是div元素
+        <span>
+            我是div元素中的span元素
+            <em>我是div元素中的span元素中的em元素</em>
+        </span>
+    </div>
+</body>
+
+</html>

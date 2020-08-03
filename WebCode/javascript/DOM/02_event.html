@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>事件</title>
+</head>
+<body>
+    <button id='btn'>我是一个按钮</button>
+    <script type="text/javascript">
+        // 可以为对象对应的事件绑定处理函数来处理相应事件
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            alert('你竟然敢点我？！！！');
+        };
+    </script>
+</body>
+</html>

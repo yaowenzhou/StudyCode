@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>外边距的折叠</title>
+    <style>
+        .box1, .box2 {
+            font-size: 100px;;
+            width:200px;
+            height:200px;
+        }
+
+        /* 
+            垂直方向的相邻外边距重叠现象
+                - 兄弟元素间的相邻垂直外边距
+                    - 二者都是正值会取二者之间的较大值
+                    - 如果有一个是负值，则取二者之和(一般不会遇到)
+                    - 两个都是负值，取绝对值较大者(一般不会遇到)
+                    兄弟元素之间外边距的重叠，对于开发是有利的，不需要我们进行处理
+
+                - 父子元素之间的外边距重叠
+                    - 子元素的外边距会传递给父元素
+                    - 父子外边距的折叠会影响到页面的布局，必须要进行处理
+                    当前没有完美的解决方案，完美的解决方案以后再说
+        */
+        .box1 {
+            background-color: purple;
+            margin-bottom: 200px;;
+        }
+        .box2 {
+            margin-top: -100px;
+            background-color: sandybrown;
+        }
+
+        .box3 {
+            width:200px;
+            height:200px;
+            background-color: #bbffaa;
+        }
+        .box4 {
+            width:100px;
+            height:100px;
+            background-color: red;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

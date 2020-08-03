@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>背景</title>
+    <style>
+        .box1 {
+            width: 500px;
+            height: 500px;
+            background-color: chocolate;
+            /*
+                background-image 设置背景图片
+                    可以同时设置背景图片和背景颜色，此时背景颜色会成为背景图片的背景色
+                    - 如果背景图片小于元素，则背景图片会自动在元素中平铺
+                    - 如果背景图片大于元素，则背景图片将会无法完全显示
+                background-repeat 用来设置背景图片的重复方式
+                    可选值：
+                        repeat  默认值，背景会沿着x轴，y轴双方向重复
+                        repeat-x
+                        repeat-y
+                        no-repeat
+                background-position 用来设置背景图片的位置
+                    设置方式：
+                        1. 通过 top bottom left right center等几个表示方位的词组成一个九宫格
+                            使用方位词时，必须同时指定两个方位词如果只写一个，则第二个默认就是center
+                        2. 通过指定偏移量来指定背景图片的位置
+                            水平方向的偏移量和垂直方向的偏移量，单位是像素，可以是负值
+            */
+            background-image: url("./img/2.jpg");
+            background-repeat: no-repeat;
+            background-position: -250px -250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

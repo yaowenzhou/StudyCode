@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>事件基础</title>
+    <style type=text/css>
+        #areaDiv{
+            width: 300px;
+            height:150px;
+            border: 1px solid black;
+        }
+        #showMsg{
+            width: 300px;
+            height: 50px;
+            border: 1px solid black;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function(){
+            // 当事件响应函数被触发时，浏览器每次都会将一个事件对象作为实参传递给相应函数
+            // 在IE8中，相应函数被触发时，浏览器不会传递事件对象，而是将事件对象作为window的属性来保存的
+            // 解决事件对象的兼容性问题
+            event = event || window.event;
+            _style = getComputedStyle(document.body, null) || document.doby.currentStyle;
+
+            var areaDiv = document.getElementById("areaDiv");
+            var showMsg = document.getElementById("showMsg");
+            areaDiv.onmousemove = function(event) {
+                showMsg.innerHTML = (event.clientX - parseInt(_style.marginLeft)) + "px " + (event.clientY-parseInt(_style.marginTop)) + "px";
+            };
+        };
+    </script>
+</head>
+<body>
+    <div id="areaDiv"></div>
+    <br>
+    <div id="showMsg"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>vw适配</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html {
+            /* 
+                网页中字体大小最小是12px/我在自己的电脑上看到的是9.6px，不能设置得比它还小
+             */
+            font-size: 5.33333vw;   /*0.133333的40倍*/
+        }
+        .box1 {
+            /*
+                rem
+                    1rem    1html字体大小
+             */
+            width: 18.75rem;
+            height: 0.875rem;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <!-- 48*35 -->
+    <div class="box1"></div>
+</body>
+</html>

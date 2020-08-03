@@ -1,0 +1,34 @@
+﻿#ifndef BUTTERFLY
+#define BUTTERFLY
+
+#include <QObject>
+#include <QGraphicsItem>
+#include <QPainter>
+#include <QGraphicsScene>
+#include <QGraphicsView>
+
+class Butterfly : public QObject, public QGraphicsItem
+{
+     Q_OBJECT
+public:
+    explicit Butterfly(QObject *parent = nullptr);
+    void timerEvent(QTimerEvent *) override;
+    /*
+     * To limit the range of primitives;
+     * Every custom primitive class that inherits from QGraphicsIem \
+     * must implement this method;
+    */
+    QRectF boundingRect() const override;
+
+signals:
+public slots:
+protected:
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr) override;
+private:
+    bool up;
+    QPixmap pix_up;
+    QPixmap pix_dn;
+    qreal angle;
+};
+
+#endif // BUTTERFLY

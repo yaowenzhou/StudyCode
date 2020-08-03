@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>单位</title>
+    <style>
+        /* 
+            px表示像素(物理概念)
+            百分比可以设置属性相对于其父元素的百分比
+            em是相对于自身font-size的像素来计算的
+            rem是相对于根元素的字体大小来计算的
+        */
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+        }
+
+        .box2 {
+            width: 50%;
+            height: 50%;
+            background-color: cyan;
+        }
+
+        .box3 {
+            font-size: 25px;
+            width: 10em;
+            height: 10em;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+</body>
+
+</html>

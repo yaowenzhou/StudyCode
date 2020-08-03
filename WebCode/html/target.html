@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#bottom">去底部</a>
+    <!--
+        点击超链接时，打开一个新的标签页而不是当前页跳转的方法：
+        target 属性，用来指定超链接打开的位置
+        可选值：
+            _self: 默认值，在当前页打开超链接
+            _blank: 在一个新的标签页中打开超链接
+
+        标签的id属性：
+            每一个标签都可以添加一个id属性，用来唯一标识一个标签
+
+        href="#标签id" 可以生成一个跳转到指定标签位置的超链接
+
+        href="javascript:;" 可以生成一个无法跳转到任何位置的超链接
+    -->
+    <a href="./webStudy_02.html" target="_blank">webStudy_02</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis corrupti, soluta unde laudantium nihil, explicabo, laboriosam eos quia magnam repellat? Veniam porro dicta magni sapiente amet vero, dolore sequi?</p>
+    <a id="bottom" href="#">回到顶部</a>
+    <br>
+    <a href="javascript:;">这是一个无法跳转到任何位置的超链接</a>
+
+</body>
+</html>

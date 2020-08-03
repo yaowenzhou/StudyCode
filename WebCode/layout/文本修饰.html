@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>文本修饰</title>
+    <style>
+        .box2 {
+            width:200px;
+            /*
+                white-space 设置网页如何处理空白
+                    可选值：
+                        normal 正常
+                        nowrap 不换行
+                        pre 保留空白
+            */
+            white-space: nowrap;    /*开启不换行*/
+            overflow: hidden;       /*开启隐藏*/
+            text-overflow: ellipsis;/*设置省略号*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, cum repudiandae? Illo, mollitia. Sapiente expedita similique, iure nisi accusamus veniam temporibus quis impedit modi quasi quisquam sed. Non, magnam itaque.
+    </div>
+</body>
+</html>

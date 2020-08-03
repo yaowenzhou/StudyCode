@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>React基本使用</title>
+</head>
+<body>
+    <div id=app></div>
+    <script type="text/javascript" src="./js/react.development.js"></script>
+    <script type="text/javascript" src="./js/react-dom.development.js"></script>
+    <script type="text/javascript" src="./js/babel.js"></script>
+    <script type="text/babel">
+        /* babel中可以嵌套html标签(又称jsx语法 JavaScript XML) ，最终babel会将它完全转化成纯正的JavaScript语法*/
+        // 1. 创建虚拟DOM对象
+        const vDom = <h1>Hello React!</h1>
+        // 2. 将虚拟DOM对象渲染到页面
+        ReactDOM.render(vDom, document.getElementById('app'))
+    </script>
+    
+</body>
+</html>

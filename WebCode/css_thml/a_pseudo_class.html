@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>a元素的伪类</title>
+    <style>
+        /* 
+            :link 用来标识没访问过得链接(正常的链接)
+            :visited 表示访问过的链接
+            这两个伪类仅适用于a
+        */
+        a:link{
+            color:blue;
+            font-size: 30px;
+        }
+        a:visited{
+            color:red;
+            /* 
+                font-size:40px;
+                由于隐私的原因，font-size属性在a类中不好使。
+                :visited 伪类只能改颜色
+            */
+        }
+        /* 
+            :hover表示鼠标移入的状态
+        */
+        a:hover {
+            color:aqua;
+            font-size: 50px;
+        }
+        /* 
+            :active表示鼠标点击
+        */
+        a:active {
+            color:yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">百度</a>
+    <a href="https://www.qq.com">腾讯网</a>
+</body>
+</html>

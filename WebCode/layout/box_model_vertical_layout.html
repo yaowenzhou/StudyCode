@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>盒子模型之垂直布局</title>
+    <style>
+        .outer {
+            height:200px;
+            background-color: #bbffaa;
+            /* 默认情况下，父元素高度被内容撑开 */
+            /*
+                使用overFlow设置父元素如何处理子元素溢出
+                可选值：
+                    visible: 默认值，子元素会从父元素中溢出，在父元素外部的位置显示
+                    hidden: 溢出的内容会被裁剪从而不可见
+                    scroll: 生成两个滚动条，通过滚动条来查看完整的内容
+                    auto: 根据需要生成滚动条
+            */
+            overflow: scroll;
+            /*
+                单独处理水平/垂直方向上的溢出
+                overflow-x: ;
+                overflow-y: ;
+            */
+        }
+
+        .inner {
+            width: 100px;
+            height: 400px;
+            background-color: purple;
+            margin-bottom: 100px;
+            /* 
+                子元素是在父元素的内容区排列的，如果子元素的大小超过了父元素，则子元素会从父元素中溢出
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>

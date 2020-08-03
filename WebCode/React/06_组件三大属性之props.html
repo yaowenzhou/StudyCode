@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>组件三大属性值props</title>
+</head>
+
+<body>
+    <div id="example1"></div>
+    <div id="example2"></div>
+    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/javascript" src="./js/babel.js"></script>
+    <script type="text/babel">
+        /* 
+            需求：自定义用来显示一个人员信息的组件
+            1. 如果性别没有指定，默认为男
+            2. 如果年龄没有指定，默认为18
+         */
+        // 1. 定义组件
+        function Person(props) {
+            return (
+                <ul>
+                    <li>姓名: {props.name}</li>
+                    <li>年龄: {props.age}</li>
+                    <li>性别: {props.sex}</li>
+                </ul>
+            )
+        }
+        // 指定组件属性默认值
+        Person.defaultProps = {
+            sex:'男',
+            age:'18',
+        }
+        // 对props中的属性值进行类型限制和必要性限制
+        // 自 React v15.5 起，React.PropTypes 已移入另一个包中。请使用 prop-types 库 代替。
+        Person.propTypes = {
+            name: React.PropTypes.string.isRequired,
+            age: React.PropTypes.number,
+            sex: React.PropTypes.string,
+        }
+        // 2. 渲染组件标签
+        const p1 = {
+            name:'Tom',
+            age:18,
+            sex:'女',
+        }
+        const p2 = {
+            name:'Jerry',
+        }
+        ReactDOM.render(<Person name={p1.name} age={p1.age} sex={p1.sex}/>, document.getElementById('example1'))
+        ReactDOM.render(<Person name={p2.name} age={p2.age} sex={p2.sex}/>, document.getElementById('example2'))
+    </script>
+</body>
+
+</html>

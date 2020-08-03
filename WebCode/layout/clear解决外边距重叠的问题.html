@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>clear解决外边距重叠的问题</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+        }
+
+        /* .box1::before {
+            display: inline;
+            display: block;
+            上面这两种方式都不能解决问题
+            content: '';
+            display: table;
+        } */
+
+        /* 下面这种方式可以同时解决高度塌陷和外边距重叠问题 */
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: silver;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>
