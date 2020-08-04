@@ -2834,6 +2834,93 @@
 
     return false;
   }
+<<<<<<< HEAD
+=======
+  function isAwaitExpression(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "AwaitExpression") {
+      if (typeof opts === "undefined") {
+        return true;
+      } else {
+        return shallowEqual(node, opts);
+      }
+    }
+
+    return false;
+  }
+  function isImport(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "Import") {
+      if (typeof opts === "undefined") {
+        return true;
+      } else {
+        return shallowEqual(node, opts);
+      }
+    }
+
+    return false;
+  }
+  function isBigIntLiteral(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "BigIntLiteral") {
+      if (typeof opts === "undefined") {
+        return true;
+      } else {
+        return shallowEqual(node, opts);
+      }
+    }
+
+    return false;
+  }
+  function isExportNamespaceSpecifier(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "ExportNamespaceSpecifier") {
+      if (typeof opts === "undefined") {
+        return true;
+      } else {
+        return shallowEqual(node, opts);
+      }
+    }
+
+    return false;
+  }
+  function isOptionalMemberExpression(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "OptionalMemberExpression") {
+      if (typeof opts === "undefined") {
+        return true;
+      } else {
+        return shallowEqual(node, opts);
+      }
+    }
+
+    return false;
+  }
+  function isOptionalCallExpression(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "OptionalCallExpression") {
+      if (typeof opts === "undefined") {
+        return true;
+      } else {
+        return shallowEqual(node, opts);
+      }
+    }
+
+    return false;
+  }
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function isAnyTypeAnnotation(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -3982,6 +4069,7 @@
 
     return false;
   }
+<<<<<<< HEAD
   function isAwaitExpression(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -3996,6 +4084,8 @@
 
     return false;
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function isBindExpression(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4024,6 +4114,7 @@
 
     return false;
   }
+<<<<<<< HEAD
   function isOptionalMemberExpression(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4038,6 +4129,8 @@
 
     return false;
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function isPipelineTopicExpression(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4080,6 +4173,7 @@
 
     return false;
   }
+<<<<<<< HEAD
   function isOptionalCallExpression(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4094,6 +4188,8 @@
 
     return false;
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function isClassPrivateProperty(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4122,6 +4218,7 @@
 
     return false;
   }
+<<<<<<< HEAD
   function isImport(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4136,6 +4233,8 @@
 
     return false;
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function isImportAttribute(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4192,6 +4291,7 @@
 
     return false;
   }
+<<<<<<< HEAD
   function isExportNamespaceSpecifier(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4206,6 +4306,8 @@
 
     return false;
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function isPrivateName(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -4220,25 +4322,19 @@
 
     return false;
   }
+<<<<<<< HEAD
   function isBigIntLiteral(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
 
     if (nodeType === "BigIntLiteral") {
-      if (typeof opts === "undefined") {
-        return true;
-      } else {
-        return shallowEqual(node, opts);
-      }
-    }
-
-    return false;
-  }
+=======
   function isRecordExpression(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
 
     if (nodeType === "RecordExpression") {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       if (typeof opts === "undefined") {
         return true;
       } else {
@@ -4248,11 +4344,41 @@
 
     return false;
   }
+<<<<<<< HEAD
+  function isRecordExpression(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "RecordExpression") {
+=======
   function isTupleExpression(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
 
     if (nodeType === "TupleExpression") {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
+      if (typeof opts === "undefined") {
+        return true;
+      } else {
+        return shallowEqual(node, opts);
+      }
+    }
+
+    return false;
+  }
+<<<<<<< HEAD
+  function isTupleExpression(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "TupleExpression") {
+=======
+  function isDecimalLiteral(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "DecimalLiteral") {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       if (typeof opts === "undefined") {
         return true;
       } else {
@@ -4710,6 +4836,23 @@
 
     return false;
   }
+<<<<<<< HEAD
+=======
+  function isTSNamedTupleMember(node, opts) {
+    if (!node) return false;
+    var nodeType = node.type;
+
+    if (nodeType === "TSNamedTupleMember") {
+      if (typeof opts === "undefined") {
+        return true;
+      } else {
+        return shallowEqual(node, opts);
+      }
+    }
+
+    return false;
+  }
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function isTSUnionType(node, opts) {
     if (!node) return false;
     var nodeType = node.type;
@@ -5120,7 +5263,11 @@
     if (!node) return false;
     var nodeType = node.type;
 
+<<<<<<< HEAD
     if (nodeType === "Expression" || "ArrayExpression" === nodeType || "AssignmentExpression" === nodeType || "BinaryExpression" === nodeType || "CallExpression" === nodeType || "ConditionalExpression" === nodeType || "FunctionExpression" === nodeType || "Identifier" === nodeType || "StringLiteral" === nodeType || "NumericLiteral" === nodeType || "NullLiteral" === nodeType || "BooleanLiteral" === nodeType || "RegExpLiteral" === nodeType || "LogicalExpression" === nodeType || "MemberExpression" === nodeType || "NewExpression" === nodeType || "ObjectExpression" === nodeType || "SequenceExpression" === nodeType || "ParenthesizedExpression" === nodeType || "ThisExpression" === nodeType || "UnaryExpression" === nodeType || "UpdateExpression" === nodeType || "ArrowFunctionExpression" === nodeType || "ClassExpression" === nodeType || "MetaProperty" === nodeType || "Super" === nodeType || "TaggedTemplateExpression" === nodeType || "TemplateLiteral" === nodeType || "YieldExpression" === nodeType || "TypeCastExpression" === nodeType || "JSXElement" === nodeType || "JSXFragment" === nodeType || "AwaitExpression" === nodeType || "BindExpression" === nodeType || "OptionalMemberExpression" === nodeType || "PipelinePrimaryTopicReference" === nodeType || "OptionalCallExpression" === nodeType || "Import" === nodeType || "DoExpression" === nodeType || "BigIntLiteral" === nodeType || "RecordExpression" === nodeType || "TupleExpression" === nodeType || "TSAsExpression" === nodeType || "TSTypeAssertion" === nodeType || "TSNonNullExpression" === nodeType || nodeType === "Placeholder" && ("Expression" === node.expectedNode || "Identifier" === node.expectedNode || "StringLiteral" === node.expectedNode)) {
+=======
+    if (nodeType === "Expression" || "ArrayExpression" === nodeType || "AssignmentExpression" === nodeType || "BinaryExpression" === nodeType || "CallExpression" === nodeType || "ConditionalExpression" === nodeType || "FunctionExpression" === nodeType || "Identifier" === nodeType || "StringLiteral" === nodeType || "NumericLiteral" === nodeType || "NullLiteral" === nodeType || "BooleanLiteral" === nodeType || "RegExpLiteral" === nodeType || "LogicalExpression" === nodeType || "MemberExpression" === nodeType || "NewExpression" === nodeType || "ObjectExpression" === nodeType || "SequenceExpression" === nodeType || "ParenthesizedExpression" === nodeType || "ThisExpression" === nodeType || "UnaryExpression" === nodeType || "UpdateExpression" === nodeType || "ArrowFunctionExpression" === nodeType || "ClassExpression" === nodeType || "MetaProperty" === nodeType || "Super" === nodeType || "TaggedTemplateExpression" === nodeType || "TemplateLiteral" === nodeType || "YieldExpression" === nodeType || "AwaitExpression" === nodeType || "Import" === nodeType || "BigIntLiteral" === nodeType || "OptionalMemberExpression" === nodeType || "OptionalCallExpression" === nodeType || "TypeCastExpression" === nodeType || "JSXElement" === nodeType || "JSXFragment" === nodeType || "BindExpression" === nodeType || "PipelinePrimaryTopicReference" === nodeType || "DoExpression" === nodeType || "RecordExpression" === nodeType || "TupleExpression" === nodeType || "DecimalLiteral" === nodeType || "TSAsExpression" === nodeType || "TSTypeAssertion" === nodeType || "TSNonNullExpression" === nodeType || nodeType === "Placeholder" && ("Expression" === node.expectedNode || "Identifier" === node.expectedNode || "StringLiteral" === node.expectedNode)) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       if (typeof opts === "undefined") {
         return true;
       } else {
@@ -5344,7 +5491,11 @@
     if (!node) return false;
     var nodeType = node.type;
 
+<<<<<<< HEAD
     if (nodeType === "Pureish" || "FunctionDeclaration" === nodeType || "FunctionExpression" === nodeType || "StringLiteral" === nodeType || "NumericLiteral" === nodeType || "NullLiteral" === nodeType || "BooleanLiteral" === nodeType || "RegExpLiteral" === nodeType || "ArrowFunctionExpression" === nodeType || "BigIntLiteral" === nodeType || nodeType === "Placeholder" && "StringLiteral" === node.expectedNode) {
+=======
+    if (nodeType === "Pureish" || "FunctionDeclaration" === nodeType || "FunctionExpression" === nodeType || "StringLiteral" === nodeType || "NumericLiteral" === nodeType || "NullLiteral" === nodeType || "BooleanLiteral" === nodeType || "RegExpLiteral" === nodeType || "ArrowFunctionExpression" === nodeType || "BigIntLiteral" === nodeType || "DecimalLiteral" === nodeType || nodeType === "Placeholder" && "StringLiteral" === node.expectedNode) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       if (typeof opts === "undefined") {
         return true;
       } else {
@@ -5414,7 +5565,11 @@
     if (!node) return false;
     var nodeType = node.type;
 
+<<<<<<< HEAD
     if (nodeType === "Literal" || "StringLiteral" === nodeType || "NumericLiteral" === nodeType || "NullLiteral" === nodeType || "BooleanLiteral" === nodeType || "RegExpLiteral" === nodeType || "TemplateLiteral" === nodeType || "BigIntLiteral" === nodeType || nodeType === "Placeholder" && "StringLiteral" === node.expectedNode) {
+=======
+    if (nodeType === "Literal" || "StringLiteral" === nodeType || "NumericLiteral" === nodeType || "NullLiteral" === nodeType || "BooleanLiteral" === nodeType || "RegExpLiteral" === nodeType || "TemplateLiteral" === nodeType || "BigIntLiteral" === nodeType || "DecimalLiteral" === nodeType || nodeType === "Placeholder" && "StringLiteral" === node.expectedNode) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       if (typeof opts === "undefined") {
         return true;
       } else {
@@ -5554,7 +5709,11 @@
     if (!node) return false;
     var nodeType = node.type;
 
+<<<<<<< HEAD
     if (nodeType === "ModuleSpecifier" || "ExportSpecifier" === nodeType || "ImportDefaultSpecifier" === nodeType || "ImportNamespaceSpecifier" === nodeType || "ImportSpecifier" === nodeType || "ExportDefaultSpecifier" === nodeType || "ExportNamespaceSpecifier" === nodeType) {
+=======
+    if (nodeType === "ModuleSpecifier" || "ExportSpecifier" === nodeType || "ImportDefaultSpecifier" === nodeType || "ImportNamespaceSpecifier" === nodeType || "ImportSpecifier" === nodeType || "ExportNamespaceSpecifier" === nodeType || "ExportDefaultSpecifier" === nodeType) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       if (typeof opts === "undefined") {
         return true;
       } else {
@@ -8785,7 +8944,10 @@
       }
     }
   });
+<<<<<<< HEAD
 
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   defineType("AssignmentPattern", {
     visitor: ["left", "right", "decorators"],
     builder: ["left", "right"],
@@ -9272,6 +9434,94 @@
       }
     }
   });
+<<<<<<< HEAD
+=======
+  defineType("AwaitExpression", {
+    builder: ["argument"],
+    visitor: ["argument"],
+    aliases: ["Expression", "Terminatorless"],
+    fields: {
+      argument: {
+        validate: assertNodeType("Expression")
+      }
+    }
+  });
+  defineType("Import", {
+    aliases: ["Expression"]
+  });
+  defineType("BigIntLiteral", {
+    builder: ["value"],
+    fields: {
+      value: {
+        validate: assertValueType("string")
+      }
+    },
+    aliases: ["Expression", "Pureish", "Literal", "Immutable"]
+  });
+  defineType("ExportNamespaceSpecifier", {
+    visitor: ["exported"],
+    aliases: ["ModuleSpecifier"],
+    fields: {
+      exported: {
+        validate: assertNodeType("Identifier")
+      }
+    }
+  });
+  defineType("OptionalMemberExpression", {
+    builder: ["object", "property", "computed", "optional"],
+    visitor: ["object", "property"],
+    aliases: ["Expression"],
+    fields: {
+      object: {
+        validate: assertNodeType("Expression")
+      },
+      property: {
+        validate: function () {
+          var normal = assertNodeType("Identifier");
+          var computed = assertNodeType("Expression");
+
+          var validator = function validator(node, key, val) {
+            var validator = node.computed ? computed : normal;
+            validator(node, key, val);
+          };
+
+          validator.oneOfNodeTypes = ["Expression", "Identifier"];
+          return validator;
+        }()
+      },
+      computed: {
+        "default": false
+      },
+      optional: {
+        validate: !process.env.BABEL_TYPES_8_BREAKING ? assertValueType("boolean") : chain(assertValueType("boolean"), assertOptionalChainStart())
+      }
+    }
+  });
+  defineType("OptionalCallExpression", {
+    visitor: ["callee", "arguments", "typeParameters", "typeArguments"],
+    builder: ["callee", "arguments", "optional"],
+    aliases: ["Expression"],
+    fields: {
+      callee: {
+        validate: assertNodeType("Expression")
+      },
+      arguments: {
+        validate: chain(assertValueType("array"), assertEach(assertNodeType("Expression", "SpreadElement", "JSXNamespacedName")))
+      },
+      optional: {
+        validate: !process.env.BABEL_TYPES_8_BREAKING ? assertValueType("boolean") : chain(assertValueType("boolean"), assertOptionalChainStart())
+      },
+      typeArguments: {
+        validate: assertNodeType("TypeParameterInstantiation"),
+        optional: true
+      },
+      typeParameters: {
+        validate: assertNodeType("TSTypeParameterInstantiation"),
+        optional: true
+      }
+    }
+  });
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   var defineInterfaceishType = function defineInterfaceishType(name, typeParameterType) {
     if (typeParameterType === void 0) {
@@ -9937,6 +10187,7 @@
   });
 
   defineType("ArgumentPlaceholder", {});
+<<<<<<< HEAD
   defineType("AwaitExpression", {
     builder: ["argument"],
     visitor: ["argument"],
@@ -9947,6 +10198,8 @@
       }
     }
   });
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   defineType("BindExpression", {
     visitor: ["object", "callee"],
     aliases: ["Expression"],
@@ -10001,6 +10254,7 @@
       }
     })
   });
+<<<<<<< HEAD
   defineType("OptionalMemberExpression", {
     builder: ["object", "property", "computed", "optional"],
     visitor: ["object", "property"],
@@ -10031,6 +10285,8 @@
       }
     }
   });
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   defineType("PipelineTopicExpression", {
     builder: ["expression"],
     visitor: ["expression"],
@@ -10052,6 +10308,7 @@
   defineType("PipelinePrimaryTopicReference", {
     aliases: ["Expression"]
   });
+<<<<<<< HEAD
   defineType("OptionalCallExpression", {
     visitor: ["callee", "arguments", "typeParameters", "typeArguments"],
     builder: ["callee", "arguments", "optional"],
@@ -10076,6 +10333,8 @@
       }
     }
   });
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   defineType("ClassPrivateProperty", {
     visitor: ["key", "value", "decorators"],
     builder: ["key", "value", "decorators"],
@@ -10107,9 +10366,12 @@
       }
     })
   });
+<<<<<<< HEAD
   defineType("Import", {
     aliases: ["Expression"]
   });
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   defineType("ImportAttribute", {
     visitor: ["key", "value"],
     fields: {
@@ -10147,6 +10409,7 @@
       }
     }
   });
+<<<<<<< HEAD
   defineType("ExportNamespaceSpecifier", {
     visitor: ["exported"],
     aliases: ["ModuleSpecifier"],
@@ -10156,6 +10419,8 @@
       }
     }
   });
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   defineType("PrivateName", {
     visitor: ["id"],
     aliases: ["Private"],
@@ -10165,6 +10430,7 @@
       }
     }
   });
+<<<<<<< HEAD
   defineType("BigIntLiteral", {
     builder: ["value"],
     fields: {
@@ -10174,6 +10440,8 @@
     },
     aliases: ["Expression", "Pureish", "Literal", "Immutable"]
   });
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   defineType("RecordExpression", {
     visitor: ["properties"],
     aliases: ["Expression"],
@@ -10193,6 +10461,18 @@
     visitor: ["elements"],
     aliases: ["Expression"]
   });
+<<<<<<< HEAD
+=======
+  defineType("DecimalLiteral", {
+    builder: ["value"],
+    fields: {
+      value: {
+        validate: assertValueType("string")
+      }
+    },
+    aliases: ["Expression", "Pureish", "Literal", "Immutable"]
+  });
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   var bool = assertValueType("boolean");
   var tSFunctionTypeAnnotationCommon = {
@@ -10345,7 +10625,11 @@
     aliases: ["TSType"],
     visitor: ["elementTypes"],
     fields: {
+<<<<<<< HEAD
       elementTypes: validateArrayOfType("TSType")
+=======
+      elementTypes: validateArrayOfType(["TSType", "TSNamedTupleMember"])
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
   });
   defineType("TSOptionalType", {
@@ -10362,6 +10646,21 @@
       typeAnnotation: validateType("TSType")
     }
   });
+<<<<<<< HEAD
+=======
+  defineType("TSNamedTupleMember", {
+    visitor: ["label", "elementType"],
+    builder: ["label", "elementType", "optional"],
+    fields: {
+      label: validateType("Identifier"),
+      optional: {
+        validate: bool,
+        "default": false
+      },
+      elementType: validateType("TSType")
+    }
+  });
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   var unionOrIntersection = {
     aliases: ["TSType"],
     visitor: ["types"],
@@ -11170,706 +11469,1309 @@
 
     return builder.apply(void 0, ["YieldExpression"].concat(args));
   }
+<<<<<<< HEAD
   function anyTypeAnnotation() {
+=======
+  function awaitExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len76 = arguments.length, args = new Array(_len76), _key76 = 0; _key76 < _len76; _key76++) {
       args[_key76] = arguments[_key76];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["AnyTypeAnnotation"].concat(args));
   }
   function arrayTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["AwaitExpression"].concat(args));
+  }
+
+  function _import() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len77 = arguments.length, args = new Array(_len77), _key77 = 0; _key77 < _len77; _key77++) {
       args[_key77] = arguments[_key77];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ArrayTypeAnnotation"].concat(args));
   }
   function booleanTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["Import"].concat(args));
+  }
+  function bigIntLiteral() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len78 = arguments.length, args = new Array(_len78), _key78 = 0; _key78 < _len78; _key78++) {
       args[_key78] = arguments[_key78];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["BooleanTypeAnnotation"].concat(args));
   }
   function booleanLiteralTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["BigIntLiteral"].concat(args));
+  }
+  function exportNamespaceSpecifier() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len79 = arguments.length, args = new Array(_len79), _key79 = 0; _key79 < _len79; _key79++) {
       args[_key79] = arguments[_key79];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["BooleanLiteralTypeAnnotation"].concat(args));
   }
   function nullLiteralTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["ExportNamespaceSpecifier"].concat(args));
+  }
+  function optionalMemberExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len80 = arguments.length, args = new Array(_len80), _key80 = 0; _key80 < _len80; _key80++) {
       args[_key80] = arguments[_key80];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["NullLiteralTypeAnnotation"].concat(args));
   }
   function classImplements() {
+=======
+    return builder.apply(void 0, ["OptionalMemberExpression"].concat(args));
+  }
+  function optionalCallExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len81 = arguments.length, args = new Array(_len81), _key81 = 0; _key81 < _len81; _key81++) {
       args[_key81] = arguments[_key81];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ClassImplements"].concat(args));
   }
   function declareClass() {
+=======
+    return builder.apply(void 0, ["OptionalCallExpression"].concat(args));
+  }
+  function anyTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len82 = arguments.length, args = new Array(_len82), _key82 = 0; _key82 < _len82; _key82++) {
       args[_key82] = arguments[_key82];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareClass"].concat(args));
   }
   function declareFunction() {
+=======
+    return builder.apply(void 0, ["AnyTypeAnnotation"].concat(args));
+  }
+  function arrayTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len83 = arguments.length, args = new Array(_len83), _key83 = 0; _key83 < _len83; _key83++) {
       args[_key83] = arguments[_key83];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareFunction"].concat(args));
   }
   function declareInterface() {
+=======
+    return builder.apply(void 0, ["ArrayTypeAnnotation"].concat(args));
+  }
+  function booleanTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len84 = arguments.length, args = new Array(_len84), _key84 = 0; _key84 < _len84; _key84++) {
       args[_key84] = arguments[_key84];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareInterface"].concat(args));
   }
   function declareModule() {
+=======
+    return builder.apply(void 0, ["BooleanTypeAnnotation"].concat(args));
+  }
+  function booleanLiteralTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len85 = arguments.length, args = new Array(_len85), _key85 = 0; _key85 < _len85; _key85++) {
       args[_key85] = arguments[_key85];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareModule"].concat(args));
   }
   function declareModuleExports() {
+=======
+    return builder.apply(void 0, ["BooleanLiteralTypeAnnotation"].concat(args));
+  }
+  function nullLiteralTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len86 = arguments.length, args = new Array(_len86), _key86 = 0; _key86 < _len86; _key86++) {
       args[_key86] = arguments[_key86];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareModuleExports"].concat(args));
   }
   function declareTypeAlias() {
+=======
+    return builder.apply(void 0, ["NullLiteralTypeAnnotation"].concat(args));
+  }
+  function classImplements() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len87 = arguments.length, args = new Array(_len87), _key87 = 0; _key87 < _len87; _key87++) {
       args[_key87] = arguments[_key87];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareTypeAlias"].concat(args));
   }
   function declareOpaqueType() {
+=======
+    return builder.apply(void 0, ["ClassImplements"].concat(args));
+  }
+  function declareClass() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len88 = arguments.length, args = new Array(_len88), _key88 = 0; _key88 < _len88; _key88++) {
       args[_key88] = arguments[_key88];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareOpaqueType"].concat(args));
   }
   function declareVariable() {
+=======
+    return builder.apply(void 0, ["DeclareClass"].concat(args));
+  }
+  function declareFunction() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len89 = arguments.length, args = new Array(_len89), _key89 = 0; _key89 < _len89; _key89++) {
       args[_key89] = arguments[_key89];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareVariable"].concat(args));
   }
   function declareExportDeclaration() {
+=======
+    return builder.apply(void 0, ["DeclareFunction"].concat(args));
+  }
+  function declareInterface() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len90 = arguments.length, args = new Array(_len90), _key90 = 0; _key90 < _len90; _key90++) {
       args[_key90] = arguments[_key90];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareExportDeclaration"].concat(args));
   }
   function declareExportAllDeclaration() {
+=======
+    return builder.apply(void 0, ["DeclareInterface"].concat(args));
+  }
+  function declareModule() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len91 = arguments.length, args = new Array(_len91), _key91 = 0; _key91 < _len91; _key91++) {
       args[_key91] = arguments[_key91];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclareExportAllDeclaration"].concat(args));
   }
   function declaredPredicate() {
+=======
+    return builder.apply(void 0, ["DeclareModule"].concat(args));
+  }
+  function declareModuleExports() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len92 = arguments.length, args = new Array(_len92), _key92 = 0; _key92 < _len92; _key92++) {
       args[_key92] = arguments[_key92];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DeclaredPredicate"].concat(args));
   }
   function existsTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["DeclareModuleExports"].concat(args));
+  }
+  function declareTypeAlias() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len93 = arguments.length, args = new Array(_len93), _key93 = 0; _key93 < _len93; _key93++) {
       args[_key93] = arguments[_key93];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ExistsTypeAnnotation"].concat(args));
   }
   function functionTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["DeclareTypeAlias"].concat(args));
+  }
+  function declareOpaqueType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len94 = arguments.length, args = new Array(_len94), _key94 = 0; _key94 < _len94; _key94++) {
       args[_key94] = arguments[_key94];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["FunctionTypeAnnotation"].concat(args));
   }
   function functionTypeParam() {
+=======
+    return builder.apply(void 0, ["DeclareOpaqueType"].concat(args));
+  }
+  function declareVariable() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len95 = arguments.length, args = new Array(_len95), _key95 = 0; _key95 < _len95; _key95++) {
       args[_key95] = arguments[_key95];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["FunctionTypeParam"].concat(args));
   }
   function genericTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["DeclareVariable"].concat(args));
+  }
+  function declareExportDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len96 = arguments.length, args = new Array(_len96), _key96 = 0; _key96 < _len96; _key96++) {
       args[_key96] = arguments[_key96];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["GenericTypeAnnotation"].concat(args));
   }
   function inferredPredicate() {
+=======
+    return builder.apply(void 0, ["DeclareExportDeclaration"].concat(args));
+  }
+  function declareExportAllDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len97 = arguments.length, args = new Array(_len97), _key97 = 0; _key97 < _len97; _key97++) {
       args[_key97] = arguments[_key97];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["InferredPredicate"].concat(args));
   }
   function interfaceExtends() {
+=======
+    return builder.apply(void 0, ["DeclareExportAllDeclaration"].concat(args));
+  }
+  function declaredPredicate() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len98 = arguments.length, args = new Array(_len98), _key98 = 0; _key98 < _len98; _key98++) {
       args[_key98] = arguments[_key98];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["InterfaceExtends"].concat(args));
   }
   function interfaceDeclaration() {
+=======
+    return builder.apply(void 0, ["DeclaredPredicate"].concat(args));
+  }
+  function existsTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len99 = arguments.length, args = new Array(_len99), _key99 = 0; _key99 < _len99; _key99++) {
       args[_key99] = arguments[_key99];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["InterfaceDeclaration"].concat(args));
   }
   function interfaceTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["ExistsTypeAnnotation"].concat(args));
+  }
+  function functionTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len100 = arguments.length, args = new Array(_len100), _key100 = 0; _key100 < _len100; _key100++) {
       args[_key100] = arguments[_key100];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["InterfaceTypeAnnotation"].concat(args));
   }
   function intersectionTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["FunctionTypeAnnotation"].concat(args));
+  }
+  function functionTypeParam() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len101 = arguments.length, args = new Array(_len101), _key101 = 0; _key101 < _len101; _key101++) {
       args[_key101] = arguments[_key101];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["IntersectionTypeAnnotation"].concat(args));
   }
   function mixedTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["FunctionTypeParam"].concat(args));
+  }
+  function genericTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len102 = arguments.length, args = new Array(_len102), _key102 = 0; _key102 < _len102; _key102++) {
       args[_key102] = arguments[_key102];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["MixedTypeAnnotation"].concat(args));
   }
   function emptyTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["GenericTypeAnnotation"].concat(args));
+  }
+  function inferredPredicate() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len103 = arguments.length, args = new Array(_len103), _key103 = 0; _key103 < _len103; _key103++) {
       args[_key103] = arguments[_key103];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EmptyTypeAnnotation"].concat(args));
   }
   function nullableTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["InferredPredicate"].concat(args));
+  }
+  function interfaceExtends() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len104 = arguments.length, args = new Array(_len104), _key104 = 0; _key104 < _len104; _key104++) {
       args[_key104] = arguments[_key104];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["NullableTypeAnnotation"].concat(args));
   }
   function numberLiteralTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["InterfaceExtends"].concat(args));
+  }
+  function interfaceDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len105 = arguments.length, args = new Array(_len105), _key105 = 0; _key105 < _len105; _key105++) {
       args[_key105] = arguments[_key105];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["NumberLiteralTypeAnnotation"].concat(args));
   }
   function numberTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["InterfaceDeclaration"].concat(args));
+  }
+  function interfaceTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len106 = arguments.length, args = new Array(_len106), _key106 = 0; _key106 < _len106; _key106++) {
       args[_key106] = arguments[_key106];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["NumberTypeAnnotation"].concat(args));
   }
   function objectTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["InterfaceTypeAnnotation"].concat(args));
+  }
+  function intersectionTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len107 = arguments.length, args = new Array(_len107), _key107 = 0; _key107 < _len107; _key107++) {
       args[_key107] = arguments[_key107];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ObjectTypeAnnotation"].concat(args));
   }
   function objectTypeInternalSlot() {
+=======
+    return builder.apply(void 0, ["IntersectionTypeAnnotation"].concat(args));
+  }
+  function mixedTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len108 = arguments.length, args = new Array(_len108), _key108 = 0; _key108 < _len108; _key108++) {
       args[_key108] = arguments[_key108];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ObjectTypeInternalSlot"].concat(args));
   }
   function objectTypeCallProperty() {
+=======
+    return builder.apply(void 0, ["MixedTypeAnnotation"].concat(args));
+  }
+  function emptyTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len109 = arguments.length, args = new Array(_len109), _key109 = 0; _key109 < _len109; _key109++) {
       args[_key109] = arguments[_key109];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ObjectTypeCallProperty"].concat(args));
   }
   function objectTypeIndexer() {
+=======
+    return builder.apply(void 0, ["EmptyTypeAnnotation"].concat(args));
+  }
+  function nullableTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len110 = arguments.length, args = new Array(_len110), _key110 = 0; _key110 < _len110; _key110++) {
       args[_key110] = arguments[_key110];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ObjectTypeIndexer"].concat(args));
   }
   function objectTypeProperty() {
+=======
+    return builder.apply(void 0, ["NullableTypeAnnotation"].concat(args));
+  }
+  function numberLiteralTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len111 = arguments.length, args = new Array(_len111), _key111 = 0; _key111 < _len111; _key111++) {
       args[_key111] = arguments[_key111];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ObjectTypeProperty"].concat(args));
   }
   function objectTypeSpreadProperty() {
+=======
+    return builder.apply(void 0, ["NumberLiteralTypeAnnotation"].concat(args));
+  }
+  function numberTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len112 = arguments.length, args = new Array(_len112), _key112 = 0; _key112 < _len112; _key112++) {
       args[_key112] = arguments[_key112];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ObjectTypeSpreadProperty"].concat(args));
   }
   function opaqueType() {
+=======
+    return builder.apply(void 0, ["NumberTypeAnnotation"].concat(args));
+  }
+  function objectTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len113 = arguments.length, args = new Array(_len113), _key113 = 0; _key113 < _len113; _key113++) {
       args[_key113] = arguments[_key113];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["OpaqueType"].concat(args));
   }
   function qualifiedTypeIdentifier() {
+=======
+    return builder.apply(void 0, ["ObjectTypeAnnotation"].concat(args));
+  }
+  function objectTypeInternalSlot() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len114 = arguments.length, args = new Array(_len114), _key114 = 0; _key114 < _len114; _key114++) {
       args[_key114] = arguments[_key114];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["QualifiedTypeIdentifier"].concat(args));
   }
   function stringLiteralTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["ObjectTypeInternalSlot"].concat(args));
+  }
+  function objectTypeCallProperty() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len115 = arguments.length, args = new Array(_len115), _key115 = 0; _key115 < _len115; _key115++) {
       args[_key115] = arguments[_key115];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["StringLiteralTypeAnnotation"].concat(args));
   }
   function stringTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["ObjectTypeCallProperty"].concat(args));
+  }
+  function objectTypeIndexer() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len116 = arguments.length, args = new Array(_len116), _key116 = 0; _key116 < _len116; _key116++) {
       args[_key116] = arguments[_key116];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["StringTypeAnnotation"].concat(args));
   }
   function symbolTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["ObjectTypeIndexer"].concat(args));
+  }
+  function objectTypeProperty() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len117 = arguments.length, args = new Array(_len117), _key117 = 0; _key117 < _len117; _key117++) {
       args[_key117] = arguments[_key117];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["SymbolTypeAnnotation"].concat(args));
   }
   function thisTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["ObjectTypeProperty"].concat(args));
+  }
+  function objectTypeSpreadProperty() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len118 = arguments.length, args = new Array(_len118), _key118 = 0; _key118 < _len118; _key118++) {
       args[_key118] = arguments[_key118];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ThisTypeAnnotation"].concat(args));
   }
   function tupleTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["ObjectTypeSpreadProperty"].concat(args));
+  }
+  function opaqueType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len119 = arguments.length, args = new Array(_len119), _key119 = 0; _key119 < _len119; _key119++) {
       args[_key119] = arguments[_key119];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TupleTypeAnnotation"].concat(args));
   }
   function typeofTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["OpaqueType"].concat(args));
+  }
+  function qualifiedTypeIdentifier() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len120 = arguments.length, args = new Array(_len120), _key120 = 0; _key120 < _len120; _key120++) {
       args[_key120] = arguments[_key120];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TypeofTypeAnnotation"].concat(args));
   }
   function typeAlias() {
+=======
+    return builder.apply(void 0, ["QualifiedTypeIdentifier"].concat(args));
+  }
+  function stringLiteralTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len121 = arguments.length, args = new Array(_len121), _key121 = 0; _key121 < _len121; _key121++) {
       args[_key121] = arguments[_key121];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TypeAlias"].concat(args));
   }
   function typeAnnotation() {
+=======
+    return builder.apply(void 0, ["StringLiteralTypeAnnotation"].concat(args));
+  }
+  function stringTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len122 = arguments.length, args = new Array(_len122), _key122 = 0; _key122 < _len122; _key122++) {
       args[_key122] = arguments[_key122];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TypeAnnotation"].concat(args));
   }
   function typeCastExpression() {
+=======
+    return builder.apply(void 0, ["StringTypeAnnotation"].concat(args));
+  }
+  function symbolTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len123 = arguments.length, args = new Array(_len123), _key123 = 0; _key123 < _len123; _key123++) {
       args[_key123] = arguments[_key123];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TypeCastExpression"].concat(args));
   }
   function typeParameter() {
+=======
+    return builder.apply(void 0, ["SymbolTypeAnnotation"].concat(args));
+  }
+  function thisTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len124 = arguments.length, args = new Array(_len124), _key124 = 0; _key124 < _len124; _key124++) {
       args[_key124] = arguments[_key124];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TypeParameter"].concat(args));
   }
   function typeParameterDeclaration() {
+=======
+    return builder.apply(void 0, ["ThisTypeAnnotation"].concat(args));
+  }
+  function tupleTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len125 = arguments.length, args = new Array(_len125), _key125 = 0; _key125 < _len125; _key125++) {
       args[_key125] = arguments[_key125];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TypeParameterDeclaration"].concat(args));
   }
   function typeParameterInstantiation() {
+=======
+    return builder.apply(void 0, ["TupleTypeAnnotation"].concat(args));
+  }
+  function typeofTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len126 = arguments.length, args = new Array(_len126), _key126 = 0; _key126 < _len126; _key126++) {
       args[_key126] = arguments[_key126];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TypeParameterInstantiation"].concat(args));
   }
   function unionTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["TypeofTypeAnnotation"].concat(args));
+  }
+  function typeAlias() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len127 = arguments.length, args = new Array(_len127), _key127 = 0; _key127 < _len127; _key127++) {
       args[_key127] = arguments[_key127];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["UnionTypeAnnotation"].concat(args));
   }
   function variance() {
+=======
+    return builder.apply(void 0, ["TypeAlias"].concat(args));
+  }
+  function typeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len128 = arguments.length, args = new Array(_len128), _key128 = 0; _key128 < _len128; _key128++) {
       args[_key128] = arguments[_key128];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["Variance"].concat(args));
   }
   function voidTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["TypeAnnotation"].concat(args));
+  }
+  function typeCastExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len129 = arguments.length, args = new Array(_len129), _key129 = 0; _key129 < _len129; _key129++) {
       args[_key129] = arguments[_key129];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["VoidTypeAnnotation"].concat(args));
   }
   function enumDeclaration() {
+=======
+    return builder.apply(void 0, ["TypeCastExpression"].concat(args));
+  }
+  function typeParameter() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len130 = arguments.length, args = new Array(_len130), _key130 = 0; _key130 < _len130; _key130++) {
       args[_key130] = arguments[_key130];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumDeclaration"].concat(args));
   }
   function enumBooleanBody() {
+=======
+    return builder.apply(void 0, ["TypeParameter"].concat(args));
+  }
+  function typeParameterDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len131 = arguments.length, args = new Array(_len131), _key131 = 0; _key131 < _len131; _key131++) {
       args[_key131] = arguments[_key131];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumBooleanBody"].concat(args));
   }
   function enumNumberBody() {
+=======
+    return builder.apply(void 0, ["TypeParameterDeclaration"].concat(args));
+  }
+  function typeParameterInstantiation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len132 = arguments.length, args = new Array(_len132), _key132 = 0; _key132 < _len132; _key132++) {
       args[_key132] = arguments[_key132];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumNumberBody"].concat(args));
   }
   function enumStringBody() {
+=======
+    return builder.apply(void 0, ["TypeParameterInstantiation"].concat(args));
+  }
+  function unionTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len133 = arguments.length, args = new Array(_len133), _key133 = 0; _key133 < _len133; _key133++) {
       args[_key133] = arguments[_key133];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumStringBody"].concat(args));
   }
   function enumSymbolBody() {
+=======
+    return builder.apply(void 0, ["UnionTypeAnnotation"].concat(args));
+  }
+  function variance() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len134 = arguments.length, args = new Array(_len134), _key134 = 0; _key134 < _len134; _key134++) {
       args[_key134] = arguments[_key134];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumSymbolBody"].concat(args));
   }
   function enumBooleanMember() {
+=======
+    return builder.apply(void 0, ["Variance"].concat(args));
+  }
+  function voidTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len135 = arguments.length, args = new Array(_len135), _key135 = 0; _key135 < _len135; _key135++) {
       args[_key135] = arguments[_key135];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumBooleanMember"].concat(args));
   }
   function enumNumberMember() {
+=======
+    return builder.apply(void 0, ["VoidTypeAnnotation"].concat(args));
+  }
+  function enumDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len136 = arguments.length, args = new Array(_len136), _key136 = 0; _key136 < _len136; _key136++) {
       args[_key136] = arguments[_key136];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumNumberMember"].concat(args));
   }
   function enumStringMember() {
+=======
+    return builder.apply(void 0, ["EnumDeclaration"].concat(args));
+  }
+  function enumBooleanBody() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len137 = arguments.length, args = new Array(_len137), _key137 = 0; _key137 < _len137; _key137++) {
       args[_key137] = arguments[_key137];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumStringMember"].concat(args));
   }
   function enumDefaultedMember() {
+=======
+    return builder.apply(void 0, ["EnumBooleanBody"].concat(args));
+  }
+  function enumNumberBody() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len138 = arguments.length, args = new Array(_len138), _key138 = 0; _key138 < _len138; _key138++) {
       args[_key138] = arguments[_key138];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["EnumDefaultedMember"].concat(args));
   }
   function jsxAttribute() {
+=======
+    return builder.apply(void 0, ["EnumNumberBody"].concat(args));
+  }
+  function enumStringBody() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len139 = arguments.length, args = new Array(_len139), _key139 = 0; _key139 < _len139; _key139++) {
       args[_key139] = arguments[_key139];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXAttribute"].concat(args));
   }
   function jsxClosingElement() {
+=======
+    return builder.apply(void 0, ["EnumStringBody"].concat(args));
+  }
+  function enumSymbolBody() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len140 = arguments.length, args = new Array(_len140), _key140 = 0; _key140 < _len140; _key140++) {
       args[_key140] = arguments[_key140];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXClosingElement"].concat(args));
   }
   function jsxElement() {
+=======
+    return builder.apply(void 0, ["EnumSymbolBody"].concat(args));
+  }
+  function enumBooleanMember() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len141 = arguments.length, args = new Array(_len141), _key141 = 0; _key141 < _len141; _key141++) {
       args[_key141] = arguments[_key141];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXElement"].concat(args));
   }
   function jsxEmptyExpression() {
+=======
+    return builder.apply(void 0, ["EnumBooleanMember"].concat(args));
+  }
+  function enumNumberMember() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len142 = arguments.length, args = new Array(_len142), _key142 = 0; _key142 < _len142; _key142++) {
       args[_key142] = arguments[_key142];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXEmptyExpression"].concat(args));
   }
   function jsxExpressionContainer() {
+=======
+    return builder.apply(void 0, ["EnumNumberMember"].concat(args));
+  }
+  function enumStringMember() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len143 = arguments.length, args = new Array(_len143), _key143 = 0; _key143 < _len143; _key143++) {
       args[_key143] = arguments[_key143];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXExpressionContainer"].concat(args));
   }
   function jsxSpreadChild() {
+=======
+    return builder.apply(void 0, ["EnumStringMember"].concat(args));
+  }
+  function enumDefaultedMember() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len144 = arguments.length, args = new Array(_len144), _key144 = 0; _key144 < _len144; _key144++) {
       args[_key144] = arguments[_key144];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXSpreadChild"].concat(args));
   }
   function jsxIdentifier() {
+=======
+    return builder.apply(void 0, ["EnumDefaultedMember"].concat(args));
+  }
+  function jsxAttribute() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len145 = arguments.length, args = new Array(_len145), _key145 = 0; _key145 < _len145; _key145++) {
       args[_key145] = arguments[_key145];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXIdentifier"].concat(args));
   }
   function jsxMemberExpression() {
+=======
+    return builder.apply(void 0, ["JSXAttribute"].concat(args));
+  }
+  function jsxClosingElement() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len146 = arguments.length, args = new Array(_len146), _key146 = 0; _key146 < _len146; _key146++) {
       args[_key146] = arguments[_key146];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXMemberExpression"].concat(args));
   }
   function jsxNamespacedName() {
+=======
+    return builder.apply(void 0, ["JSXClosingElement"].concat(args));
+  }
+  function jsxElement() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len147 = arguments.length, args = new Array(_len147), _key147 = 0; _key147 < _len147; _key147++) {
       args[_key147] = arguments[_key147];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXNamespacedName"].concat(args));
   }
   function jsxOpeningElement() {
+=======
+    return builder.apply(void 0, ["JSXElement"].concat(args));
+  }
+  function jsxEmptyExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len148 = arguments.length, args = new Array(_len148), _key148 = 0; _key148 < _len148; _key148++) {
       args[_key148] = arguments[_key148];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXOpeningElement"].concat(args));
   }
   function jsxSpreadAttribute() {
+=======
+    return builder.apply(void 0, ["JSXEmptyExpression"].concat(args));
+  }
+  function jsxExpressionContainer() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len149 = arguments.length, args = new Array(_len149), _key149 = 0; _key149 < _len149; _key149++) {
       args[_key149] = arguments[_key149];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXSpreadAttribute"].concat(args));
   }
   function jsxText() {
+=======
+    return builder.apply(void 0, ["JSXExpressionContainer"].concat(args));
+  }
+  function jsxSpreadChild() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len150 = arguments.length, args = new Array(_len150), _key150 = 0; _key150 < _len150; _key150++) {
       args[_key150] = arguments[_key150];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXText"].concat(args));
   }
   function jsxFragment() {
+=======
+    return builder.apply(void 0, ["JSXSpreadChild"].concat(args));
+  }
+  function jsxIdentifier() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len151 = arguments.length, args = new Array(_len151), _key151 = 0; _key151 < _len151; _key151++) {
       args[_key151] = arguments[_key151];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXFragment"].concat(args));
   }
   function jsxOpeningFragment() {
+=======
+    return builder.apply(void 0, ["JSXIdentifier"].concat(args));
+  }
+  function jsxMemberExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len152 = arguments.length, args = new Array(_len152), _key152 = 0; _key152 < _len152; _key152++) {
       args[_key152] = arguments[_key152];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXOpeningFragment"].concat(args));
   }
   function jsxClosingFragment() {
+=======
+    return builder.apply(void 0, ["JSXMemberExpression"].concat(args));
+  }
+  function jsxNamespacedName() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len153 = arguments.length, args = new Array(_len153), _key153 = 0; _key153 < _len153; _key153++) {
       args[_key153] = arguments[_key153];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["JSXClosingFragment"].concat(args));
   }
   function noop$1() {
+=======
+    return builder.apply(void 0, ["JSXNamespacedName"].concat(args));
+  }
+  function jsxOpeningElement() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len154 = arguments.length, args = new Array(_len154), _key154 = 0; _key154 < _len154; _key154++) {
       args[_key154] = arguments[_key154];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["Noop"].concat(args));
   }
   function placeholder() {
+=======
+    return builder.apply(void 0, ["JSXOpeningElement"].concat(args));
+  }
+  function jsxSpreadAttribute() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len155 = arguments.length, args = new Array(_len155), _key155 = 0; _key155 < _len155; _key155++) {
       args[_key155] = arguments[_key155];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["Placeholder"].concat(args));
   }
   function v8IntrinsicIdentifier() {
+=======
+    return builder.apply(void 0, ["JSXSpreadAttribute"].concat(args));
+  }
+  function jsxText() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len156 = arguments.length, args = new Array(_len156), _key156 = 0; _key156 < _len156; _key156++) {
       args[_key156] = arguments[_key156];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["V8IntrinsicIdentifier"].concat(args));
   }
   function argumentPlaceholder() {
+=======
+    return builder.apply(void 0, ["JSXText"].concat(args));
+  }
+  function jsxFragment() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len157 = arguments.length, args = new Array(_len157), _key157 = 0; _key157 < _len157; _key157++) {
       args[_key157] = arguments[_key157];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ArgumentPlaceholder"].concat(args));
   }
   function awaitExpression() {
+=======
+    return builder.apply(void 0, ["JSXFragment"].concat(args));
+  }
+  function jsxOpeningFragment() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len158 = arguments.length, args = new Array(_len158), _key158 = 0; _key158 < _len158; _key158++) {
       args[_key158] = arguments[_key158];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["AwaitExpression"].concat(args));
   }
   function bindExpression() {
+=======
+    return builder.apply(void 0, ["JSXOpeningFragment"].concat(args));
+  }
+  function jsxClosingFragment() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len159 = arguments.length, args = new Array(_len159), _key159 = 0; _key159 < _len159; _key159++) {
       args[_key159] = arguments[_key159];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["BindExpression"].concat(args));
   }
   function classProperty() {
+=======
+    return builder.apply(void 0, ["JSXClosingFragment"].concat(args));
+  }
+  function noop$1() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len160 = arguments.length, args = new Array(_len160), _key160 = 0; _key160 < _len160; _key160++) {
       args[_key160] = arguments[_key160];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ClassProperty"].concat(args));
   }
   function optionalMemberExpression() {
+=======
+    return builder.apply(void 0, ["Noop"].concat(args));
+  }
+  function placeholder() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len161 = arguments.length, args = new Array(_len161), _key161 = 0; _key161 < _len161; _key161++) {
       args[_key161] = arguments[_key161];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["OptionalMemberExpression"].concat(args));
   }
   function pipelineTopicExpression() {
+=======
+    return builder.apply(void 0, ["Placeholder"].concat(args));
+  }
+  function v8IntrinsicIdentifier() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len162 = arguments.length, args = new Array(_len162), _key162 = 0; _key162 < _len162; _key162++) {
       args[_key162] = arguments[_key162];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["PipelineTopicExpression"].concat(args));
   }
   function pipelineBareFunction() {
+=======
+    return builder.apply(void 0, ["V8IntrinsicIdentifier"].concat(args));
+  }
+  function argumentPlaceholder() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len163 = arguments.length, args = new Array(_len163), _key163 = 0; _key163 < _len163; _key163++) {
       args[_key163] = arguments[_key163];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["PipelineBareFunction"].concat(args));
   }
   function pipelinePrimaryTopicReference() {
+=======
+    return builder.apply(void 0, ["ArgumentPlaceholder"].concat(args));
+  }
+  function bindExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len164 = arguments.length, args = new Array(_len164), _key164 = 0; _key164 < _len164; _key164++) {
       args[_key164] = arguments[_key164];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["PipelinePrimaryTopicReference"].concat(args));
   }
   function optionalCallExpression() {
+=======
+    return builder.apply(void 0, ["BindExpression"].concat(args));
+  }
+  function classProperty() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len165 = arguments.length, args = new Array(_len165), _key165 = 0; _key165 < _len165; _key165++) {
       args[_key165] = arguments[_key165];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["OptionalCallExpression"].concat(args));
   }
   function classPrivateProperty() {
+=======
+    return builder.apply(void 0, ["ClassProperty"].concat(args));
+  }
+  function pipelineTopicExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len166 = arguments.length, args = new Array(_len166), _key166 = 0; _key166 < _len166; _key166++) {
       args[_key166] = arguments[_key166];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ClassPrivateProperty"].concat(args));
   }
   function classPrivateMethod() {
+=======
+    return builder.apply(void 0, ["PipelineTopicExpression"].concat(args));
+  }
+  function pipelineBareFunction() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len167 = arguments.length, args = new Array(_len167), _key167 = 0; _key167 < _len167; _key167++) {
       args[_key167] = arguments[_key167];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ClassPrivateMethod"].concat(args));
   }
 
   function _import() {
+=======
+    return builder.apply(void 0, ["PipelineBareFunction"].concat(args));
+  }
+  function pipelinePrimaryTopicReference() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len168 = arguments.length, args = new Array(_len168), _key168 = 0; _key168 < _len168; _key168++) {
       args[_key168] = arguments[_key168];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["Import"].concat(args));
   }
   function importAttribute() {
+=======
+    return builder.apply(void 0, ["PipelinePrimaryTopicReference"].concat(args));
+  }
+  function classPrivateProperty() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len169 = arguments.length, args = new Array(_len169), _key169 = 0; _key169 < _len169; _key169++) {
       args[_key169] = arguments[_key169];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ImportAttribute"].concat(args));
   }
   function decorator() {
+=======
+    return builder.apply(void 0, ["ClassPrivateProperty"].concat(args));
+  }
+  function classPrivateMethod() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len170 = arguments.length, args = new Array(_len170), _key170 = 0; _key170 < _len170; _key170++) {
       args[_key170] = arguments[_key170];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["Decorator"].concat(args));
   }
   function doExpression() {
+=======
+    return builder.apply(void 0, ["ClassPrivateMethod"].concat(args));
+  }
+  function importAttribute() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len171 = arguments.length, args = new Array(_len171), _key171 = 0; _key171 < _len171; _key171++) {
       args[_key171] = arguments[_key171];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["DoExpression"].concat(args));
   }
   function exportDefaultSpecifier() {
+=======
+    return builder.apply(void 0, ["ImportAttribute"].concat(args));
+  }
+  function decorator() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len172 = arguments.length, args = new Array(_len172), _key172 = 0; _key172 < _len172; _key172++) {
       args[_key172] = arguments[_key172];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ExportDefaultSpecifier"].concat(args));
   }
   function exportNamespaceSpecifier() {
+=======
+    return builder.apply(void 0, ["Decorator"].concat(args));
+  }
+  function doExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len173 = arguments.length, args = new Array(_len173), _key173 = 0; _key173 < _len173; _key173++) {
       args[_key173] = arguments[_key173];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["ExportNamespaceSpecifier"].concat(args));
   }
   function privateName() {
+=======
+    return builder.apply(void 0, ["DoExpression"].concat(args));
+  }
+  function exportDefaultSpecifier() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len174 = arguments.length, args = new Array(_len174), _key174 = 0; _key174 < _len174; _key174++) {
       args[_key174] = arguments[_key174];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["PrivateName"].concat(args));
   }
   function bigIntLiteral() {
+=======
+    return builder.apply(void 0, ["ExportDefaultSpecifier"].concat(args));
+  }
+  function privateName() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len175 = arguments.length, args = new Array(_len175), _key175 = 0; _key175 < _len175; _key175++) {
       args[_key175] = arguments[_key175];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["BigIntLiteral"].concat(args));
+=======
+    return builder.apply(void 0, ["PrivateName"].concat(args));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   }
   function recordExpression() {
     for (var _len176 = arguments.length, args = new Array(_len176), _key176 = 0; _key176 < _len176; _key176++) {
@@ -11885,438 +12787,824 @@
 
     return builder.apply(void 0, ["TupleExpression"].concat(args));
   }
+<<<<<<< HEAD
   function tsParameterProperty() {
+=======
+  function decimalLiteral() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len178 = arguments.length, args = new Array(_len178), _key178 = 0; _key178 < _len178; _key178++) {
       args[_key178] = arguments[_key178];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSParameterProperty"].concat(args));
   }
   function tsDeclareFunction() {
+=======
+    return builder.apply(void 0, ["DecimalLiteral"].concat(args));
+  }
+  function tsParameterProperty() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len179 = arguments.length, args = new Array(_len179), _key179 = 0; _key179 < _len179; _key179++) {
       args[_key179] = arguments[_key179];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSDeclareFunction"].concat(args));
   }
   function tsDeclareMethod() {
+=======
+    return builder.apply(void 0, ["TSParameterProperty"].concat(args));
+  }
+  function tsDeclareFunction() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len180 = arguments.length, args = new Array(_len180), _key180 = 0; _key180 < _len180; _key180++) {
       args[_key180] = arguments[_key180];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSDeclareMethod"].concat(args));
   }
   function tsQualifiedName() {
+=======
+    return builder.apply(void 0, ["TSDeclareFunction"].concat(args));
+  }
+  function tsDeclareMethod() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len181 = arguments.length, args = new Array(_len181), _key181 = 0; _key181 < _len181; _key181++) {
       args[_key181] = arguments[_key181];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSQualifiedName"].concat(args));
   }
   function tsCallSignatureDeclaration() {
+=======
+    return builder.apply(void 0, ["TSDeclareMethod"].concat(args));
+  }
+  function tsQualifiedName() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len182 = arguments.length, args = new Array(_len182), _key182 = 0; _key182 < _len182; _key182++) {
       args[_key182] = arguments[_key182];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSCallSignatureDeclaration"].concat(args));
   }
   function tsConstructSignatureDeclaration() {
+=======
+    return builder.apply(void 0, ["TSQualifiedName"].concat(args));
+  }
+  function tsCallSignatureDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len183 = arguments.length, args = new Array(_len183), _key183 = 0; _key183 < _len183; _key183++) {
       args[_key183] = arguments[_key183];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSConstructSignatureDeclaration"].concat(args));
   }
   function tsPropertySignature() {
+=======
+    return builder.apply(void 0, ["TSCallSignatureDeclaration"].concat(args));
+  }
+  function tsConstructSignatureDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len184 = arguments.length, args = new Array(_len184), _key184 = 0; _key184 < _len184; _key184++) {
       args[_key184] = arguments[_key184];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSPropertySignature"].concat(args));
   }
   function tsMethodSignature() {
+=======
+    return builder.apply(void 0, ["TSConstructSignatureDeclaration"].concat(args));
+  }
+  function tsPropertySignature() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len185 = arguments.length, args = new Array(_len185), _key185 = 0; _key185 < _len185; _key185++) {
       args[_key185] = arguments[_key185];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSMethodSignature"].concat(args));
   }
   function tsIndexSignature() {
+=======
+    return builder.apply(void 0, ["TSPropertySignature"].concat(args));
+  }
+  function tsMethodSignature() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len186 = arguments.length, args = new Array(_len186), _key186 = 0; _key186 < _len186; _key186++) {
       args[_key186] = arguments[_key186];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSIndexSignature"].concat(args));
   }
   function tsAnyKeyword() {
+=======
+    return builder.apply(void 0, ["TSMethodSignature"].concat(args));
+  }
+  function tsIndexSignature() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len187 = arguments.length, args = new Array(_len187), _key187 = 0; _key187 < _len187; _key187++) {
       args[_key187] = arguments[_key187];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSAnyKeyword"].concat(args));
   }
   function tsBooleanKeyword() {
+=======
+    return builder.apply(void 0, ["TSIndexSignature"].concat(args));
+  }
+  function tsAnyKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len188 = arguments.length, args = new Array(_len188), _key188 = 0; _key188 < _len188; _key188++) {
       args[_key188] = arguments[_key188];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSBooleanKeyword"].concat(args));
   }
   function tsBigIntKeyword() {
+=======
+    return builder.apply(void 0, ["TSAnyKeyword"].concat(args));
+  }
+  function tsBooleanKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len189 = arguments.length, args = new Array(_len189), _key189 = 0; _key189 < _len189; _key189++) {
       args[_key189] = arguments[_key189];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSBigIntKeyword"].concat(args));
   }
   function tsNeverKeyword() {
+=======
+    return builder.apply(void 0, ["TSBooleanKeyword"].concat(args));
+  }
+  function tsBigIntKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len190 = arguments.length, args = new Array(_len190), _key190 = 0; _key190 < _len190; _key190++) {
       args[_key190] = arguments[_key190];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSNeverKeyword"].concat(args));
   }
   function tsNullKeyword() {
+=======
+    return builder.apply(void 0, ["TSBigIntKeyword"].concat(args));
+  }
+  function tsNeverKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len191 = arguments.length, args = new Array(_len191), _key191 = 0; _key191 < _len191; _key191++) {
       args[_key191] = arguments[_key191];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSNullKeyword"].concat(args));
   }
   function tsNumberKeyword() {
+=======
+    return builder.apply(void 0, ["TSNeverKeyword"].concat(args));
+  }
+  function tsNullKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len192 = arguments.length, args = new Array(_len192), _key192 = 0; _key192 < _len192; _key192++) {
       args[_key192] = arguments[_key192];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSNumberKeyword"].concat(args));
   }
   function tsObjectKeyword() {
+=======
+    return builder.apply(void 0, ["TSNullKeyword"].concat(args));
+  }
+  function tsNumberKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len193 = arguments.length, args = new Array(_len193), _key193 = 0; _key193 < _len193; _key193++) {
       args[_key193] = arguments[_key193];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSObjectKeyword"].concat(args));
   }
   function tsStringKeyword() {
+=======
+    return builder.apply(void 0, ["TSNumberKeyword"].concat(args));
+  }
+  function tsObjectKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len194 = arguments.length, args = new Array(_len194), _key194 = 0; _key194 < _len194; _key194++) {
       args[_key194] = arguments[_key194];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSStringKeyword"].concat(args));
   }
   function tsSymbolKeyword() {
+=======
+    return builder.apply(void 0, ["TSObjectKeyword"].concat(args));
+  }
+  function tsStringKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len195 = arguments.length, args = new Array(_len195), _key195 = 0; _key195 < _len195; _key195++) {
       args[_key195] = arguments[_key195];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSSymbolKeyword"].concat(args));
   }
   function tsUndefinedKeyword() {
+=======
+    return builder.apply(void 0, ["TSStringKeyword"].concat(args));
+  }
+  function tsSymbolKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len196 = arguments.length, args = new Array(_len196), _key196 = 0; _key196 < _len196; _key196++) {
       args[_key196] = arguments[_key196];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSUndefinedKeyword"].concat(args));
   }
   function tsUnknownKeyword() {
+=======
+    return builder.apply(void 0, ["TSSymbolKeyword"].concat(args));
+  }
+  function tsUndefinedKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len197 = arguments.length, args = new Array(_len197), _key197 = 0; _key197 < _len197; _key197++) {
       args[_key197] = arguments[_key197];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSUnknownKeyword"].concat(args));
   }
   function tsVoidKeyword() {
+=======
+    return builder.apply(void 0, ["TSUndefinedKeyword"].concat(args));
+  }
+  function tsUnknownKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len198 = arguments.length, args = new Array(_len198), _key198 = 0; _key198 < _len198; _key198++) {
       args[_key198] = arguments[_key198];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSVoidKeyword"].concat(args));
   }
   function tsThisType() {
+=======
+    return builder.apply(void 0, ["TSUnknownKeyword"].concat(args));
+  }
+  function tsVoidKeyword() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len199 = arguments.length, args = new Array(_len199), _key199 = 0; _key199 < _len199; _key199++) {
       args[_key199] = arguments[_key199];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSThisType"].concat(args));
   }
   function tsFunctionType() {
+=======
+    return builder.apply(void 0, ["TSVoidKeyword"].concat(args));
+  }
+  function tsThisType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len200 = arguments.length, args = new Array(_len200), _key200 = 0; _key200 < _len200; _key200++) {
       args[_key200] = arguments[_key200];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSFunctionType"].concat(args));
   }
   function tsConstructorType() {
+=======
+    return builder.apply(void 0, ["TSThisType"].concat(args));
+  }
+  function tsFunctionType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len201 = arguments.length, args = new Array(_len201), _key201 = 0; _key201 < _len201; _key201++) {
       args[_key201] = arguments[_key201];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSConstructorType"].concat(args));
   }
   function tsTypeReference() {
+=======
+    return builder.apply(void 0, ["TSFunctionType"].concat(args));
+  }
+  function tsConstructorType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len202 = arguments.length, args = new Array(_len202), _key202 = 0; _key202 < _len202; _key202++) {
       args[_key202] = arguments[_key202];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypeReference"].concat(args));
   }
   function tsTypePredicate() {
+=======
+    return builder.apply(void 0, ["TSConstructorType"].concat(args));
+  }
+  function tsTypeReference() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len203 = arguments.length, args = new Array(_len203), _key203 = 0; _key203 < _len203; _key203++) {
       args[_key203] = arguments[_key203];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypePredicate"].concat(args));
   }
   function tsTypeQuery() {
+=======
+    return builder.apply(void 0, ["TSTypeReference"].concat(args));
+  }
+  function tsTypePredicate() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len204 = arguments.length, args = new Array(_len204), _key204 = 0; _key204 < _len204; _key204++) {
       args[_key204] = arguments[_key204];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypeQuery"].concat(args));
   }
   function tsTypeLiteral() {
+=======
+    return builder.apply(void 0, ["TSTypePredicate"].concat(args));
+  }
+  function tsTypeQuery() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len205 = arguments.length, args = new Array(_len205), _key205 = 0; _key205 < _len205; _key205++) {
       args[_key205] = arguments[_key205];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypeLiteral"].concat(args));
   }
   function tsArrayType() {
+=======
+    return builder.apply(void 0, ["TSTypeQuery"].concat(args));
+  }
+  function tsTypeLiteral() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len206 = arguments.length, args = new Array(_len206), _key206 = 0; _key206 < _len206; _key206++) {
       args[_key206] = arguments[_key206];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSArrayType"].concat(args));
   }
   function tsTupleType() {
+=======
+    return builder.apply(void 0, ["TSTypeLiteral"].concat(args));
+  }
+  function tsArrayType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len207 = arguments.length, args = new Array(_len207), _key207 = 0; _key207 < _len207; _key207++) {
       args[_key207] = arguments[_key207];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTupleType"].concat(args));
   }
   function tsOptionalType() {
+=======
+    return builder.apply(void 0, ["TSArrayType"].concat(args));
+  }
+  function tsTupleType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len208 = arguments.length, args = new Array(_len208), _key208 = 0; _key208 < _len208; _key208++) {
       args[_key208] = arguments[_key208];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSOptionalType"].concat(args));
   }
   function tsRestType() {
+=======
+    return builder.apply(void 0, ["TSTupleType"].concat(args));
+  }
+  function tsOptionalType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len209 = arguments.length, args = new Array(_len209), _key209 = 0; _key209 < _len209; _key209++) {
       args[_key209] = arguments[_key209];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSRestType"].concat(args));
   }
   function tsUnionType() {
+=======
+    return builder.apply(void 0, ["TSOptionalType"].concat(args));
+  }
+  function tsRestType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len210 = arguments.length, args = new Array(_len210), _key210 = 0; _key210 < _len210; _key210++) {
       args[_key210] = arguments[_key210];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSUnionType"].concat(args));
   }
   function tsIntersectionType() {
+=======
+    return builder.apply(void 0, ["TSRestType"].concat(args));
+  }
+  function tsNamedTupleMember() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len211 = arguments.length, args = new Array(_len211), _key211 = 0; _key211 < _len211; _key211++) {
       args[_key211] = arguments[_key211];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSIntersectionType"].concat(args));
   }
   function tsConditionalType() {
+=======
+    return builder.apply(void 0, ["TSNamedTupleMember"].concat(args));
+  }
+  function tsUnionType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len212 = arguments.length, args = new Array(_len212), _key212 = 0; _key212 < _len212; _key212++) {
       args[_key212] = arguments[_key212];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSConditionalType"].concat(args));
   }
   function tsInferType() {
+=======
+    return builder.apply(void 0, ["TSUnionType"].concat(args));
+  }
+  function tsIntersectionType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len213 = arguments.length, args = new Array(_len213), _key213 = 0; _key213 < _len213; _key213++) {
       args[_key213] = arguments[_key213];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSInferType"].concat(args));
   }
   function tsParenthesizedType() {
+=======
+    return builder.apply(void 0, ["TSIntersectionType"].concat(args));
+  }
+  function tsConditionalType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len214 = arguments.length, args = new Array(_len214), _key214 = 0; _key214 < _len214; _key214++) {
       args[_key214] = arguments[_key214];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSParenthesizedType"].concat(args));
   }
   function tsTypeOperator() {
+=======
+    return builder.apply(void 0, ["TSConditionalType"].concat(args));
+  }
+  function tsInferType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len215 = arguments.length, args = new Array(_len215), _key215 = 0; _key215 < _len215; _key215++) {
       args[_key215] = arguments[_key215];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypeOperator"].concat(args));
   }
   function tsIndexedAccessType() {
+=======
+    return builder.apply(void 0, ["TSInferType"].concat(args));
+  }
+  function tsParenthesizedType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len216 = arguments.length, args = new Array(_len216), _key216 = 0; _key216 < _len216; _key216++) {
       args[_key216] = arguments[_key216];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSIndexedAccessType"].concat(args));
   }
   function tsMappedType() {
+=======
+    return builder.apply(void 0, ["TSParenthesizedType"].concat(args));
+  }
+  function tsTypeOperator() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len217 = arguments.length, args = new Array(_len217), _key217 = 0; _key217 < _len217; _key217++) {
       args[_key217] = arguments[_key217];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSMappedType"].concat(args));
   }
   function tsLiteralType() {
+=======
+    return builder.apply(void 0, ["TSTypeOperator"].concat(args));
+  }
+  function tsIndexedAccessType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len218 = arguments.length, args = new Array(_len218), _key218 = 0; _key218 < _len218; _key218++) {
       args[_key218] = arguments[_key218];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSLiteralType"].concat(args));
   }
   function tsExpressionWithTypeArguments() {
+=======
+    return builder.apply(void 0, ["TSIndexedAccessType"].concat(args));
+  }
+  function tsMappedType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len219 = arguments.length, args = new Array(_len219), _key219 = 0; _key219 < _len219; _key219++) {
       args[_key219] = arguments[_key219];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSExpressionWithTypeArguments"].concat(args));
   }
   function tsInterfaceDeclaration() {
+=======
+    return builder.apply(void 0, ["TSMappedType"].concat(args));
+  }
+  function tsLiteralType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len220 = arguments.length, args = new Array(_len220), _key220 = 0; _key220 < _len220; _key220++) {
       args[_key220] = arguments[_key220];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSInterfaceDeclaration"].concat(args));
   }
   function tsInterfaceBody() {
+=======
+    return builder.apply(void 0, ["TSLiteralType"].concat(args));
+  }
+  function tsExpressionWithTypeArguments() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len221 = arguments.length, args = new Array(_len221), _key221 = 0; _key221 < _len221; _key221++) {
       args[_key221] = arguments[_key221];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSInterfaceBody"].concat(args));
   }
   function tsTypeAliasDeclaration() {
+=======
+    return builder.apply(void 0, ["TSExpressionWithTypeArguments"].concat(args));
+  }
+  function tsInterfaceDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len222 = arguments.length, args = new Array(_len222), _key222 = 0; _key222 < _len222; _key222++) {
       args[_key222] = arguments[_key222];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypeAliasDeclaration"].concat(args));
   }
   function tsAsExpression() {
+=======
+    return builder.apply(void 0, ["TSInterfaceDeclaration"].concat(args));
+  }
+  function tsInterfaceBody() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len223 = arguments.length, args = new Array(_len223), _key223 = 0; _key223 < _len223; _key223++) {
       args[_key223] = arguments[_key223];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSAsExpression"].concat(args));
   }
   function tsTypeAssertion() {
+=======
+    return builder.apply(void 0, ["TSInterfaceBody"].concat(args));
+  }
+  function tsTypeAliasDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len224 = arguments.length, args = new Array(_len224), _key224 = 0; _key224 < _len224; _key224++) {
       args[_key224] = arguments[_key224];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypeAssertion"].concat(args));
   }
   function tsEnumDeclaration() {
+=======
+    return builder.apply(void 0, ["TSTypeAliasDeclaration"].concat(args));
+  }
+  function tsAsExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len225 = arguments.length, args = new Array(_len225), _key225 = 0; _key225 < _len225; _key225++) {
       args[_key225] = arguments[_key225];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSEnumDeclaration"].concat(args));
   }
   function tsEnumMember() {
+=======
+    return builder.apply(void 0, ["TSAsExpression"].concat(args));
+  }
+  function tsTypeAssertion() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len226 = arguments.length, args = new Array(_len226), _key226 = 0; _key226 < _len226; _key226++) {
       args[_key226] = arguments[_key226];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSEnumMember"].concat(args));
   }
   function tsModuleDeclaration() {
+=======
+    return builder.apply(void 0, ["TSTypeAssertion"].concat(args));
+  }
+  function tsEnumDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len227 = arguments.length, args = new Array(_len227), _key227 = 0; _key227 < _len227; _key227++) {
       args[_key227] = arguments[_key227];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSModuleDeclaration"].concat(args));
   }
   function tsModuleBlock() {
+=======
+    return builder.apply(void 0, ["TSEnumDeclaration"].concat(args));
+  }
+  function tsEnumMember() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len228 = arguments.length, args = new Array(_len228), _key228 = 0; _key228 < _len228; _key228++) {
       args[_key228] = arguments[_key228];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSModuleBlock"].concat(args));
   }
   function tsImportType() {
+=======
+    return builder.apply(void 0, ["TSEnumMember"].concat(args));
+  }
+  function tsModuleDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len229 = arguments.length, args = new Array(_len229), _key229 = 0; _key229 < _len229; _key229++) {
       args[_key229] = arguments[_key229];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSImportType"].concat(args));
   }
   function tsImportEqualsDeclaration() {
+=======
+    return builder.apply(void 0, ["TSModuleDeclaration"].concat(args));
+  }
+  function tsModuleBlock() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len230 = arguments.length, args = new Array(_len230), _key230 = 0; _key230 < _len230; _key230++) {
       args[_key230] = arguments[_key230];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSImportEqualsDeclaration"].concat(args));
   }
   function tsExternalModuleReference() {
+=======
+    return builder.apply(void 0, ["TSModuleBlock"].concat(args));
+  }
+  function tsImportType() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len231 = arguments.length, args = new Array(_len231), _key231 = 0; _key231 < _len231; _key231++) {
       args[_key231] = arguments[_key231];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSExternalModuleReference"].concat(args));
   }
   function tsNonNullExpression() {
+=======
+    return builder.apply(void 0, ["TSImportType"].concat(args));
+  }
+  function tsImportEqualsDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len232 = arguments.length, args = new Array(_len232), _key232 = 0; _key232 < _len232; _key232++) {
       args[_key232] = arguments[_key232];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSNonNullExpression"].concat(args));
   }
   function tsExportAssignment() {
+=======
+    return builder.apply(void 0, ["TSImportEqualsDeclaration"].concat(args));
+  }
+  function tsExternalModuleReference() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len233 = arguments.length, args = new Array(_len233), _key233 = 0; _key233 < _len233; _key233++) {
       args[_key233] = arguments[_key233];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSExportAssignment"].concat(args));
   }
   function tsNamespaceExportDeclaration() {
+=======
+    return builder.apply(void 0, ["TSExternalModuleReference"].concat(args));
+  }
+  function tsNonNullExpression() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len234 = arguments.length, args = new Array(_len234), _key234 = 0; _key234 < _len234; _key234++) {
       args[_key234] = arguments[_key234];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSNamespaceExportDeclaration"].concat(args));
   }
   function tsTypeAnnotation() {
+=======
+    return builder.apply(void 0, ["TSNonNullExpression"].concat(args));
+  }
+  function tsExportAssignment() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len235 = arguments.length, args = new Array(_len235), _key235 = 0; _key235 < _len235; _key235++) {
       args[_key235] = arguments[_key235];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypeAnnotation"].concat(args));
   }
   function tsTypeParameterInstantiation() {
+=======
+    return builder.apply(void 0, ["TSExportAssignment"].concat(args));
+  }
+  function tsNamespaceExportDeclaration() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len236 = arguments.length, args = new Array(_len236), _key236 = 0; _key236 < _len236; _key236++) {
       args[_key236] = arguments[_key236];
     }
 
+<<<<<<< HEAD
     return builder.apply(void 0, ["TSTypeParameterInstantiation"].concat(args));
   }
   function tsTypeParameterDeclaration() {
+=======
+    return builder.apply(void 0, ["TSNamespaceExportDeclaration"].concat(args));
+  }
+  function tsTypeAnnotation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     for (var _len237 = arguments.length, args = new Array(_len237), _key237 = 0; _key237 < _len237; _key237++) {
       args[_key237] = arguments[_key237];
+    }
+
+<<<<<<< HEAD
+    return builder.apply(void 0, ["TSTypeParameterDeclaration"].concat(args));
+  }
+  function tsTypeParameter() {
+=======
+    return builder.apply(void 0, ["TSTypeAnnotation"].concat(args));
+  }
+  function tsTypeParameterInstantiation() {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
+    for (var _len238 = arguments.length, args = new Array(_len238), _key238 = 0; _key238 < _len238; _key238++) {
+      args[_key238] = arguments[_key238];
+    }
+
+<<<<<<< HEAD
+=======
+    return builder.apply(void 0, ["TSTypeParameterInstantiation"].concat(args));
+  }
+  function tsTypeParameterDeclaration() {
+    for (var _len239 = arguments.length, args = new Array(_len239), _key239 = 0; _key239 < _len239; _key239++) {
+      args[_key239] = arguments[_key239];
     }
 
     return builder.apply(void 0, ["TSTypeParameterDeclaration"].concat(args));
   }
   function tsTypeParameter() {
-    for (var _len238 = arguments.length, args = new Array(_len238), _key238 = 0; _key238 < _len238; _key238++) {
-      args[_key238] = arguments[_key238];
+    for (var _len240 = arguments.length, args = new Array(_len240), _key240 = 0; _key240 < _len240; _key240++) {
+      args[_key240] = arguments[_key240];
     }
 
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     return builder.apply(void 0, ["TSTypeParameter"].concat(args));
   }
   function NumberLiteral() {
     console.trace("The node type NumberLiteral has been renamed to NumericLiteral");
 
+<<<<<<< HEAD
     for (var _len239 = arguments.length, args = new Array(_len239), _key239 = 0; _key239 < _len239; _key239++) {
       args[_key239] = arguments[_key239];
+=======
+    for (var _len241 = arguments.length, args = new Array(_len241), _key241 = 0; _key241 < _len241; _key241++) {
+      args[_key241] = arguments[_key241];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
 
     return builder.apply(void 0, ["NumberLiteral"].concat(args));
@@ -12324,8 +13612,13 @@
   function RegexLiteral() {
     console.trace("The node type RegexLiteral has been renamed to RegExpLiteral");
 
+<<<<<<< HEAD
     for (var _len240 = arguments.length, args = new Array(_len240), _key240 = 0; _key240 < _len240; _key240++) {
       args[_key240] = arguments[_key240];
+=======
+    for (var _len242 = arguments.length, args = new Array(_len242), _key242 = 0; _key242 < _len242; _key242++) {
+      args[_key242] = arguments[_key242];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
 
     return builder.apply(void 0, ["RegexLiteral"].concat(args));
@@ -12333,8 +13626,13 @@
   function RestProperty() {
     console.trace("The node type RestProperty has been renamed to RestElement");
 
+<<<<<<< HEAD
     for (var _len241 = arguments.length, args = new Array(_len241), _key241 = 0; _key241 < _len241; _key241++) {
       args[_key241] = arguments[_key241];
+=======
+    for (var _len243 = arguments.length, args = new Array(_len243), _key243 = 0; _key243 < _len243; _key243++) {
+      args[_key243] = arguments[_key243];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
 
     return builder.apply(void 0, ["RestProperty"].concat(args));
@@ -12342,8 +13640,13 @@
   function SpreadProperty() {
     console.trace("The node type SpreadProperty has been renamed to SpreadElement");
 
+<<<<<<< HEAD
     for (var _len242 = arguments.length, args = new Array(_len242), _key242 = 0; _key242 < _len242; _key242++) {
       args[_key242] = arguments[_key242];
+=======
+    for (var _len244 = arguments.length, args = new Array(_len244), _key244 = 0; _key244 < _len244; _key244++) {
+      args[_key244] = arguments[_key244];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
 
     return builder.apply(void 0, ["SpreadProperty"].concat(args));
@@ -12951,6 +14254,51 @@
 
     assert("YieldExpression", node, opts);
   }
+<<<<<<< HEAD
+=======
+  function assertAwaitExpression(node, opts) {
+    if (opts === void 0) {
+      opts = {};
+    }
+
+    assert("AwaitExpression", node, opts);
+  }
+  function assertImport(node, opts) {
+    if (opts === void 0) {
+      opts = {};
+    }
+
+    assert("Import", node, opts);
+  }
+  function assertBigIntLiteral(node, opts) {
+    if (opts === void 0) {
+      opts = {};
+    }
+
+    assert("BigIntLiteral", node, opts);
+  }
+  function assertExportNamespaceSpecifier(node, opts) {
+    if (opts === void 0) {
+      opts = {};
+    }
+
+    assert("ExportNamespaceSpecifier", node, opts);
+  }
+  function assertOptionalMemberExpression(node, opts) {
+    if (opts === void 0) {
+      opts = {};
+    }
+
+    assert("OptionalMemberExpression", node, opts);
+  }
+  function assertOptionalCallExpression(node, opts) {
+    if (opts === void 0) {
+      opts = {};
+    }
+
+    assert("OptionalCallExpression", node, opts);
+  }
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function assertAnyTypeAnnotation(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13525,6 +14873,7 @@
 
     assert("ArgumentPlaceholder", node, opts);
   }
+<<<<<<< HEAD
   function assertAwaitExpression(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13532,6 +14881,8 @@
 
     assert("AwaitExpression", node, opts);
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function assertBindExpression(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13546,6 +14897,7 @@
 
     assert("ClassProperty", node, opts);
   }
+<<<<<<< HEAD
   function assertOptionalMemberExpression(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13553,6 +14905,8 @@
 
     assert("OptionalMemberExpression", node, opts);
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function assertPipelineTopicExpression(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13574,6 +14928,7 @@
 
     assert("PipelinePrimaryTopicReference", node, opts);
   }
+<<<<<<< HEAD
   function assertOptionalCallExpression(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13581,6 +14936,8 @@
 
     assert("OptionalCallExpression", node, opts);
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function assertClassPrivateProperty(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13595,6 +14952,7 @@
 
     assert("ClassPrivateMethod", node, opts);
   }
+<<<<<<< HEAD
   function assertImport(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13602,6 +14960,8 @@
 
     assert("Import", node, opts);
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function assertImportAttribute(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13630,6 +14990,7 @@
 
     assert("ExportDefaultSpecifier", node, opts);
   }
+<<<<<<< HEAD
   function assertExportNamespaceSpecifier(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13637,6 +14998,8 @@
 
     assert("ExportNamespaceSpecifier", node, opts);
   }
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function assertPrivateName(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -13644,26 +15007,46 @@
 
     assert("PrivateName", node, opts);
   }
+<<<<<<< HEAD
   function assertBigIntLiteral(node, opts) {
+=======
+  function assertRecordExpression(node, opts) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     if (opts === void 0) {
       opts = {};
     }
 
+<<<<<<< HEAD
     assert("BigIntLiteral", node, opts);
   }
   function assertRecordExpression(node, opts) {
-    if (opts === void 0) {
-      opts = {};
-    }
-
+=======
     assert("RecordExpression", node, opts);
   }
   function assertTupleExpression(node, opts) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     if (opts === void 0) {
       opts = {};
     }
 
+<<<<<<< HEAD
+    assert("RecordExpression", node, opts);
+  }
+  function assertTupleExpression(node, opts) {
+=======
     assert("TupleExpression", node, opts);
+  }
+  function assertDecimalLiteral(node, opts) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
+    if (opts === void 0) {
+      opts = {};
+    }
+
+<<<<<<< HEAD
+    assert("TupleExpression", node, opts);
+=======
+    assert("DecimalLiteral", node, opts);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   }
   function assertTSParameterProperty(node, opts) {
     if (opts === void 0) {
@@ -13889,6 +15272,16 @@
 
     assert("TSRestType", node, opts);
   }
+<<<<<<< HEAD
+=======
+  function assertTSNamedTupleMember(node, opts) {
+    if (opts === void 0) {
+      opts = {};
+    }
+
+    assert("TSNamedTupleMember", node, opts);
+  }
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function assertTSUnionType(node, opts) {
     if (opts === void 0) {
       opts = {};
@@ -15783,6 +17176,15 @@
     assertTemplateElement: assertTemplateElement,
     assertTemplateLiteral: assertTemplateLiteral,
     assertYieldExpression: assertYieldExpression,
+<<<<<<< HEAD
+=======
+    assertAwaitExpression: assertAwaitExpression,
+    assertImport: assertImport,
+    assertBigIntLiteral: assertBigIntLiteral,
+    assertExportNamespaceSpecifier: assertExportNamespaceSpecifier,
+    assertOptionalMemberExpression: assertOptionalMemberExpression,
+    assertOptionalCallExpression: assertOptionalCallExpression,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     assertAnyTypeAnnotation: assertAnyTypeAnnotation,
     assertArrayTypeAnnotation: assertArrayTypeAnnotation,
     assertBooleanTypeAnnotation: assertBooleanTypeAnnotation,
@@ -15865,6 +17267,7 @@
     assertPlaceholder: assertPlaceholder,
     assertV8IntrinsicIdentifier: assertV8IntrinsicIdentifier,
     assertArgumentPlaceholder: assertArgumentPlaceholder,
+<<<<<<< HEAD
     assertAwaitExpression: assertAwaitExpression,
     assertBindExpression: assertBindExpression,
     assertClassProperty: assertClassProperty,
@@ -15876,15 +17279,31 @@
     assertClassPrivateProperty: assertClassPrivateProperty,
     assertClassPrivateMethod: assertClassPrivateMethod,
     assertImport: assertImport,
+=======
+    assertBindExpression: assertBindExpression,
+    assertClassProperty: assertClassProperty,
+    assertPipelineTopicExpression: assertPipelineTopicExpression,
+    assertPipelineBareFunction: assertPipelineBareFunction,
+    assertPipelinePrimaryTopicReference: assertPipelinePrimaryTopicReference,
+    assertClassPrivateProperty: assertClassPrivateProperty,
+    assertClassPrivateMethod: assertClassPrivateMethod,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     assertImportAttribute: assertImportAttribute,
     assertDecorator: assertDecorator,
     assertDoExpression: assertDoExpression,
     assertExportDefaultSpecifier: assertExportDefaultSpecifier,
+<<<<<<< HEAD
     assertExportNamespaceSpecifier: assertExportNamespaceSpecifier,
     assertPrivateName: assertPrivateName,
     assertBigIntLiteral: assertBigIntLiteral,
     assertRecordExpression: assertRecordExpression,
     assertTupleExpression: assertTupleExpression,
+=======
+    assertPrivateName: assertPrivateName,
+    assertRecordExpression: assertRecordExpression,
+    assertTupleExpression: assertTupleExpression,
+    assertDecimalLiteral: assertDecimalLiteral,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     assertTSParameterProperty: assertTSParameterProperty,
     assertTSDeclareFunction: assertTSDeclareFunction,
     assertTSDeclareMethod: assertTSDeclareMethod,
@@ -15917,6 +17336,10 @@
     assertTSTupleType: assertTSTupleType,
     assertTSOptionalType: assertTSOptionalType,
     assertTSRestType: assertTSRestType,
+<<<<<<< HEAD
+=======
+    assertTSNamedTupleMember: assertTSNamedTupleMember,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     assertTSUnionType: assertTSUnionType,
     assertTSIntersectionType: assertTSIntersectionType,
     assertTSConditionalType: assertTSConditionalType,
@@ -16145,6 +17568,21 @@
     TemplateLiteral: templateLiteral,
     yieldExpression: yieldExpression,
     YieldExpression: yieldExpression,
+<<<<<<< HEAD
+=======
+    awaitExpression: awaitExpression,
+    AwaitExpression: awaitExpression,
+    Import: _import,
+    'import': _import,
+    bigIntLiteral: bigIntLiteral,
+    BigIntLiteral: bigIntLiteral,
+    exportNamespaceSpecifier: exportNamespaceSpecifier,
+    ExportNamespaceSpecifier: exportNamespaceSpecifier,
+    optionalMemberExpression: optionalMemberExpression,
+    OptionalMemberExpression: optionalMemberExpression,
+    optionalCallExpression: optionalCallExpression,
+    OptionalCallExpression: optionalCallExpression,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     anyTypeAnnotation: anyTypeAnnotation,
     AnyTypeAnnotation: anyTypeAnnotation,
     arrayTypeAnnotation: arrayTypeAnnotation,
@@ -16324,28 +17762,40 @@
     V8IntrinsicIdentifier: v8IntrinsicIdentifier,
     argumentPlaceholder: argumentPlaceholder,
     ArgumentPlaceholder: argumentPlaceholder,
+<<<<<<< HEAD
     awaitExpression: awaitExpression,
     AwaitExpression: awaitExpression,
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     bindExpression: bindExpression,
     BindExpression: bindExpression,
     classProperty: classProperty,
     ClassProperty: classProperty,
+<<<<<<< HEAD
     optionalMemberExpression: optionalMemberExpression,
     OptionalMemberExpression: optionalMemberExpression,
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     pipelineTopicExpression: pipelineTopicExpression,
     PipelineTopicExpression: pipelineTopicExpression,
     pipelineBareFunction: pipelineBareFunction,
     PipelineBareFunction: pipelineBareFunction,
     pipelinePrimaryTopicReference: pipelinePrimaryTopicReference,
     PipelinePrimaryTopicReference: pipelinePrimaryTopicReference,
+<<<<<<< HEAD
     optionalCallExpression: optionalCallExpression,
     OptionalCallExpression: optionalCallExpression,
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     classPrivateProperty: classPrivateProperty,
     ClassPrivateProperty: classPrivateProperty,
     classPrivateMethod: classPrivateMethod,
     ClassPrivateMethod: classPrivateMethod,
+<<<<<<< HEAD
     Import: _import,
     'import': _import,
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     importAttribute: importAttribute,
     ImportAttribute: importAttribute,
     decorator: decorator,
@@ -16354,16 +17804,26 @@
     DoExpression: doExpression,
     exportDefaultSpecifier: exportDefaultSpecifier,
     ExportDefaultSpecifier: exportDefaultSpecifier,
+<<<<<<< HEAD
     exportNamespaceSpecifier: exportNamespaceSpecifier,
     ExportNamespaceSpecifier: exportNamespaceSpecifier,
     privateName: privateName,
     PrivateName: privateName,
     bigIntLiteral: bigIntLiteral,
     BigIntLiteral: bigIntLiteral,
+=======
+    privateName: privateName,
+    PrivateName: privateName,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     recordExpression: recordExpression,
     RecordExpression: recordExpression,
     tupleExpression: tupleExpression,
     TupleExpression: tupleExpression,
+<<<<<<< HEAD
+=======
+    decimalLiteral: decimalLiteral,
+    DecimalLiteral: decimalLiteral,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     tsParameterProperty: tsParameterProperty,
     TSParameterProperty: tsParameterProperty,
     tSParameterProperty: tsParameterProperty,
@@ -16460,6 +17920,12 @@
     tsRestType: tsRestType,
     TSRestType: tsRestType,
     tSRestType: tsRestType,
+<<<<<<< HEAD
+=======
+    tsNamedTupleMember: tsNamedTupleMember,
+    TSNamedTupleMember: tsNamedTupleMember,
+    tSNamedTupleMember: tsNamedTupleMember,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     tsUnionType: tsUnionType,
     TSUnionType: tsUnionType,
     tSUnionType: tsUnionType,
@@ -16706,6 +18172,15 @@
     isTemplateElement: isTemplateElement,
     isTemplateLiteral: isTemplateLiteral,
     isYieldExpression: isYieldExpression,
+<<<<<<< HEAD
+=======
+    isAwaitExpression: isAwaitExpression,
+    isImport: isImport,
+    isBigIntLiteral: isBigIntLiteral,
+    isExportNamespaceSpecifier: isExportNamespaceSpecifier,
+    isOptionalMemberExpression: isOptionalMemberExpression,
+    isOptionalCallExpression: isOptionalCallExpression,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     isAnyTypeAnnotation: isAnyTypeAnnotation,
     isArrayTypeAnnotation: isArrayTypeAnnotation,
     isBooleanTypeAnnotation: isBooleanTypeAnnotation,
@@ -16788,6 +18263,7 @@
     isPlaceholder: isPlaceholder,
     isV8IntrinsicIdentifier: isV8IntrinsicIdentifier,
     isArgumentPlaceholder: isArgumentPlaceholder,
+<<<<<<< HEAD
     isAwaitExpression: isAwaitExpression,
     isBindExpression: isBindExpression,
     isClassProperty: isClassProperty,
@@ -16799,15 +18275,31 @@
     isClassPrivateProperty: isClassPrivateProperty,
     isClassPrivateMethod: isClassPrivateMethod,
     isImport: isImport,
+=======
+    isBindExpression: isBindExpression,
+    isClassProperty: isClassProperty,
+    isPipelineTopicExpression: isPipelineTopicExpression,
+    isPipelineBareFunction: isPipelineBareFunction,
+    isPipelinePrimaryTopicReference: isPipelinePrimaryTopicReference,
+    isClassPrivateProperty: isClassPrivateProperty,
+    isClassPrivateMethod: isClassPrivateMethod,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     isImportAttribute: isImportAttribute,
     isDecorator: isDecorator,
     isDoExpression: isDoExpression,
     isExportDefaultSpecifier: isExportDefaultSpecifier,
+<<<<<<< HEAD
     isExportNamespaceSpecifier: isExportNamespaceSpecifier,
     isPrivateName: isPrivateName,
     isBigIntLiteral: isBigIntLiteral,
     isRecordExpression: isRecordExpression,
     isTupleExpression: isTupleExpression,
+=======
+    isPrivateName: isPrivateName,
+    isRecordExpression: isRecordExpression,
+    isTupleExpression: isTupleExpression,
+    isDecimalLiteral: isDecimalLiteral,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     isTSParameterProperty: isTSParameterProperty,
     isTSDeclareFunction: isTSDeclareFunction,
     isTSDeclareMethod: isTSDeclareMethod,
@@ -16840,6 +18332,10 @@
     isTSTupleType: isTSTupleType,
     isTSOptionalType: isTSOptionalType,
     isTSRestType: isTSRestType,
+<<<<<<< HEAD
+=======
+    isTSNamedTupleMember: isTSNamedTupleMember,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     isTSUnionType: isTSUnionType,
     isTSIntersectionType: isTSIntersectionType,
     isTSConditionalType: isTSConditionalType,
@@ -17578,7 +19074,11 @@
 
   function splitExportDeclaration(exportDeclaration) {
     if (!exportDeclaration.isExportDeclaration()) {
+<<<<<<< HEAD
       throw new Error("Only export declarations can be splitted.");
+=======
+      throw new Error("Only export declarations can be split.");
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
 
     var isDefault = exportDeclaration.isExportDefaultDeclaration();
@@ -23866,6 +25366,10 @@
     if (node.param) {
       this.token("(");
       this.print(node.param, node);
+<<<<<<< HEAD
+=======
+      this.print(node.param.typeAnnotation, node);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       this.token(")");
       this.space();
     }
@@ -24205,7 +25709,11 @@
     var firstParam = node.params[0];
 
     if (node.params.length === 1 && isIdentifier(firstParam) && !hasTypes(node, firstParam)) {
+<<<<<<< HEAD
       if (this.format.retainLines && node.loc && node.body.loc && node.loc.start.line < node.body.loc.start.line) {
+=======
+      if ((this.format.retainLines || node.async) && node.loc && node.body.loc && node.loc.start.line < node.body.loc.start.line) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         this.token("(");
 
         if (firstParam.loc && firstParam.loc.start.line > node.loc.start.line) {
@@ -26853,6 +28361,19 @@
 
     this.token(node.value + "n");
   }
+<<<<<<< HEAD
+=======
+  function DecimalLiteral(node) {
+    var raw = this.getPossibleRaw(node);
+
+    if (!this.format.minified && raw != null) {
+      this.token(raw);
+      return;
+    }
+
+    this.token(node.value + "m");
+  }
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function PipelineTopicExpression(node) {
     this.print(node.expression, node);
   }
@@ -27908,6 +29429,16 @@
     this.token("...");
     this.print(node.typeAnnotation, node);
   }
+<<<<<<< HEAD
+=======
+  function TSNamedTupleMember(node) {
+    this.print(node.label, node);
+    if (node.optional) this.token("?");
+    this.token(":");
+    this.space();
+    this.print(node.elementType, node);
+  }
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function TSUnionType$1(node) {
     this.tsPrintUnionOrIntersectionType(node, "|");
   }
@@ -28345,6 +29876,10 @@
     NumericLiteral: NumericLiteral,
     StringLiteral: StringLiteral,
     BigIntLiteral: BigIntLiteral,
+<<<<<<< HEAD
+=======
+    DecimalLiteral: DecimalLiteral,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     PipelineTopicExpression: PipelineTopicExpression,
     PipelineBareFunction: PipelineBareFunction,
     PipelinePrimaryTopicReference: PipelinePrimaryTopicReference,
@@ -28476,6 +30011,10 @@
     TSTupleType: TSTupleType,
     TSOptionalType: TSOptionalType,
     TSRestType: TSRestType,
+<<<<<<< HEAD
+=======
+    TSNamedTupleMember: TSNamedTupleMember,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     TSUnionType: TSUnionType$1,
     TSIntersectionType: TSIntersectionType,
     tsPrintUnionOrIntersectionType: tsPrintUnionOrIntersectionType,
@@ -31821,6 +33360,12 @@
     bigint: new TokenType("bigint", {
       startsExpr: startsExpr
     }),
+<<<<<<< HEAD
+=======
+    decimal: new TokenType("decimal", {
+      startsExpr: startsExpr
+    }),
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     regexp: new TokenType("regexp", {
       startsExpr: startsExpr
     }),
@@ -32420,6 +33965,10 @@
     ImportOutsideModule: "'import' and 'export' may appear only with 'sourceType: \"module\"'",
     InvalidBigIntLiteral: "Invalid BigIntLiteral",
     InvalidCodePoint: "Code point out of bounds",
+<<<<<<< HEAD
+=======
+    InvalidDecimal: "Invalid decimal",
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     InvalidDigit: "Expected number in radix %0",
     InvalidEscapeSequence: "Bad character escape sequence",
     InvalidEscapeSequenceTemplate: "Invalid escape sequence in template",
@@ -32475,6 +34024,10 @@
     StrictEvalArguments: "Assigning to '%0' in strict mode",
     StrictEvalArgumentsBinding: "Binding '%0' in strict mode",
     StrictFunction: "In strict mode code, functions can only be declared at top level or inside a block",
+<<<<<<< HEAD
+=======
+    StrictNumericEscape: "The only valid numeric escape in strict mode is '\\0'",
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     StrictOctalLiteral: "Legacy octal literals are not allowed in strict mode",
     StrictWith: "'with' in strict mode",
     SuperNotAllowed: "super() is only valid inside a class constructor of a subclass. Maybe a typo in the method name ('constructor') or not extending another class?",
@@ -32606,6 +34159,16 @@
         return node;
       };
 
+<<<<<<< HEAD
+=======
+      _proto.estreeParseDecimalLiteral = function estreeParseDecimalLiteral(value) {
+        var decimal = null;
+        var node = this.estreeParseLiteral(decimal);
+        node.decimal = String(node.value || value);
+        return node;
+      };
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       _proto.estreeParseLiteral = function estreeParseLiteral(value) {
         return this.parseLiteral(value, "Literal");
       };
@@ -32728,6 +34291,12 @@
           case types.bigint:
             return this.estreeParseBigIntLiteral(this.state.value);
 
+<<<<<<< HEAD
+=======
+          case types.decimal:
+            return this.estreeParseDecimalLiteral(this.state.value);
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           case types._null:
             return this.estreeParseLiteral(null);
 
@@ -32825,8 +34394,11 @@
           node.source = node.arguments[0];
           delete node.arguments;
           delete node.callee;
+<<<<<<< HEAD
         } else if (node.type === "CallExpression") {
           node.optional = false;
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         }
 
         return node;
@@ -32861,6 +34433,7 @@
         return node;
       };
 
+<<<<<<< HEAD
       _proto.parseSubscript = function parseSubscript() {
         var _superClass$prototype;
 
@@ -32871,6 +34444,22 @@
         var node = (_superClass$prototype = _superClass.prototype.parseSubscript).call.apply(_superClass$prototype, [this].concat(args));
 
         if (node.type === "MemberExpression") {
+=======
+      _proto.parseSubscript = function parseSubscript(base, startPos, startLoc, noCalls, state) {
+        var node = _superClass.prototype.parseSubscript.call(this, base, startPos, startLoc, noCalls, state);
+
+        if (state.optionalChainMember) {
+          if (node.type === "OptionalMemberExpression" || node.type === "OptionalCallExpression") {
+            node.type = node.type.substring(8);
+          }
+
+          if (state.stop) {
+            var chain = this.startNodeAtNode(node);
+            chain.expression = node;
+            return this.finishNode(chain, "ChainExpression");
+          }
+        } else if (node.type === "MemberExpression" || node.type === "CallExpression") {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           node.optional = false;
         }
 
@@ -36913,6 +38502,11 @@
     IndexSignatureHasAbstract: "Index signatures cannot have the 'abstract' modifier",
     IndexSignatureHasAccessibility: "Index signatures cannot have an accessibility modifier ('%0')",
     IndexSignatureHasStatic: "Index signatures cannot have the 'static' modifier",
+<<<<<<< HEAD
+=======
+    InvalidTupleMemberLabel: "Tuple members must be labeled with a simple identifier.",
+    MixedLabeledAndUnlabeledElements: "Tuple members must all have names or all not have names.",
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     OptionalTypeBeforeRequired: "A required element cannot follow an optional element.",
     PatternIsOptional: "A binding pattern parameter cannot be optional in an implementation signature.",
     PrivateElementHasAbstract: "Private elements cannot have the 'abstract' modifier.",
@@ -37402,17 +38996,45 @@
         var node = this.startNode();
         node.elementTypes = this.tsParseBracketedList("TupleElementTypes", this.tsParseTupleElementType.bind(this), true, false);
         var seenOptionalElement = false;
+<<<<<<< HEAD
         node.elementTypes.forEach(function (elementNode) {
           if (elementNode.type === "TSOptionalType") {
             seenOptionalElement = true;
           } else if (seenOptionalElement && elementNode.type !== "TSRestType") {
             _this2.raise(elementNode.start, TSErrors.OptionalTypeBeforeRequired);
           }
+=======
+        var labeledElements = null;
+        node.elementTypes.forEach(function (elementNode) {
+          var _labeledElements;
+
+          var _elementNode = elementNode,
+              type = _elementNode.type;
+
+          if (seenOptionalElement && type !== "TSRestType" && type !== "TSOptionalType" && !(type === "TSNamedTupleMember" && elementNode.optional)) {
+            _this2.raise(elementNode.start, TSErrors.OptionalTypeBeforeRequired);
+          }
+
+          seenOptionalElement = seenOptionalElement || type === "TSNamedTupleMember" && elementNode.optional || type === "TSOptionalType";
+
+          if (type === "TSRestType") {
+            elementNode = elementNode.typeAnnotation;
+            type = elementNode.type;
+          }
+
+          var isLabeled = type === "TSNamedTupleMember";
+          labeledElements = (_labeledElements = labeledElements) != null ? _labeledElements : isLabeled;
+
+          if (labeledElements !== isLabeled) {
+            _this2.raise(elementNode.start, TSErrors.MixedLabeledAndUnlabeledElements);
+          }
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         });
         return this.finishNode(node, "TSTupleType");
       };
 
       _proto.tsParseTupleElementType = function tsParseTupleElementType() {
+<<<<<<< HEAD
         if (this.match(types.ellipsis)) {
           var restNode = this.startNode();
           this.next();
@@ -37431,6 +39053,39 @@
           var optionalTypeNode = this.startNodeAtNode(type);
           optionalTypeNode.typeAnnotation = type;
           return this.finishNode(optionalTypeNode, "TSOptionalType");
+=======
+        var _this$state = this.state,
+            startPos = _this$state.start,
+            startLoc = _this$state.startLoc;
+        var rest = this.eat(types.ellipsis);
+        var type = this.tsParseType();
+        var optional = this.eat(types.question);
+        var labeled = this.eat(types.colon);
+
+        if (labeled) {
+          var labeledNode = this.startNodeAtNode(type);
+          labeledNode.optional = optional;
+
+          if (type.type === "TSTypeReference" && !type.typeParameters && type.typeName.type === "Identifier") {
+            labeledNode.label = type.typeName;
+          } else {
+            this.raise(type.start, TSErrors.InvalidTupleMemberLabel);
+            labeledNode.label = type;
+          }
+
+          labeledNode.elementType = this.tsParseType();
+          type = this.finishNode(labeledNode, "TSNamedTupleMember");
+        } else if (optional) {
+          var optionalTypeNode = this.startNodeAtNode(type);
+          optionalTypeNode.typeAnnotation = type;
+          type = this.finishNode(optionalTypeNode, "TSOptionalType");
+        }
+
+        if (rest) {
+          var restNode = this.startNodeAt(startPos, startLoc);
+          restNode.typeAnnotation = type;
+          type = this.finishNode(restNode, "TSRestType");
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         }
 
         return type;
@@ -39144,6 +40799,21 @@
         return hasContextParam ? baseCount + 1 : baseCount;
       };
 
+<<<<<<< HEAD
+=======
+      _proto.parseCatchClauseParam = function parseCatchClauseParam() {
+        var param = _superClass.prototype.parseCatchClauseParam.call(this);
+
+        var type = this.tsTryParseTypeAnnotation();
+
+        if (type) {
+          param.typeAnnotation = type;
+        }
+
+        return param;
+      };
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       return _class;
     }(superClass);
   });
@@ -40340,6 +42010,7 @@
         var code = this.input.charCodeAt(this.state.pos);
         var val = void 0;
 
+<<<<<<< HEAD
         if (this.hasPlugin("numericSeparator")) {
           if (code === 95) {
             var prev = this.input.charCodeAt(this.state.pos - 1);
@@ -40358,6 +42029,24 @@
             ++this.state.pos;
             continue;
           }
+=======
+        if (code === 95) {
+          var prev = this.input.charCodeAt(this.state.pos - 1);
+          var next = this.input.charCodeAt(this.state.pos + 1);
+
+          if (allowedSiblings.indexOf(next) === -1) {
+            this.raise(this.state.pos, ErrorMessages.UnexpectedNumericSeparator);
+          } else if (forbiddenSiblings.indexOf(prev) > -1 || forbiddenSiblings.indexOf(next) > -1 || Number.isNaN(next)) {
+            this.raise(this.state.pos, ErrorMessages.UnexpectedNumericSeparator);
+          }
+
+          if (!allowNumSeparator) {
+            this.raise(this.state.pos, ErrorMessages.NumericSeparatorInEscapeSequence);
+          }
+
+          ++this.state.pos;
+          continue;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         }
 
         if (code >= 97) {
@@ -40405,6 +42094,7 @@
 
       var next = this.input.charCodeAt(this.state.pos);
 
+<<<<<<< HEAD
       if (next === 95) {
         this.expectPlugin("numericSeparator", this.state.pos);
       }
@@ -40412,6 +42102,13 @@
       if (next === 110) {
         ++this.state.pos;
         isBigInt = true;
+=======
+      if (next === 110) {
+        ++this.state.pos;
+        isBigInt = true;
+      } else if (next === 109) {
+        throw this.raise(start, ErrorMessages.InvalidDecimal);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       }
 
       if (isIdentifierStart(this.input.codePointAt(this.state.pos))) {
@@ -40431,12 +42128,19 @@
       var start = this.state.pos;
       var isFloat = false;
       var isBigInt = false;
+<<<<<<< HEAD
       var isNonOctalDecimalInt = false;
+=======
+      var isDecimal = false;
+      var hasExponent = false;
+      var isOctal = false;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
       if (!startsWithDot && this.readInt(10) === null) {
         this.raise(start, ErrorMessages.InvalidNumber);
       }
 
+<<<<<<< HEAD
       var octal = this.state.pos - start >= 2 && this.input.charCodeAt(start) === 48;
 
       if (octal) {
@@ -40448,18 +42152,44 @@
           octal = false;
           isNonOctalDecimalInt = true;
         }
+=======
+      var hasLeadingZero = this.state.pos - start >= 2 && this.input.charCodeAt(start) === 48;
+
+      if (hasLeadingZero) {
+        var integer = this.input.slice(start, this.state.pos);
+
+        if (this.state.strict) {
+          this.raise(start, ErrorMessages.StrictOctalLiteral);
+        } else {
+          var underscorePos = integer.indexOf("_");
+
+          if (underscorePos > 0) {
+            this.raise(underscorePos + start, ErrorMessages.ZeroDigitNumericSeparator);
+          }
+        }
+
+        isOctal = hasLeadingZero && !/[89]/.test(integer);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       }
 
       var next = this.input.charCodeAt(this.state.pos);
 
+<<<<<<< HEAD
       if (next === 46 && !octal) {
+=======
+      if (next === 46 && !isOctal) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         ++this.state.pos;
         this.readInt(10);
         isFloat = true;
         next = this.input.charCodeAt(this.state.pos);
       }
 
+<<<<<<< HEAD
       if ((next === 69 || next === 101) && !octal) {
+=======
+      if ((next === 69 || next === 101) && !isOctal) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         next = this.input.charCodeAt(++this.state.pos);
 
         if (next === 43 || next === 45) {
@@ -40468,6 +42198,7 @@
 
         if (this.readInt(10) === null) this.raise(start, ErrorMessages.InvalidNumber);
         isFloat = true;
+<<<<<<< HEAD
         next = this.input.charCodeAt(this.state.pos);
       }
 
@@ -40490,20 +42221,57 @@
 
         ++this.state.pos;
         isBigInt = true;
+=======
+        hasExponent = true;
+        next = this.input.charCodeAt(this.state.pos);
+      }
+
+      if (next === 110) {
+        if (isFloat || hasLeadingZero) {
+          this.raise(start, ErrorMessages.InvalidBigIntLiteral);
+        }
+
+        ++this.state.pos;
+        isBigInt = true;
+      }
+
+      if (next === 109) {
+        this.expectPlugin("decimal", this.state.pos);
+
+        if (hasExponent || hasLeadingZero) {
+          this.raise(start, ErrorMessages.InvalidDecimal);
+        }
+
+        ++this.state.pos;
+        isDecimal = true;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       }
 
       if (isIdentifierStart(this.input.codePointAt(this.state.pos))) {
         throw this.raise(this.state.pos, ErrorMessages.NumberIdentifier);
       }
 
+<<<<<<< HEAD
       var str = this.input.slice(start, this.state.pos).replace(/[_n]/g, "");
+=======
+      var str = this.input.slice(start, this.state.pos).replace(/[_mn]/g, "");
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
       if (isBigInt) {
         this.finishToken(types.bigint, str);
         return;
       }
 
+<<<<<<< HEAD
       var val = octal ? parseInt(str, 8) : parseFloat(str);
+=======
+      if (isDecimal) {
+        this.finishToken(types.decimal, str);
+        return;
+      }
+
+      var val = isOctal ? parseInt(str, 8) : parseFloat(str);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       this.finishToken(types.num, val);
     };
 
@@ -40684,6 +42452,11 @@
         case 57:
           if (inTemplate) {
             return null;
+<<<<<<< HEAD
+=======
+          } else if (this.state.strict) {
+            this.raise(this.state.pos - 1, ErrorMessages.StrictNumericEscape);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           }
 
         default:
@@ -40705,7 +42478,11 @@
               if (inTemplate) {
                 return null;
               } else if (this.state.strict) {
+<<<<<<< HEAD
                 this.raise(codePos, ErrorMessages.StrictOctalLiteral);
+=======
+                this.raise(codePos, ErrorMessages.StrictNumericEscape);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               } else {
                 this.state.octalPositions.push(codePos);
               }
@@ -41070,7 +42847,11 @@
     };
 
     _proto.isLiteralPropertyName = function isLiteralPropertyName() {
+<<<<<<< HEAD
       return this.match(types.name) || !!this.state.type.keyword || this.match(types.string) || this.match(types.num) || this.match(types.bigint);
+=======
+      return this.match(types.name) || !!this.state.type.keyword || this.match(types.string) || this.match(types.num) || this.match(types.bigint) || this.match(types.decimal);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     };
 
     return UtilParser;
@@ -41652,6 +43433,7 @@
         var operator = this.state.value;
         node.operator = operator;
 
+<<<<<<< HEAD
         if (operator === "??=") {
           this.expectPlugin("logicalAssignment");
         }
@@ -41660,6 +43442,8 @@
           this.expectPlugin("logicalAssignment");
         }
 
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         if (this.match(types.eq)) {
           node.left = this.toAssignable(left);
           refExpressionErrors.doubleProto = -1;
@@ -42212,6 +43996,12 @@
         case types.bigint:
           return this.parseLiteral(this.state.value, "BigIntLiteral");
 
+<<<<<<< HEAD
+=======
+        case types.decimal:
+          return this.parseLiteral(this.state.value, "DecimalLiteral");
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         case types.string:
           return this.parseLiteral(this.state.value, "StringLiteral");
 
@@ -42504,8 +44294,13 @@
         }
       }
 
+<<<<<<< HEAD
       var innerEndPos = this.state.start;
       var innerEndLoc = this.state.startLoc;
+=======
+      var innerEndPos = this.state.lastTokEnd;
+      var innerEndLoc = this.state.lastTokEndLoc;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       this.expect(types.parenR);
       this.state.maybeInArrowParameters = oldMaybeInArrowParameters;
       this.state.inFSharpPipelineDirectBody = oldInFSharpPipelineDirectBody;
@@ -42828,7 +44623,11 @@
       }
 
       if (!prop.computed && prop.key.type === "Identifier") {
+<<<<<<< HEAD
         this.checkReservedWord(prop.key.name, prop.key.start, true, true);
+=======
+        this.checkReservedWord(prop.key.name, prop.key.start, true, false);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
         if (isPattern) {
           prop.value = this.parseMaybeDefault(startPos, startLoc, prop.key.__clone());
@@ -42861,7 +44660,11 @@
       } else {
         var oldInPropertyName = this.state.inPropertyName;
         this.state.inPropertyName = true;
+<<<<<<< HEAD
         prop.key = this.match(types.num) || this.match(types.string) || this.match(types.bigint) ? this.parseExprAtom() : this.parseMaybePrivateName(isPrivateNameAllowed);
+=======
+        prop.key = this.match(types.num) || this.match(types.string) || this.match(types.bigint) || this.match(types.decimal) ? this.parseExprAtom() : this.parseMaybePrivateName(isPrivateNameAllowed);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
         if (prop.key.type !== "PrivateName") {
           prop.computed = false;
@@ -43865,6 +45668,17 @@
       return this.finishNode(node, "ThrowStatement");
     };
 
+<<<<<<< HEAD
+=======
+    _proto.parseCatchClauseParam = function parseCatchClauseParam() {
+      var param = this.parseBindingAtom();
+      var simple = param.type === "Identifier";
+      this.scope.enter(simple ? SCOPE_SIMPLE_CATCH : 0);
+      this.checkLVal(param, BIND_LEXICAL, null, "catch clause");
+      return param;
+    };
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     _proto.parseTryStatement = function parseTryStatement(node) {
       var _this2 = this;
 
@@ -43878,10 +45692,14 @@
 
         if (this.match(types.parenL)) {
           this.expect(types.parenL);
+<<<<<<< HEAD
           clause.param = this.parseBindingAtom();
           var simple = clause.param.type === "Identifier";
           this.scope.enter(simple ? SCOPE_SIMPLE_CATCH : 0);
           this.checkLVal(clause.param, BIND_LEXICAL, null, "catch clause");
+=======
+          clause.param = this.parseCatchClauseParam();
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           this.expect(types.parenR);
         } else {
           clause.param = null;
@@ -47447,16 +49265,28 @@
 
     return false;
   }
+<<<<<<< HEAD
   function isBlacklisted() {
     var blacklist = this.opts.blacklist;
     return blacklist && blacklist.indexOf(this.node.type) > -1;
+=======
+  function isDenylisted() {
+    var _this$opts$denylist;
+
+    var denylist = (_this$opts$denylist = this.opts.denylist) != null ? _this$opts$denylist : this.opts.blacklist;
+    return denylist && denylist.indexOf(this.node.type) > -1;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   }
   function visit$1() {
     if (!this.node) {
       return false;
     }
 
+<<<<<<< HEAD
     if (this.isBlacklisted()) {
+=======
+    if (this.isDenylisted()) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       return false;
     }
 
@@ -47620,7 +49450,12 @@
     __proto__: null,
     call: call,
     _call: _call,
+<<<<<<< HEAD
     isBlacklisted: isBlacklisted,
+=======
+    isDenylisted: isDenylisted,
+    isBlacklisted: isDenylisted,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     visit: visit$1,
     skip: skip,
     skipKey: skipKey,
@@ -49034,7 +50869,11 @@
     if (key[0] === "_") return true;
     if (key === "enter" || key === "exit" || key === "shouldSkip") return true;
 
+<<<<<<< HEAD
     if (key === "blacklist" || key === "noScope" || key === "skipKeys") {
+=======
+    if (key === "denylist" || key === "noScope" || key === "skipKeys" || key === "blacklist") {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       return true;
     }
 
@@ -49102,15 +50941,24 @@
     return tree;
   };
 
+<<<<<<< HEAD
   function hasBlacklistedType(path, state) {
+=======
+  function hasDenylistedType(path, state) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     if (path.node.type === state.type) {
       state.has = true;
       path.stop();
     }
   }
 
+<<<<<<< HEAD
   traverse$1.hasType = function (tree, type, blacklistTypes) {
     if (blacklistTypes == null ? void 0 : blacklistTypes.includes(tree.type)) return false;
+=======
+  traverse$1.hasType = function (tree, type, denylistTypes) {
+    if (denylistTypes == null ? void 0 : denylistTypes.includes(tree.type)) return false;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     if (tree.type === type) return true;
     var state = {
       has: false,
@@ -49118,8 +50966,13 @@
     };
     traverse$1(tree, {
       noScope: true,
+<<<<<<< HEAD
       blacklist: blacklistTypes,
       enter: hasBlacklistedType
+=======
+      denylist: denylistTypes,
+      enter: hasDenylistedType
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }, null, state);
     return state.has;
   };
@@ -51973,6 +53826,7 @@
         }
 
         var _operator = parent.operator,
+<<<<<<< HEAD
             right = parent.right;
         var _value = right;
 
@@ -51982,6 +53836,24 @@
         }
 
         parentPath.replaceWith(this.set(member, _value));
+=======
+            _value = parent.right;
+
+        if (_operator === "=") {
+          parentPath.replaceWith(this.set(member, _value));
+        } else {
+          var operatorTrunc = _operator.slice(0, -1);
+
+          if (LOGICAL_OPERATORS.includes(operatorTrunc)) {
+            this.memoise(member, 1);
+            parentPath.replaceWith(logicalExpression(operatorTrunc, this.get(member), this.set(member, _value)));
+          } else {
+            this.memoise(member, 2);
+            parentPath.replaceWith(this.set(member, binaryExpression(operatorTrunc, this.get(member), _value)));
+          }
+        }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         return;
       }
 
@@ -53527,6 +55399,7 @@
   var MAX_SAFE_COMPONENT_LENGTH = 16;
   var re = exports.re = [];
   var src = exports.src = [];
+<<<<<<< HEAD
   var t = exports.tokens = {};
   var R = 0;
 
@@ -53616,6 +55489,87 @@
   src[t.HYPHENRANGELOOSE] = '^\\s*(' + src[t.XRANGEPLAINLOOSE] + ')' + '\\s+-\\s+' + '(' + src[t.XRANGEPLAINLOOSE] + ')' + '\\s*$';
   tok('STAR');
   src[t.STAR] = '(<|>)?=?\\s*\\*';
+=======
+  var R = 0;
+  var NUMERICIDENTIFIER = R++;
+  src[NUMERICIDENTIFIER] = '0|[1-9]\\d*';
+  var NUMERICIDENTIFIERLOOSE = R++;
+  src[NUMERICIDENTIFIERLOOSE] = '[0-9]+';
+  var NONNUMERICIDENTIFIER = R++;
+  src[NONNUMERICIDENTIFIER] = '\\d*[a-zA-Z-][a-zA-Z0-9-]*';
+  var MAINVERSION = R++;
+  src[MAINVERSION] = '(' + src[NUMERICIDENTIFIER] + ')\\.' + '(' + src[NUMERICIDENTIFIER] + ')\\.' + '(' + src[NUMERICIDENTIFIER] + ')';
+  var MAINVERSIONLOOSE = R++;
+  src[MAINVERSIONLOOSE] = '(' + src[NUMERICIDENTIFIERLOOSE] + ')\\.' + '(' + src[NUMERICIDENTIFIERLOOSE] + ')\\.' + '(' + src[NUMERICIDENTIFIERLOOSE] + ')';
+  var PRERELEASEIDENTIFIER = R++;
+  src[PRERELEASEIDENTIFIER] = '(?:' + src[NUMERICIDENTIFIER] + '|' + src[NONNUMERICIDENTIFIER] + ')';
+  var PRERELEASEIDENTIFIERLOOSE = R++;
+  src[PRERELEASEIDENTIFIERLOOSE] = '(?:' + src[NUMERICIDENTIFIERLOOSE] + '|' + src[NONNUMERICIDENTIFIER] + ')';
+  var PRERELEASE = R++;
+  src[PRERELEASE] = '(?:-(' + src[PRERELEASEIDENTIFIER] + '(?:\\.' + src[PRERELEASEIDENTIFIER] + ')*))';
+  var PRERELEASELOOSE = R++;
+  src[PRERELEASELOOSE] = '(?:-?(' + src[PRERELEASEIDENTIFIERLOOSE] + '(?:\\.' + src[PRERELEASEIDENTIFIERLOOSE] + ')*))';
+  var BUILDIDENTIFIER = R++;
+  src[BUILDIDENTIFIER] = '[0-9A-Za-z-]+';
+  var BUILD = R++;
+  src[BUILD] = '(?:\\+(' + src[BUILDIDENTIFIER] + '(?:\\.' + src[BUILDIDENTIFIER] + ')*))';
+  var FULL = R++;
+  var FULLPLAIN = 'v?' + src[MAINVERSION] + src[PRERELEASE] + '?' + src[BUILD] + '?';
+  src[FULL] = '^' + FULLPLAIN + '$';
+  var LOOSEPLAIN = '[v=\\s]*' + src[MAINVERSIONLOOSE] + src[PRERELEASELOOSE] + '?' + src[BUILD] + '?';
+  var LOOSE = R++;
+  src[LOOSE] = '^' + LOOSEPLAIN + '$';
+  var GTLT = R++;
+  src[GTLT] = '((?:<|>)?=?)';
+  var XRANGEIDENTIFIERLOOSE = R++;
+  src[XRANGEIDENTIFIERLOOSE] = src[NUMERICIDENTIFIERLOOSE] + '|x|X|\\*';
+  var XRANGEIDENTIFIER = R++;
+  src[XRANGEIDENTIFIER] = src[NUMERICIDENTIFIER] + '|x|X|\\*';
+  var XRANGEPLAIN = R++;
+  src[XRANGEPLAIN] = '[v=\\s]*(' + src[XRANGEIDENTIFIER] + ')' + '(?:\\.(' + src[XRANGEIDENTIFIER] + ')' + '(?:\\.(' + src[XRANGEIDENTIFIER] + ')' + '(?:' + src[PRERELEASE] + ')?' + src[BUILD] + '?' + ')?)?';
+  var XRANGEPLAINLOOSE = R++;
+  src[XRANGEPLAINLOOSE] = '[v=\\s]*(' + src[XRANGEIDENTIFIERLOOSE] + ')' + '(?:\\.(' + src[XRANGEIDENTIFIERLOOSE] + ')' + '(?:\\.(' + src[XRANGEIDENTIFIERLOOSE] + ')' + '(?:' + src[PRERELEASELOOSE] + ')?' + src[BUILD] + '?' + ')?)?';
+  var XRANGE = R++;
+  src[XRANGE] = '^' + src[GTLT] + '\\s*' + src[XRANGEPLAIN] + '$';
+  var XRANGELOOSE = R++;
+  src[XRANGELOOSE] = '^' + src[GTLT] + '\\s*' + src[XRANGEPLAINLOOSE] + '$';
+  var COERCE = R++;
+  src[COERCE] = '(?:^|[^\\d])' + '(\\d{1,' + MAX_SAFE_COMPONENT_LENGTH + '})' + '(?:\\.(\\d{1,' + MAX_SAFE_COMPONENT_LENGTH + '}))?' + '(?:\\.(\\d{1,' + MAX_SAFE_COMPONENT_LENGTH + '}))?' + '(?:$|[^\\d])';
+  var LONETILDE = R++;
+  src[LONETILDE] = '(?:~>?)';
+  var TILDETRIM = R++;
+  src[TILDETRIM] = '(\\s*)' + src[LONETILDE] + '\\s+';
+  re[TILDETRIM] = new RegExp(src[TILDETRIM], 'g');
+  var tildeTrimReplace = '$1~';
+  var TILDE = R++;
+  src[TILDE] = '^' + src[LONETILDE] + src[XRANGEPLAIN] + '$';
+  var TILDELOOSE = R++;
+  src[TILDELOOSE] = '^' + src[LONETILDE] + src[XRANGEPLAINLOOSE] + '$';
+  var LONECARET = R++;
+  src[LONECARET] = '(?:\\^)';
+  var CARETTRIM = R++;
+  src[CARETTRIM] = '(\\s*)' + src[LONECARET] + '\\s+';
+  re[CARETTRIM] = new RegExp(src[CARETTRIM], 'g');
+  var caretTrimReplace = '$1^';
+  var CARET = R++;
+  src[CARET] = '^' + src[LONECARET] + src[XRANGEPLAIN] + '$';
+  var CARETLOOSE = R++;
+  src[CARETLOOSE] = '^' + src[LONECARET] + src[XRANGEPLAINLOOSE] + '$';
+  var COMPARATORLOOSE = R++;
+  src[COMPARATORLOOSE] = '^' + src[GTLT] + '\\s*(' + LOOSEPLAIN + ')$|^$';
+  var COMPARATOR = R++;
+  src[COMPARATOR] = '^' + src[GTLT] + '\\s*(' + FULLPLAIN + ')$|^$';
+  var COMPARATORTRIM = R++;
+  src[COMPARATORTRIM] = '(\\s*)' + src[GTLT] + '\\s*(' + LOOSEPLAIN + '|' + src[XRANGEPLAIN] + ')';
+  re[COMPARATORTRIM] = new RegExp(src[COMPARATORTRIM], 'g');
+  var comparatorTrimReplace = '$1$2$3';
+  var HYPHENRANGE = R++;
+  src[HYPHENRANGE] = '^\\s*(' + src[XRANGEPLAIN] + ')' + '\\s+-\\s+' + '(' + src[XRANGEPLAIN] + ')' + '\\s*$';
+  var HYPHENRANGELOOSE = R++;
+  src[HYPHENRANGELOOSE] = '^\\s*(' + src[XRANGEPLAINLOOSE] + ')' + '\\s+-\\s+' + '(' + src[XRANGEPLAINLOOSE] + ')' + '\\s*$';
+  var STAR = R++;
+  src[STAR] = '(<|>)?=?\\s*\\*';
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   for (var i = 0; i < R; i++) {
     debug(i, src[i]);
@@ -53647,7 +55601,11 @@
       return null;
     }
 
+<<<<<<< HEAD
     var r = options.loose ? re[t.LOOSE] : re[t.FULL];
+=======
+    var r = options.loose ? re[LOOSE] : re[FULL];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
     if (!r.test(version)) {
       return null;
@@ -53705,7 +55663,11 @@
     debug('SemVer', version, options);
     this.options = options;
     this.loose = !!options.loose;
+<<<<<<< HEAD
     var m = version.trim().match(options.loose ? re[t.LOOSE] : re[t.FULL]);
+=======
+    var m = version.trim().match(options.loose ? re[LOOSE] : re[FULL]);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
     if (!m) {
       throw new TypeError('Invalid Version: ' + version);
@@ -53814,6 +55776,7 @@
     } while (++i);
   };
 
+<<<<<<< HEAD
   SemVer.prototype.compareBuild = function (other) {
     if (!(other instanceof SemVer)) {
       other = new SemVer(other, this.options);
@@ -53840,6 +55803,8 @@
     } while (++i);
   };
 
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   SemVer.prototype.inc = function (release, identifier) {
     switch (release) {
       case 'premajor':
@@ -54030,6 +55995,7 @@
     return compare(a, b, true);
   }
 
+<<<<<<< HEAD
   exports.compareBuild = compareBuild;
 
   function compareBuild(a, b, loose) {
@@ -54038,6 +56004,8 @@
     return versionA.compare(versionB) || versionA.compareBuild(versionB);
   }
 
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   exports.rcompare = rcompare;
 
   function rcompare(a, b, loose) {
@@ -54048,7 +56016,11 @@
 
   function sort(list, loose) {
     return list.sort(function (a, b) {
+<<<<<<< HEAD
       return exports.compareBuild(a, b, loose);
+=======
+      return exports.compare(a, b, loose);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     });
   }
 
@@ -54056,7 +56028,11 @@
 
   function rsort(list, loose) {
     return list.sort(function (a, b) {
+<<<<<<< HEAD
       return exports.compareBuild(b, a, loose);
+=======
+      return exports.rcompare(a, b, loose);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     });
   }
 
@@ -54174,14 +56150,22 @@
   var ANY = {};
 
   Comparator.prototype.parse = function (comp) {
+<<<<<<< HEAD
     var r = this.options.loose ? re[t.COMPARATORLOOSE] : re[t.COMPARATOR];
+=======
+    var r = this.options.loose ? re[COMPARATORLOOSE] : re[COMPARATOR];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     var m = comp.match(r);
 
     if (!m) {
       throw new TypeError('Invalid comparator: ' + comp);
     }
 
+<<<<<<< HEAD
     this.operator = m[1] !== undefined ? m[1] : '';
+=======
+    this.operator = m[1];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
     if (this.operator === '=') {
       this.operator = '';
@@ -54201,16 +56185,24 @@
   Comparator.prototype.test = function (version) {
     debug('Comparator.test', version, this.options.loose);
 
+<<<<<<< HEAD
     if (this.semver === ANY || version === ANY) {
+=======
+    if (this.semver === ANY) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       return true;
     }
 
     if (typeof version === 'string') {
+<<<<<<< HEAD
       try {
         version = new SemVer(version, this.options);
       } catch (er) {
         return false;
       }
+=======
+      version = new SemVer(version, this.options);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
 
     return cmp(version, this.operator, this.semver, this.options);
@@ -54231,6 +56223,7 @@
     var rangeTmp;
 
     if (this.operator === '') {
+<<<<<<< HEAD
       if (this.value === '') {
         return true;
       }
@@ -54242,6 +56235,11 @@
         return true;
       }
 
+=======
+      rangeTmp = new Range(comp.value, options);
+      return satisfies(this.value, rangeTmp, options);
+    } else if (comp.operator === '') {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       rangeTmp = new Range(this.value, options);
       return satisfies(comp.semver, rangeTmp, options);
     }
@@ -54312,6 +56310,7 @@
   Range.prototype.parseRange = function (range) {
     var loose = this.options.loose;
     range = range.trim();
+<<<<<<< HEAD
     var hr = loose ? re[t.HYPHENRANGELOOSE] : re[t.HYPHENRANGE];
     range = range.replace(hr, hyphenReplace);
     debug('hyphen replace', range);
@@ -54321,6 +56320,17 @@
     range = range.replace(re[t.CARETTRIM], caretTrimReplace);
     range = range.split(/\s+/).join(' ');
     var compRe = loose ? re[t.COMPARATORLOOSE] : re[t.COMPARATOR];
+=======
+    var hr = loose ? re[HYPHENRANGELOOSE] : re[HYPHENRANGE];
+    range = range.replace(hr, hyphenReplace);
+    debug('hyphen replace', range);
+    range = range.replace(re[COMPARATORTRIM], comparatorTrimReplace);
+    debug('comparator trim', range, re[COMPARATORTRIM]);
+    range = range.replace(re[TILDETRIM], tildeTrimReplace);
+    range = range.replace(re[CARETTRIM], caretTrimReplace);
+    range = range.split(/\s+/).join(' ');
+    var compRe = loose ? re[COMPARATORLOOSE] : re[COMPARATOR];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     var set = range.split(' ').map(function (comp) {
       return parseComparator(comp, this.options);
     }, this).join(' ').split(/\s+/);
@@ -54343,8 +56353,13 @@
     }
 
     return this.set.some(function (thisComparators) {
+<<<<<<< HEAD
       return isSatisfiable(thisComparators, options) && range.set.some(function (rangeComparators) {
         return isSatisfiable(rangeComparators, options) && thisComparators.every(function (thisComparator) {
+=======
+      return thisComparators.every(function (thisComparator) {
+        return range.set.some(function (rangeComparators) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           return rangeComparators.every(function (rangeComparator) {
             return thisComparator.intersects(rangeComparator, options);
           });
@@ -54353,6 +56368,7 @@
     });
   };
 
+<<<<<<< HEAD
   function isSatisfiable(comparators, options) {
     var result = true;
     var remainingComparators = comparators.slice();
@@ -54368,6 +56384,8 @@
     return result;
   }
 
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   exports.toComparators = toComparators;
 
   function toComparators(range, options) {
@@ -54402,7 +56420,11 @@
   }
 
   function replaceTilde(comp, options) {
+<<<<<<< HEAD
     var r = options.loose ? re[t.TILDELOOSE] : re[t.TILDE];
+=======
+    var r = options.loose ? re[TILDELOOSE] : re[TILDE];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     return comp.replace(r, function (_, M, m, p, pr) {
       debug('tilde', comp, _, M, m, p, pr);
       var ret;
@@ -54433,7 +56455,11 @@
 
   function replaceCaret(comp, options) {
     debug('caret', comp, options);
+<<<<<<< HEAD
     var r = options.loose ? re[t.CARETLOOSE] : re[t.CARET];
+=======
+    var r = options.loose ? re[CARETLOOSE] : re[CARET];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     return comp.replace(r, function (_, M, m, p, pr) {
       debug('caret', comp, _, M, m, p, pr);
       var ret;
@@ -54488,7 +56514,11 @@
 
   function replaceXRange(comp, options) {
     comp = comp.trim();
+<<<<<<< HEAD
     var r = options.loose ? re[t.XRANGELOOSE] : re[t.XRANGE];
+=======
+    var r = options.loose ? re[XRANGELOOSE] : re[XRANGE];
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     return comp.replace(r, function (ret, gtlt, M, m, p, pr) {
       debug('xRange', comp, ret, gtlt, M, m, p, pr);
       var xM = isX(M);
@@ -54500,11 +56530,17 @@
         gtlt = '';
       }
 
+<<<<<<< HEAD
       pr = options.includePrerelease ? '-0' : '';
 
       if (xM) {
         if (gtlt === '>' || gtlt === '<') {
           ret = '<0.0.0-0';
+=======
+      if (xM) {
+        if (gtlt === '>' || gtlt === '<') {
+          ret = '<0.0.0';
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         } else {
           ret = '*';
         }
@@ -54536,11 +56572,19 @@
           }
         }
 
+<<<<<<< HEAD
         ret = gtlt + M + '.' + m + '.' + p + pr;
       } else if (xm) {
         ret = '>=' + M + '.0.0' + pr + ' <' + (+M + 1) + '.0.0' + pr;
       } else if (xp) {
         ret = '>=' + M + '.' + m + '.0' + pr + ' <' + M + '.' + (+m + 1) + '.0' + pr;
+=======
+        ret = gtlt + M + '.' + m + '.' + p;
+      } else if (xm) {
+        ret = '>=' + M + '.0.0 <' + (+M + 1) + '.0.0';
+      } else if (xp) {
+        ret = '>=' + M + '.' + m + '.0 <' + M + '.' + (+m + 1) + '.0';
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       }
 
       debug('xRange return', ret);
@@ -54550,7 +56594,11 @@
 
   function replaceStars(comp, options) {
     debug('replaceStars', comp, options);
+<<<<<<< HEAD
     return comp.trim().replace(re[t.STAR], '');
+=======
+    return comp.trim().replace(re[STAR], '');
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   }
 
   function hyphenReplace($0, from, fM, fm, fp, fpr, fb, to, tM, tm, tp, tpr, tb) {
@@ -54585,11 +56633,15 @@
     }
 
     if (typeof version === 'string') {
+<<<<<<< HEAD
       try {
         version = new SemVer(version, this.options);
       } catch (er) {
         return false;
       }
+=======
+      version = new SemVer(version, this.options);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
 
     for (var i = 0; i < this.set.length; i++) {
@@ -54851,19 +56903,27 @@
 
   exports.coerce = coerce;
 
+<<<<<<< HEAD
   function coerce(version, options) {
+=======
+  function coerce(version) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     if (version instanceof SemVer) {
       return version;
     }
 
+<<<<<<< HEAD
     if (typeof version === 'number') {
       version = String(version);
     }
 
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     if (typeof version !== 'string') {
       return null;
     }
 
+<<<<<<< HEAD
     options = options || {};
     var match = null;
 
@@ -54888,11 +56948,21 @@
     }
 
     return parse(match[2] + '.' + (match[3] || '0') + '.' + (match[4] || '0'), options);
+=======
+    var match = version.match(re[COERCE]);
+
+    if (match == null) {
+      return null;
+    }
+
+    return parse(match[1] + '.' + (match[2] || '0') + '.' + (match[3] || '0'));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   }
   });
   var semver_1 = semver.SEMVER_SPEC_VERSION;
   var semver_2 = semver.re;
   var semver_3 = semver.src;
+<<<<<<< HEAD
   var semver_4 = semver.tokens;
   var semver_5 = semver.parse;
   var semver_6 = semver.valid;
@@ -54932,6 +57002,45 @@
   var semver_40 = semver.prerelease;
   var semver_41 = semver.intersects;
   var semver_42 = semver.coerce;
+=======
+  var semver_4 = semver.parse;
+  var semver_5 = semver.valid;
+  var semver_6 = semver.clean;
+  var semver_7 = semver.SemVer;
+  var semver_8 = semver.inc;
+  var semver_9 = semver.diff;
+  var semver_10 = semver.compareIdentifiers;
+  var semver_11 = semver.rcompareIdentifiers;
+  var semver_12 = semver.major;
+  var semver_13 = semver.minor;
+  var semver_14 = semver.patch;
+  var semver_15 = semver.compare;
+  var semver_16 = semver.compareLoose;
+  var semver_17 = semver.rcompare;
+  var semver_18 = semver.sort;
+  var semver_19 = semver.rsort;
+  var semver_20 = semver.gt;
+  var semver_21 = semver.lt;
+  var semver_22 = semver.eq;
+  var semver_23 = semver.neq;
+  var semver_24 = semver.gte;
+  var semver_25 = semver.lte;
+  var semver_26 = semver.cmp;
+  var semver_27 = semver.Comparator;
+  var semver_28 = semver.Range;
+  var semver_29 = semver.toComparators;
+  var semver_30 = semver.satisfies;
+  var semver_31 = semver.maxSatisfying;
+  var semver_32 = semver.minSatisfying;
+  var semver_33 = semver.minVersion;
+  var semver_34 = semver.validRange;
+  var semver_35 = semver.ltr;
+  var semver_36 = semver.gtr;
+  var semver_37 = semver.outside;
+  var semver_38 = semver.prerelease;
+  var semver_39 = semver.intersects;
+  var semver_40 = semver.coerce;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   var errorVisitor = {
     enter: function enter(path, state) {
@@ -55237,6 +57346,27 @@
     var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
     var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
 
+<<<<<<< HEAD
+=======
+    function define(obj, key, value) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+      return obj[key];
+    }
+
+    try {
+      define({}, "");
+    } catch (err) {
+      define = function define(obj, key, value) {
+        return obj[key] = value;
+      };
+    }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     function wrap(innerFn, outerFn, self, tryLocsList) {
       var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
       var generator = Object.create(protoGenerator.prototype);
@@ -55289,6 +57419,7 @@
     var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
     GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
     GeneratorFunctionPrototype.constructor = GeneratorFunction;
+<<<<<<< HEAD
     GeneratorFunctionPrototype[toStringTagSymbol] = GeneratorFunction.displayName = "GeneratorFunction";
 
     function defineIteratorMethods(prototype) {
@@ -55296,6 +57427,15 @@
         prototype[method] = function (arg) {
           return this._invoke(method, arg);
         };
+=======
+    GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction");
+
+    function defineIteratorMethods(prototype) {
+      ["next", "throw", "return"].forEach(function (method) {
+        define(prototype, method, function (arg) {
+          return this._invoke(method, arg);
+        });
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       });
     }
 
@@ -55309,10 +57449,14 @@
         Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
       } else {
         genFun.__proto__ = GeneratorFunctionPrototype;
+<<<<<<< HEAD
 
         if (!(toStringTagSymbol in genFun)) {
           genFun[toStringTagSymbol] = "GeneratorFunction";
         }
+=======
+        define(genFun, toStringTagSymbol, "GeneratorFunction");
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       }
 
       genFun.prototype = Object.create(Gp);
@@ -55508,7 +57652,11 @@
     }
 
     defineIteratorMethods(Gp);
+<<<<<<< HEAD
     Gp[toStringTagSymbol] = "Generator";
+=======
+    define(Gp, toStringTagSymbol, "Generator");
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
     Gp[iteratorSymbol] = function () {
       return this;
@@ -55805,7 +57953,12 @@
       _marked2 = regenerator.mark(findPackageData),
       _marked3 = regenerator.mark(findRelativeConfig),
       _marked4 = regenerator.mark(findRootConfig),
+<<<<<<< HEAD
       _marked5 = regenerator.mark(loadConfig);
+=======
+      _marked5 = regenerator.mark(loadConfig),
+      _marked6 = regenerator.mark(resolveShowConfigPath);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   function findConfigUpwards(rootDir) {
     return regenerator.wrap(function findConfigUpwards$(_context) {
@@ -55886,6 +58039,23 @@
       }
     }, _marked5);
   }
+<<<<<<< HEAD
+=======
+  function resolveShowConfigPath(dirname) {
+    return regenerator.wrap(function resolveShowConfigPath$(_context6) {
+      while (1) {
+        switch (_context6.prev = _context6.next) {
+          case 0:
+            return _context6.abrupt("return", null);
+
+          case 1:
+          case "end":
+            return _context6.stop();
+        }
+      }
+    }, _marked6);
+  }
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   var ROOT_CONFIG_FILENAMES = [];
   function resolvePlugin(name, dirname) {
     return null;
@@ -55900,7 +58070,11 @@
     throw new Error("Cannot load preset " + name + " relative to " + dirname + " in a browser");
   }
 
+<<<<<<< HEAD
   var version$1 = "7.10.5";
+=======
+  var version$1 = "7.11.0";
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   function getEnv(defaultValue) {
     if (defaultValue === void 0) {
@@ -57903,6 +60077,10 @@
     filenameRelative: assertString,
     code: assertBoolean,
     ast: assertBoolean,
+<<<<<<< HEAD
+=======
+    cloneInputAst: assertBoolean,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     envName: assertString
   };
   var BABELRC_VALIDATORS = {
@@ -58153,6 +60331,135 @@
     })).join(""));
   }
 
+<<<<<<< HEAD
+=======
+  var ChainFormatter = {
+    Programmatic: 0,
+    Config: 1
+  };
+  var Formatter = {
+    title: function title(type, callerName, filepath) {
+      var title = "";
+
+      if (type === ChainFormatter.Programmatic) {
+        title = "programmatic options";
+
+        if (callerName) {
+          title += " from " + callerName;
+        }
+      } else {
+        title = "config " + filepath;
+      }
+
+      return title;
+    },
+    loc: function loc(index, envName) {
+      var loc = "";
+
+      if (index != null) {
+        loc += ".overrides[" + index + "]";
+      }
+
+      if (envName != null) {
+        loc += ".env[\"" + envName + "\"]";
+      }
+
+      return loc;
+    },
+    optionsAndDescriptors: function optionsAndDescriptors(opt) {
+      var content = Object.assign({}, opt.options);
+      delete content.overrides;
+      delete content.env;
+      var pluginDescriptors = [].concat(opt.plugins());
+
+      if (pluginDescriptors.length) {
+        content.plugins = pluginDescriptors.map(function (d) {
+          return descriptorToConfig(d);
+        });
+      }
+
+      var presetDescriptors = [].concat(opt.presets());
+
+      if (presetDescriptors.length) {
+        content.presets = [].concat(presetDescriptors).map(function (d) {
+          return descriptorToConfig(d);
+        });
+      }
+
+      return JSON.stringify(content, undefined, 2);
+    }
+  };
+
+  function descriptorToConfig(d) {
+    var _d$file;
+
+    var name = (_d$file = d.file) == null ? void 0 : _d$file.request;
+
+    if (name == null) {
+      if (typeof d.value === "object") {
+        name = d.value;
+      } else if (typeof d.value === "function") {
+        name = "[Function: " + d.value.toString().substr(0, 50) + " ... ]";
+      }
+    }
+
+    if (name == null) {
+      name = "[Unknown]";
+    }
+
+    if (d.options === undefined) {
+      return name;
+    } else if (d.name == null) {
+      return [name, d.options];
+    } else {
+      return [name, d.options, d.name];
+    }
+  }
+
+  var ConfigPrinter = function () {
+    function ConfigPrinter() {
+      this._stack = [];
+    }
+
+    var _proto = ConfigPrinter.prototype;
+
+    _proto.configure = function configure(enabled, type, _ref) {
+      var _this = this;
+
+      var callerName = _ref.callerName,
+          filepath = _ref.filepath;
+      if (!enabled) return function () {};
+      return function (content, index, envName) {
+        _this._stack.push({
+          type: type,
+          callerName: callerName,
+          filepath: filepath,
+          content: content,
+          index: index,
+          envName: envName
+        });
+      };
+    };
+
+    ConfigPrinter.format = function format(config) {
+      var title = Formatter.title(config.type, config.callerName, config.filepath);
+      var loc = Formatter.loc(config.index, config.envName);
+      if (loc) title += " " + loc;
+      var content = Formatter.optionsAndDescriptors(config.content);
+      return title + "\n" + content;
+    };
+
+    _proto.output = function output() {
+      if (this._stack.length === 0) return "";
+      return this._stack.map(function (s) {
+        return ConfigPrinter.format(s);
+      }).join("\n\n");
+    };
+
+    return ConfigPrinter;
+  }();
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   var _marked$2 = regenerator.mark(buildPresetChain),
       _marked2$2 = regenerator.mark(buildRootChain),
       _marked3$2 = regenerator.mark(mergeExtendsChain);
@@ -58203,6 +60510,12 @@
     },
     overridesEnv: function overridesEnv(preset, index, envName) {
       return loadPresetOverridesEnvDescriptors(preset)(index)(envName);
+<<<<<<< HEAD
+=======
+    },
+    createLogger: function createLogger() {
+      return function () {};
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
   });
   var loadPresetDescriptors = makeWeakCacheSync(function (preset) {
@@ -58226,12 +60539,17 @@
     });
   });
   function buildRootChain(opts, context) {
+<<<<<<< HEAD
     var programmaticChain, configFile, babelrc, babelrcRoots, babelrcRootsDirectory, configFileChain, validatedFile, result, pkgData, ignoreFile, babelrcFile, fileChain, _yield$findRelativeCo, _result, chain;
+=======
+    var configReport, babelRcReport, programmaticLogger, programmaticChain, programmaticReport, configFile, babelrc, babelrcRoots, babelrcRootsDirectory, configFileChain, configFileLogger, validatedFile, result, pkgData, ignoreFile, babelrcFile, fileChain, _yield$findRelativeCo, _validatedFile, babelrcLogger, _result, chain;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
     return regenerator.wrap(function buildRootChain$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
+<<<<<<< HEAD
             return _context2.delegateYield(loadProgrammaticChain({
               options: opts,
               dirname: context.cwd
@@ -58242,11 +60560,25 @@
 
             if (programmaticChain) {
               _context2.next = 4;
+=======
+            programmaticLogger = new ConfigPrinter();
+            return _context2.delegateYield(loadProgrammaticChain({
+              options: opts,
+              dirname: context.cwd
+            }, context, undefined, programmaticLogger), "t0", 2);
+
+          case 2:
+            programmaticChain = _context2.t0;
+
+            if (programmaticChain) {
+              _context2.next = 5;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               break;
             }
 
             return _context2.abrupt("return", null);
 
+<<<<<<< HEAD
           case 4:
             if (!(typeof opts.configFile === "string")) {
               _context2.next = 9;
@@ -58278,10 +60610,47 @@
 
             if (!configFile) {
               _context2.next = 24;
+=======
+          case 5:
+            programmaticReport = programmaticLogger.output();
+
+            if (!(typeof opts.configFile === "string")) {
+              _context2.next = 11;
+              break;
+            }
+
+            return _context2.delegateYield(loadConfig(opts.configFile, context.cwd, context.envName, context.caller), "t1", 8);
+
+          case 8:
+            configFile = _context2.t1;
+            _context2.next = 14;
+            break;
+
+          case 11:
+            if (!(opts.configFile !== false)) {
+              _context2.next = 14;
+              break;
+            }
+
+            return _context2.delegateYield(findRootConfig(context.root, context.envName, context.caller), "t2", 13);
+
+          case 13:
+            configFile = _context2.t2;
+
+          case 14:
+            babelrc = opts.babelrc, babelrcRoots = opts.babelrcRoots;
+            babelrcRootsDirectory = context.cwd;
+            configFileChain = emptyChain();
+            configFileLogger = new ConfigPrinter();
+
+            if (!configFile) {
+              _context2.next = 28;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               break;
             }
 
             validatedFile = validateConfigFile(configFile);
+<<<<<<< HEAD
             return _context2.delegateYield(loadFileChain(validatedFile, context), "t3", 18);
 
           case 18:
@@ -58289,12 +60658,27 @@
 
             if (result) {
               _context2.next = 21;
+=======
+            return _context2.delegateYield(loadFileChain(validatedFile, context, undefined, configFileLogger), "t3", 21);
+
+          case 21:
+            result = _context2.t3;
+
+            if (result) {
+              _context2.next = 24;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               break;
             }
 
             return _context2.abrupt("return", null);
 
+<<<<<<< HEAD
           case 21:
+=======
+          case 24:
+            configReport = configFileLogger.output();
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             if (babelrc === undefined) {
               babelrc = validatedFile.options.babelrc;
             }
@@ -58306,6 +60690,7 @@
 
             mergeChain(configFileChain, result);
 
+<<<<<<< HEAD
           case 24:
             if (!(typeof context.filename === "string")) {
               _context2.next = 29;
@@ -58323,10 +60708,30 @@
             _context2.t4 = null;
 
           case 30:
+=======
+          case 28:
+            if (!(typeof context.filename === "string")) {
+              _context2.next = 33;
+              break;
+            }
+
+            return _context2.delegateYield(findPackageData(context.filename), "t5", 30);
+
+          case 30:
+            _context2.t4 = _context2.t5;
+            _context2.next = 34;
+            break;
+
+          case 33:
+            _context2.t4 = null;
+
+          case 34:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             pkgData = _context2.t4;
             fileChain = emptyChain();
 
             if (!((babelrc === true || babelrc === undefined) && pkgData && babelrcLoadEnabled(context, pkgData, babelrcRoots, babelrcRootsDirectory))) {
+<<<<<<< HEAD
               _context2.next = 45;
               break;
             }
@@ -58334,17 +60739,31 @@
             return _context2.delegateYield(findRelativeConfig(pkgData, context.envName, context.caller), "t6", 34);
 
           case 34:
+=======
+              _context2.next = 52;
+              break;
+            }
+
+            return _context2.delegateYield(findRelativeConfig(pkgData, context.envName, context.caller), "t6", 38);
+
+          case 38:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             _yield$findRelativeCo = _context2.t6;
             ignoreFile = _yield$findRelativeCo.ignore;
             babelrcFile = _yield$findRelativeCo.config;
 
             if (!(ignoreFile && shouldIgnore(context, ignoreFile.ignore, null, ignoreFile.dirname))) {
+<<<<<<< HEAD
               _context2.next = 39;
+=======
+              _context2.next = 43;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               break;
             }
 
             return _context2.abrupt("return", null);
 
+<<<<<<< HEAD
           case 39:
             if (!babelrcFile) {
               _context2.next = 45;
@@ -58358,15 +60777,51 @@
 
             if (_result) {
               _context2.next = 44;
+=======
+          case 43:
+            if (!babelrcFile) {
+              _context2.next = 52;
+              break;
+            }
+
+            _validatedFile = validateBabelrcFile(babelrcFile);
+            babelrcLogger = new ConfigPrinter();
+            return _context2.delegateYield(loadFileChain(_validatedFile, context, undefined, babelrcLogger), "t7", 47);
+
+          case 47:
+            _result = _context2.t7;
+
+            if (_result) {
+              _context2.next = 50;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               break;
             }
 
             return _context2.abrupt("return", null);
 
+<<<<<<< HEAD
           case 44:
             mergeChain(fileChain, _result);
 
           case 45:
+=======
+          case 50:
+            babelRcReport = babelrcLogger.output();
+            mergeChain(fileChain, _result);
+
+          case 52:
+            if (!context.showConfig) {
+              _context2.next = 55;
+              break;
+            }
+
+            console.log("Babel configs on \"" + context.filename + "\" (ascending priority):\n" + [configReport, babelRcReport, programmaticReport].filter(function (x) {
+              return !!x;
+            }).join("\n\n"));
+            return _context2.abrupt("return", null);
+
+          case 55:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             chain = mergeChain(mergeChain(mergeChain(emptyChain(), configFileChain), fileChain), programmaticChain);
             return _context2.abrupt("return", {
               plugins: dedupDescriptors(chain.plugins),
@@ -58379,7 +60834,11 @@
               config: configFile || undefined
             });
 
+<<<<<<< HEAD
           case 47:
+=======
+          case 57:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           case "end":
             return _context2.stop();
         }
@@ -58449,6 +60908,12 @@
     },
     overridesEnv: function overridesEnv(input, index, envName) {
       return buildOverrideEnvDescriptors(input, "base", createCachedDescriptors, index, envName);
+<<<<<<< HEAD
+=======
+    },
+    createLogger: function createLogger(input, context, baseLogger) {
+      return buildProgrammaticLogger(input, context, baseLogger);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
   });
   var loadFileChain = makeChainWalker({
@@ -58463,6 +60928,12 @@
     },
     overridesEnv: function overridesEnv(file, index, envName) {
       return loadFileOverridesEnvDescriptors(file)(index)(envName);
+<<<<<<< HEAD
+=======
+    },
+    createLogger: function createLogger(file, context, baseLogger) {
+      return buildFileLogger(file.filepath, context, baseLogger);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     }
   });
   var loadFileDescriptors = makeWeakCacheSync(function (file) {
@@ -58486,12 +60957,40 @@
     });
   });
 
+<<<<<<< HEAD
+=======
+  function buildFileLogger(filepath, context, baseLogger) {
+    if (!baseLogger) {
+      return function () {};
+    }
+
+    return baseLogger.configure(context.showConfig, ChainFormatter.Config, {
+      filepath: filepath
+    });
+  }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function buildRootDescriptors(_ref, alias, descriptors) {
     var dirname = _ref.dirname,
         options = _ref.options;
     return descriptors(dirname, options, alias);
   }
 
+<<<<<<< HEAD
+=======
+  function buildProgrammaticLogger(_, context, baseLogger) {
+    var _context$caller;
+
+    if (!baseLogger) {
+      return function () {};
+    }
+
+    return baseLogger.configure(context.showConfig, ChainFormatter.Programmatic, {
+      callerName: (_context$caller = context.caller) == null ? void 0 : _context$caller.name
+    });
+  }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function buildEnvDescriptors(_ref2, alias, descriptors, envName) {
     var dirname = _ref2.dirname,
         options = _ref2.options;
@@ -58520,9 +61019,16 @@
     var root = _ref5.root,
         env = _ref5.env,
         overrides = _ref5.overrides,
+<<<<<<< HEAD
         overridesEnv = _ref5.overridesEnv;
     return regenerator.mark(function _callee(input, context, files) {
       var dirname, flattenedConfigs, rootOpts, envOpts, chain, _i, _flattenedConfigs, op;
+=======
+        overridesEnv = _ref5.overridesEnv,
+        createLogger = _ref5.createLogger;
+    return regenerator.mark(function _callee(input, context, files, baseLogger) {
+      var dirname, flattenedConfigs, rootOpts, envOpts, chain, logger, _i, _flattenedConfigs, _flattenedConfigs$_i, config, index, envName;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
       return regenerator.wrap(function _callee$(_context3) {
         while (1) {
@@ -58537,31 +61043,69 @@
               rootOpts = root(input);
 
               if (configIsApplicable(rootOpts, dirname, context)) {
+<<<<<<< HEAD
                 flattenedConfigs.push(rootOpts);
                 envOpts = env(input, context.envName);
 
                 if (envOpts && configIsApplicable(envOpts, dirname, context)) {
                   flattenedConfigs.push(envOpts);
+=======
+                flattenedConfigs.push({
+                  config: rootOpts,
+                  envName: undefined,
+                  index: undefined
+                });
+                envOpts = env(input, context.envName);
+
+                if (envOpts && configIsApplicable(envOpts, dirname, context)) {
+                  flattenedConfigs.push({
+                    config: envOpts,
+                    envName: context.envName,
+                    index: undefined
+                  });
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
                 }
 
                 (rootOpts.options.overrides || []).forEach(function (_, index) {
                   var overrideOps = overrides(input, index);
 
                   if (configIsApplicable(overrideOps, dirname, context)) {
+<<<<<<< HEAD
                     flattenedConfigs.push(overrideOps);
                     var overrideEnvOpts = overridesEnv(input, index, context.envName);
 
                     if (overrideEnvOpts && configIsApplicable(overrideEnvOpts, dirname, context)) {
                       flattenedConfigs.push(overrideEnvOpts);
+=======
+                    flattenedConfigs.push({
+                      config: overrideOps,
+                      index: index,
+                      envName: undefined
+                    });
+                    var overrideEnvOpts = overridesEnv(input, index, context.envName);
+
+                    if (overrideEnvOpts && configIsApplicable(overrideEnvOpts, dirname, context)) {
+                      flattenedConfigs.push({
+                        config: overrideEnvOpts,
+                        index: index,
+                        envName: context.envName
+                      });
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
                     }
                   }
                 });
               }
 
               if (!flattenedConfigs.some(function (_ref6) {
+<<<<<<< HEAD
                 var _ref6$options = _ref6.options,
                     ignore = _ref6$options.ignore,
                     only = _ref6$options.only;
+=======
+                var _ref6$config$options = _ref6.config.options,
+                    ignore = _ref6$config$options.ignore,
+                    only = _ref6$config$options.only;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
                 return shouldIgnore(context, ignore, only, dirname);
               })) {
                 _context3.next = 7;
@@ -58572,6 +61116,7 @@
 
             case 7:
               chain = emptyChain();
+<<<<<<< HEAD
               _i = 0, _flattenedConfigs = flattenedConfigs;
 
             case 9:
@@ -58586,11 +61131,29 @@
             case 12:
               if (_context3.t0) {
                 _context3.next = 14;
+=======
+              logger = createLogger(input, context, baseLogger);
+              _i = 0, _flattenedConfigs = flattenedConfigs;
+
+            case 10:
+              if (!(_i < _flattenedConfigs.length)) {
+                _context3.next = 20;
+                break;
+              }
+
+              _flattenedConfigs$_i = _flattenedConfigs[_i], config = _flattenedConfigs$_i.config, index = _flattenedConfigs$_i.index, envName = _flattenedConfigs$_i.envName;
+              return _context3.delegateYield(mergeExtendsChain(chain, config.options, dirname, context, files, baseLogger), "t0", 13);
+
+            case 13:
+              if (_context3.t0) {
+                _context3.next = 15;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
                 break;
               }
 
               return _context3.abrupt("return", null);
 
+<<<<<<< HEAD
             case 14:
               mergeChainOpts(chain, op);
 
@@ -58603,6 +61166,21 @@
               return _context3.abrupt("return", chain);
 
             case 19:
+=======
+            case 15:
+              logger(config, index, envName);
+              mergeChainOpts(chain, config);
+
+            case 17:
+              _i++;
+              _context3.next = 10;
+              break;
+
+            case 20:
+              return _context3.abrupt("return", chain);
+
+            case 21:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             case "end":
               return _context3.stop();
           }
@@ -58611,7 +61189,11 @@
     });
   }
 
+<<<<<<< HEAD
   function mergeExtendsChain(chain, opts, dirname, context, files) {
+=======
+  function mergeExtendsChain(chain, opts, dirname, context, files, baseLogger) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     var file, fileChain;
     return regenerator.wrap(function mergeExtendsChain$(_context4) {
       while (1) {
@@ -58641,7 +61223,11 @@
 
           case 6:
             files.add(file);
+<<<<<<< HEAD
             return _context4.delegateYield(loadFileChain(validateExtendFile(file), context, files), "t1", 8);
+=======
+            return _context4.delegateYield(loadFileChain(validateExtendFile(file), context, files, baseLogger), "t1", 8);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
           case 8:
             fileChain = _context4.t1;
@@ -58775,12 +61361,37 @@
 
   function shouldIgnore(context, ignore, only, dirname) {
     if (ignore && matchesPatterns(context, ignore, dirname)) {
+<<<<<<< HEAD
       debug("Ignored %o because it matched one of %O from %o", context.filename, ignore, dirname);
+=======
+      var _context$filename;
+
+      var message = "No config is applied to \"" + ((_context$filename = context.filename) != null ? _context$filename : "(unknown)") + "\" because it matches one of `ignore: " + JSON.stringify(ignore) + "` from \"" + dirname + "\"";
+      debug(message);
+
+      if (context.showConfig) {
+        console.log(message);
+      }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       return true;
     }
 
     if (only && !matchesPatterns(context, only, dirname)) {
+<<<<<<< HEAD
       debug("Ignored %o because it failed to match one of %O from %o", context.filename, only, dirname);
+=======
+      var _context$filename2;
+
+      var _message = "No config is applied to \"" + ((_context$filename2 = context.filename) != null ? _context$filename2 : "(unknown)") + "\" because it fails to match one of `only: " + JSON.stringify(only) + "` from \"" + dirname + "\"";
+
+      debug(_message);
+
+      if (context.showConfig) {
+        console.log(_message);
+      }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       return true;
     }
 
@@ -59004,7 +61615,11 @@
   }
 
   function loadPrivatePartialConfig(inputOpts) {
+<<<<<<< HEAD
     var args, _args$envName, envName, _args$cwd, cwd, _args$root, rootDir, _args$rootMode, rootMode, caller, absoluteCwd, absoluteRootDir, context, configChain, options;
+=======
+    var args, _args$envName, envName, _args$cwd, cwd, _args$root, rootDir, _args$rootMode, rootMode, caller, _args$cloneInputAst, cloneInputAst, absoluteCwd, absoluteRootDir, filename, showConfigPath, context, configChain, options;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
     return regenerator.wrap(function loadPrivatePartialConfig$(_context2) {
       while (1) {
@@ -59019,12 +61634,17 @@
 
           case 2:
             args = inputOpts ? validate$3("arguments", inputOpts) : {};
+<<<<<<< HEAD
             _args$envName = args.envName, envName = _args$envName === void 0 ? getEnv() : _args$envName, _args$cwd = args.cwd, cwd = _args$cwd === void 0 ? "." : _args$cwd, _args$root = args.root, rootDir = _args$root === void 0 ? "." : _args$root, _args$rootMode = args.rootMode, rootMode = _args$rootMode === void 0 ? "root" : _args$rootMode, caller = args.caller;
+=======
+            _args$envName = args.envName, envName = _args$envName === void 0 ? getEnv() : _args$envName, _args$cwd = args.cwd, cwd = _args$cwd === void 0 ? "." : _args$cwd, _args$root = args.root, rootDir = _args$root === void 0 ? "." : _args$root, _args$rootMode = args.rootMode, rootMode = _args$rootMode === void 0 ? "root" : _args$rootMode, caller = args.caller, _args$cloneInputAst = args.cloneInputAst, cloneInputAst = _args$cloneInputAst === void 0 ? true : _args$cloneInputAst;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             absoluteCwd = path$1.resolve(cwd);
             return _context2.delegateYield(resolveRootMode(path$1.resolve(absoluteCwd, rootDir), rootMode), "t0", 6);
 
           case 6:
             absoluteRootDir = _context2.t0;
+<<<<<<< HEAD
             context = {
               filename: typeof args.filename === "string" ? path$1.resolve(cwd, args.filename) : undefined,
               cwd: absoluteCwd,
@@ -59039,16 +61659,46 @@
 
             if (configChain) {
               _context2.next = 12;
+=======
+            filename = typeof args.filename === "string" ? path$1.resolve(cwd, args.filename) : undefined;
+            return _context2.delegateYield(resolveShowConfigPath(), "t1", 9);
+
+          case 9:
+            showConfigPath = _context2.t1;
+            context = {
+              filename: filename,
+              cwd: absoluteCwd,
+              root: absoluteRootDir,
+              envName: envName,
+              caller: caller,
+              showConfig: showConfigPath === filename
+            };
+            return _context2.delegateYield(buildRootChain(args, context), "t2", 12);
+
+          case 12:
+            configChain = _context2.t2;
+
+            if (configChain) {
+              _context2.next = 15;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               break;
             }
 
             return _context2.abrupt("return", null);
 
+<<<<<<< HEAD
           case 12:
+=======
+          case 15:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             options = {};
             configChain.options.forEach(function (opts) {
               mergeOptions(options, opts);
             });
+<<<<<<< HEAD
+=======
+            options.cloneInputAst = cloneInputAst;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             options.babelrc = false;
             options.configFile = false;
             options.passPerPreset = false;
@@ -59070,7 +61720,11 @@
               config: configChain.config
             });
 
+<<<<<<< HEAD
           case 24:
+=======
+          case 28:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           case "end":
             return _context2.stop();
         }
@@ -60955,6 +63609,15 @@
         url: "https://git.io/JvpRG"
       }
     },
+<<<<<<< HEAD
+=======
+    decimal: {
+      syntax: {
+        name: "@babel/plugin-syntax-decimal",
+        url: "https://git.io/JfKOH"
+      }
+    },
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     decorators: {
       syntax: {
         name: "@babel/plugin-syntax-decorators",
@@ -61047,6 +63710,7 @@
         url: "https://git.io/JfeDR"
       }
     },
+<<<<<<< HEAD
     logicalAssignment: {
       syntax: {
         name: "@babel/plugin-syntax-logical-assignment-operators",
@@ -61057,6 +63721,8 @@
         url: "https://git.io/vAlRe"
       }
     },
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     moduleAttributes: {
       syntax: {
         name: "@babel/plugin-syntax-module-attributes",
@@ -61139,6 +63805,19 @@
         url: "https://git.io/vb4yp"
       }
     },
+<<<<<<< HEAD
+=======
+    logicalAssignment: {
+      syntax: {
+        name: "@babel/plugin-syntax-logical-assignment-operators",
+        url: "https://git.io/vAlBp"
+      },
+      transform: {
+        name: "@babel/plugin-proposal-logical-assignment-operators",
+        url: "https://git.io/vAlRe"
+      }
+    },
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     nullishCoalescingOperator: {
       syntax: {
         name: "@babel/plugin-syntax-nullish-coalescing-operator",
@@ -61300,7 +63979,11 @@
   var debug$1 = browser$4("babel:transform:file");
   var LARGE_INPUT_SOURCEMAP_THRESHOLD = 1000000;
   function normalizeFile(pluginPasses, options, code, ast) {
+<<<<<<< HEAD
     var inputMap, lastComment, _lastComment, match, inputMapContent;
+=======
+    var cloneInputAst, inputMap, lastComment, _lastComment, match, inputMapContent;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
     return regenerator.wrap(function normalizeFile$(_context) {
       while (1) {
@@ -61309,7 +63992,11 @@
             code = "" + (code || "");
 
             if (!ast) {
+<<<<<<< HEAD
               _context.next = 11;
+=======
+              _context.next = 12;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               break;
             }
 
@@ -61331,6 +64018,7 @@
             throw new Error("AST root must be a Program or File node");
 
           case 8:
+<<<<<<< HEAD
             ast = cloneDeep_1(ast);
             _context.next = 13;
             break;
@@ -61342,6 +64030,24 @@
             ast = _context.t0;
 
           case 13:
+=======
+            cloneInputAst = options.cloneInputAst;
+
+            if (cloneInputAst) {
+              ast = cloneDeep_1(ast);
+            }
+
+            _context.next = 14;
+            break;
+
+          case 12:
+            return _context.delegateYield(parser(pluginPasses, options, code), "t0", 13);
+
+          case 13:
+            ast = _context.t0;
+
+          case 14:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             inputMap = null;
 
             if (options.inputSourceMap !== false) {
@@ -61389,7 +64095,11 @@
               inputMap: inputMap
             }));
 
+<<<<<<< HEAD
           case 16:
+=======
+          case 17:
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           case "end":
             return _context.stop();
         }
@@ -62223,6 +64933,19 @@
     };
   });
 
+<<<<<<< HEAD
+=======
+  var syntaxDecimal = declare(function (api) {
+    api.assertVersion(7);
+    return {
+      name: "syntax-decimal",
+      manipulateOptions: function manipulateOptions(opts, parserOpts) {
+        parserOpts.plugins.push("decimal");
+      }
+    };
+  });
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   var syntaxDecorators = declare(function (api, options) {
     api.assertVersion(7);
     var _options$legacy = options.legacy,
@@ -63997,7 +66720,10 @@
   	"@babel/core": "^7.10.5",
   	"@babel/helper-plugin-test-runner": "^7.10.4"
   };
+<<<<<<< HEAD
   var gitHead = "f7964a9ac51356f7df6404a25b27ba1cffba1ba7";
+=======
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   var pkg = {
   	name: name,
   	version: version$2,
@@ -64010,8 +66736,12 @@
   	keywords: keywords$2,
   	dependencies: dependencies,
   	peerDependencies: peerDependencies,
+<<<<<<< HEAD
   	devDependencies: devDependencies,
   	gitHead: gitHead
+=======
+  	devDependencies: devDependencies
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   };
 
   var version$3 = pkg.version.split(".").reduce(function (v, x) {
@@ -64724,8 +67454,14 @@
           var operator = node.operator,
               left = node.left,
               right = node.right;
+<<<<<<< HEAD
 
           if (operator !== "||=" && operator !== "&&=" && operator !== "??=") {
+=======
+          var operatorTrunc = operator.slice(0, -1);
+
+          if (!LOGICAL_OPERATORS.includes(operatorTrunc)) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             return;
           }
 
@@ -64752,7 +67488,11 @@
             }
           }
 
+<<<<<<< HEAD
           path.replaceWith(logicalExpression(operator.slice(0, -1), lhs, assignmentExpression("=", left, right)));
+=======
+          path.replaceWith(logicalExpression(operatorTrunc, lhs, assignmentExpression("=", left, right)));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         }
       }
     };
@@ -65852,6 +68592,20 @@
     };
   });
 
+<<<<<<< HEAD
+=======
+  function isTransparentExprWrapper(node) {
+    return isTSAsExpression(node) || isTSTypeAssertion(node) || isTSNonNullExpression(node) || isTypeCastExpression(node) || isParenthesizedExpression(node);
+  }
+  function skipTransparentExprWrappers(path) {
+    while (isTransparentExprWrapper(path.node)) {
+      path = path.get("expression");
+    }
+
+    return path;
+  }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   var lib$a = createCommonjsModule(function (module, exports) {
 
   Object.defineProperty(exports, "__esModule", {
@@ -65882,6 +68636,10 @@
         loose = _options$loose === void 0 ? false : _options$loose;
 
     function isSimpleMemberExpression(expression) {
+<<<<<<< HEAD
+=======
+      expression = skipTransparentExprWrappers(expression);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       return isIdentifier(expression) || isSuper(expression) || isMemberExpression(expression) && !expression.computed && isSimpleMemberExpression(expression.object);
     }
 
@@ -65891,6 +68649,7 @@
       visitor: {
         "OptionalCallExpression|OptionalMemberExpression": function OptionalCallExpressionOptionalMemberExpression(path) {
           var scope = path.scope;
+<<<<<<< HEAD
           var maybeParenthesized = path;
           var parentPath = path.findParent(function (p) {
             if (!p.isParenthesizedExpression()) return true;
@@ -65899,11 +68658,25 @@
           var isDeleteOperation = false;
           var parentIsCall = parentPath.isCallExpression({
             callee: maybeParenthesized.node
+=======
+          var maybeWrapped = path;
+          var parentPath = path.findParent(function (p) {
+            if (!isTransparentExprWrapper(p)) return true;
+            maybeWrapped = p;
+          });
+          var isDeleteOperation = false;
+          var parentIsCall = parentPath.isCallExpression({
+            callee: maybeWrapped.node
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           }) && path.isOptionalMemberExpression();
           var optionals = [];
           var optionalPath = path;
 
+<<<<<<< HEAD
           while (optionalPath.isOptionalMemberExpression() || optionalPath.isOptionalCallExpression() || optionalPath.isParenthesizedExpression() || optionalPath.isTSNonNullExpression()) {
+=======
+          while (optionalPath.isOptionalMemberExpression() || optionalPath.isOptionalCallExpression()) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             var _optionalPath = optionalPath,
                 node = _optionalPath.node;
 
@@ -65913,12 +68686,19 @@
 
             if (optionalPath.isOptionalMemberExpression()) {
               optionalPath.node.type = "MemberExpression";
+<<<<<<< HEAD
               optionalPath = optionalPath.get("object");
             } else if (optionalPath.isOptionalCallExpression()) {
               optionalPath.node.type = "CallExpression";
               optionalPath = optionalPath.get("callee");
             } else {
               optionalPath = optionalPath.get("expression");
+=======
+              optionalPath = skipTransparentExprWrappers(optionalPath.get("object"));
+            } else if (optionalPath.isOptionalCallExpression()) {
+              optionalPath.node.type = "CallExpression";
+              optionalPath = skipTransparentExprWrappers(optionalPath.get("callee"));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             }
           }
 
@@ -65935,28 +68715,62 @@
             var _node = optionals[i];
             var isCall = isCallExpression(_node);
             var replaceKey = isCall ? "callee" : "object";
+<<<<<<< HEAD
             var chain = _node[replaceKey];
             var ref = void 0;
             var check = void 0;
 
             if (loose && isCall && isSimpleMemberExpression(chain)) {
               check = ref = chain;
+=======
+            var chainWithTypes = _node[replaceKey];
+            var chain = chainWithTypes;
+
+            while (isTransparentExprWrapper(chain)) {
+              chain = chain.expression;
+            }
+
+            var ref = void 0;
+            var check = void 0;
+
+            if (isCall && isIdentifier(chain, {
+              name: "eval"
+            })) {
+              check = ref = chain;
+              _node[replaceKey] = sequenceExpression([numericLiteral(0), ref]);
+            } else if (loose && isCall && isSimpleMemberExpression(chain)) {
+              check = ref = chainWithTypes;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
             } else {
               ref = scope.maybeGenerateMemoised(chain);
 
               if (ref) {
+<<<<<<< HEAD
                 check = assignmentExpression("=", cloneNode(ref), chain);
                 _node[replaceKey] = ref;
               } else {
                 check = ref = chain;
+=======
+                check = assignmentExpression("=", cloneNode(ref), chainWithTypes);
+                _node[replaceKey] = ref;
+              } else {
+                check = ref = chainWithTypes;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               }
             }
 
             if (isCall && isMemberExpression(chain)) {
               if (loose && isSimpleMemberExpression(chain)) {
+<<<<<<< HEAD
                 _node.callee = chain;
               } else {
                 var object = chain.object;
+=======
+                _node.callee = chainWithTypes;
+              } else {
+                var _chain = chain,
+                    object = _chain.object;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
                 var context = scope.maybeGenerateMemoised(object);
 
                 if (context) {
@@ -65978,8 +68792,12 @@
             if (i === 0 && parentIsCall) {
               var _baseRef;
 
+<<<<<<< HEAD
               var _replacement = replacement,
                   _object = _replacement.object;
+=======
+              var _object = skipTransparentExprWrappers(replacementPath.get("object")).node;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               var baseRef = void 0;
 
               if (!loose || !isSimpleMemberExpression(_object)) {
@@ -65994,7 +68812,11 @@
             }
 
             replacementPath.replaceWith(conditionalExpression(loose ? binaryExpression("==", cloneNode(check), nullLiteral()) : logicalExpression("||", binaryExpression("===", cloneNode(check), nullLiteral()), binaryExpression("===", cloneNode(ref), scope.buildUndefinedNode())), isDeleteOperation ? booleanLiteral(true) : scope.buildUndefinedNode(), replacement));
+<<<<<<< HEAD
             replacementPath = replacementPath.get("alternate");
+=======
+            replacementPath = skipTransparentExprWrappers(replacementPath.get("alternate"));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           }
         }
       }
@@ -79582,7 +82404,11 @@
                 context2 = assignmentExpression("=", cloneNode(context1), object);
               }
 
+<<<<<<< HEAD
               node.callee = memberExpression(callExpression(this.addDefaultImport(moduleName + "/" + corejsRoot + "/instance/" + InstanceProperties[propertyName].path, propertyName + "InstanceProperty"), [context2]), identifier("call"));
+=======
+              node.callee = memberExpression(callExpression(this.addDefaultImport(modulePath + "/" + corejsRoot + "/instance/" + InstanceProperties[propertyName].path, propertyName + "InstanceProperty"), [context2]), identifier("call"));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               node.arguments.unshift(context1);
               return;
             }
@@ -79615,7 +82441,11 @@
             if (!isReferenced(object, node)) return;
 
             if (!injectCoreJS2 && node.computed && path.get("property").matchesPattern("Symbol.iterator")) {
+<<<<<<< HEAD
               path.replaceWith(callExpression(this.addDefaultImport(moduleName + "/core-js/get-iterator-method", "getIteratorMethod"), [object]));
+=======
+              path.replaceWith(callExpression(this.addDefaultImport(modulePath + "/core-js/get-iterator-method", "getIteratorMethod"), [object]));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               return;
             }
 
@@ -79624,7 +82454,11 @@
 
             if (path.scope.getBindingIdentifier(objectName) || !hasStaticMapping(objectName, propertyName)) {
               if (injectCoreJS3 && hasMapping(InstanceProperties, propertyName) && maybeNeedsPolyfill(path, InstanceProperties, propertyName)) {
+<<<<<<< HEAD
                 path.replaceWith(callExpression(this.addDefaultImport(moduleName + "/" + corejsRoot + "/instance/" + InstanceProperties[propertyName].path, propertyName + "InstanceProperty"), [object]));
+=======
+                path.replaceWith(callExpression(this.addDefaultImport(modulePath + "/" + corejsRoot + "/instance/" + InstanceProperties[propertyName].path, propertyName + "InstanceProperty"), [object]));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
               }
 
               return;
@@ -79752,7 +82586,11 @@
               scope = path.scope;
           var args = node.arguments;
           if (!hasSpread(args)) return;
+<<<<<<< HEAD
           var calleePath = path.get("callee");
+=======
+          var calleePath = skipTransparentExprWrappers(path.get("callee"));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           if (calleePath.isSuper()) return;
           var contextLiteral = scope.buildUndefinedNode();
           node.arguments = [];
@@ -79772,7 +82610,11 @@
             node.arguments.push(first);
           }
 
+<<<<<<< HEAD
           var callee = node.callee;
+=======
+          var callee = calleePath.node;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
           if (calleePath.isMemberExpression()) {
             var temp = scope.maybeGenerateMemoised(callee.object);
@@ -79783,12 +82625,19 @@
             } else {
               contextLiteral = cloneNode(callee.object);
             }
+<<<<<<< HEAD
 
             appendToMemberExpression(callee, identifier("apply"));
           } else {
             node.callee = memberExpression(node.callee, identifier("apply"));
           }
 
+=======
+          }
+
+          node.callee = memberExpression(node.callee, identifier("apply"));
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
           if (isSuper(contextLiteral)) {
             contextLiteral = thisExpression();
           }
@@ -80480,6 +83329,10 @@
         if (node.optional) node.optional = null;
         if (node.typeAnnotation) node.typeAnnotation = null;
         if (node.definite) node.definite = null;
+<<<<<<< HEAD
+=======
+        if (node.declare) node.declare = null;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       },
       method: function method(_ref2) {
         var node = _ref2.node;
@@ -80904,6 +83757,10 @@
     "external-helpers": externalHelpers,
     "syntax-async-generators": syntaxAsyncGenerators,
     "syntax-class-properties": syntaxClassProperties,
+<<<<<<< HEAD
+=======
+    "syntax-decimal": syntaxDecimal,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     "syntax-decorators": syntaxDecorators,
     "syntax-do-expressions": syntaxDoExpressions,
     "syntax-export-default-from": syntaxExportDefaultFrom,
@@ -81091,7 +83948,11 @@
         decoratorsLegacy: decoratorsLegacy,
         decoratorsBeforeExport: decoratorsBeforeExport
       }]],
+<<<<<<< HEAD
       plugins: [[syntaxModuleAttributes, {
+=======
+      plugins: [syntaxDecimal, [syntaxModuleAttributes, {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         version: moduleAttributesVersion
       }], [syntaxRecordAndTuple, {
         syntaxType: recordAndTupleSyntax
@@ -84890,6 +87751,7 @@
 
   var nativeModules = {
   	"es6.module": {
+<<<<<<< HEAD
   	edge: "16",
   	firefox: "60",
   	chrome: "61",
@@ -84901,6 +87763,20 @@
   	and_chr: "61",
   	and_ff: "60",
   	samsung: "8.2"
+=======
+  	chrome: "61",
+  	and_chr: "61",
+  	edge: "16",
+  	firefox: "60",
+  	and_ff: "60",
+  	node: "13.2.0",
+  	opera: "48",
+  	op_mob: "48",
+  	safari: "10.1",
+  	ios_saf: "10.3",
+  	samsung: "8.2",
+  	android: "61"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   }
   };
 
@@ -85046,6 +87922,22 @@
   }
 
   var plugins = {
+<<<<<<< HEAD
+=======
+  	"proposal-class-properties": {
+  	chrome: "74",
+  	opera: "61",
+  	edge: "79",
+  	node: "12",
+  	samsung: "11",
+  	electron: "6"
+  },
+  	"proposal-private-methods": {
+  	chrome: "84",
+  	edge: "84",
+  	electron: "10"
+  },
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   	"proposal-numeric-separator": {
   	chrome: "75",
   	opera: "62",
@@ -85057,6 +87949,7 @@
   	samsung: "11",
   	electron: "6"
   },
+<<<<<<< HEAD
   	"proposal-class-properties": {
   	chrome: "74",
   	opera: "61",
@@ -85067,6 +87960,13 @@
   },
   	"proposal-private-methods": {
   	chrome: "84"
+=======
+  	"proposal-logical-assignment-operators": {
+  	chrome: "85",
+  	firefox: "79",
+  	safari: "14",
+  	electron: "10"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"proposal-nullish-coalescing-operator": {
   	chrome: "80",
@@ -85075,7 +87975,12 @@
   	firefox: "72",
   	safari: "13.1",
   	node: "14",
+<<<<<<< HEAD
   	electron: "8.1"
+=======
+  	ios: "13.4",
+  	electron: "8"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"proposal-optional-chaining": {
   	chrome: "80",
@@ -85084,7 +87989,12 @@
   	firefox: "74",
   	safari: "13.1",
   	node: "14",
+<<<<<<< HEAD
   	electron: "8.1"
+=======
+  	ios: "13.4",
+  	electron: "8"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"proposal-json-strings": {
   	chrome: "66",
@@ -85167,6 +88077,10 @@
   	chrome: "64",
   	opera: "51",
   	edge: "79",
+<<<<<<< HEAD
+=======
+  	firefox: "78",
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   	safari: "11.1",
   	node: "10",
   	ios: "11.3",
@@ -85204,7 +88118,11 @@
   	node: "4",
   	ios: "13",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"transform-literals": {
   	chrome: "44",
@@ -85249,7 +88167,11 @@
   	ie: "11",
   	ios: "10",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"transform-classes": {
   	chrome: "46",
@@ -85282,7 +88204,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "4",
+<<<<<<< HEAD
   	electron: "0.28"
+=======
+  	electron: "0.27"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"transform-duplicate-keys": {
   	chrome: "42",
@@ -85457,6 +88383,17 @@
   	phantom: "2",
   	samsung: "1",
   	electron: "0.20"
+<<<<<<< HEAD
+=======
+  },
+  	"proposal-export-namespace-from": {
+  	chrome: "72",
+  	edge: "79",
+  	opera: "60",
+  	firefox: "80",
+  	node: "13.2",
+  	samsung: "11.0"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   }
   };
 
@@ -88809,7 +91746,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "5",
+<<<<<<< HEAD
   	electron: "0.32"
+=======
+  	electron: "0.31"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.array.every": {
   	chrome: "5",
@@ -88834,7 +91775,11 @@
   	node: "4",
   	ios: "8",
   	samsung: "5",
+<<<<<<< HEAD
   	electron: "0.32"
+=======
+  	electron: "0.31"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.array.filter": {
   	chrome: "5",
@@ -88859,7 +91804,11 @@
   	node: "4",
   	ios: "8",
   	samsung: "5",
+<<<<<<< HEAD
   	electron: "0.32"
+=======
+  	electron: "0.31"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.array.find-index": {
   	chrome: "45",
@@ -88870,7 +91819,11 @@
   	node: "4",
   	ios: "8",
   	samsung: "5",
+<<<<<<< HEAD
   	electron: "0.32"
+=======
+  	electron: "0.31"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es7.array.flat-map": {
   	chrome: "69",
@@ -88995,7 +91948,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "5",
+<<<<<<< HEAD
   	electron: "0.32"
+=======
+  	electron: "0.31"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.array.reduce": {
   	chrome: "5",
@@ -89374,7 +92331,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.number.epsilon": {
   	chrome: "34",
@@ -90088,7 +93049,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.string.ends-with": {
   	chrome: "41",
@@ -90099,7 +93064,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.string.fixed": {
   	chrome: "5",
@@ -90149,7 +93118,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.string.includes": {
   	chrome: "41",
@@ -90160,7 +93133,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.string.italics": {
   	chrome: "5",
@@ -90230,7 +93207,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.string.repeat": {
   	chrome: "41",
@@ -90241,7 +93222,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.string.small": {
   	chrome: "5",
@@ -90265,7 +93250,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"es6.string.strike": {
   	chrome: "5",
@@ -90610,7 +93599,11 @@
   	node: "4",
   	ios: "9",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   },
   	"bugfix/transform-tagged-template-caching": {
   	chrome: "41",
@@ -90621,7 +93614,11 @@
   	node: "4",
   	ios: "13",
   	samsung: "3.4",
+<<<<<<< HEAD
   	electron: "0.22"
+=======
+  	electron: "0.21"
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   }
   };
 
@@ -90694,6 +93691,33 @@
   var _default = (0, _helperPluginUtils.declare)(function (api) {
     api.assertVersion(7);
     return {
+<<<<<<< HEAD
+=======
+      name: "syntax-export-namespace-from",
+      manipulateOptions: function manipulateOptions(opts, parserOpts) {
+        parserOpts.plugins.push("exportNamespaceFrom");
+      }
+    };
+  });
+
+  exports["default"] = _default;
+  });
+
+  var syntaxExportNamespaceFrom$1 = unwrapExports(lib$e);
+
+  var lib$f = createCommonjsModule(function (module, exports) {
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports["default"] = void 0;
+
+
+
+  var _default = (0, _helperPluginUtils.declare)(function (api) {
+    api.assertVersion(7);
+    return {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       name: "syntax-json-strings",
       manipulateOptions: function manipulateOptions(opts, parserOpts) {
         parserOpts.plugins.push("jsonStrings");
@@ -90704,9 +93728,15 @@
   exports["default"] = _default;
   });
 
+<<<<<<< HEAD
   var syntaxJsonStrings$1 = unwrapExports(lib$e);
 
   var lib$f = createCommonjsModule(function (module, exports) {
+=======
+  var syntaxJsonStrings$1 = unwrapExports(lib$f);
+
+  var lib$g = createCommonjsModule(function (module, exports) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -90728,9 +93758,15 @@
   exports["default"] = _default;
   });
 
+<<<<<<< HEAD
   var syntaxNullishCoalescingOperator$1 = unwrapExports(lib$f);
 
   var lib$g = createCommonjsModule(function (module, exports) {
+=======
+  var syntaxNullishCoalescingOperator$1 = unwrapExports(lib$g);
+
+  var lib$h = createCommonjsModule(function (module, exports) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -90752,9 +93788,15 @@
   exports["default"] = _default;
   });
 
+<<<<<<< HEAD
   var syntaxObjectRestSpread$2 = unwrapExports(lib$g);
 
   var lib$h = createCommonjsModule(function (module, exports) {
+=======
+  var syntaxObjectRestSpread$2 = unwrapExports(lib$h);
+
+  var lib$i = createCommonjsModule(function (module, exports) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -90776,9 +93818,15 @@
   exports["default"] = _default;
   });
 
+<<<<<<< HEAD
   var syntaxOptionalCatchBinding$2 = unwrapExports(lib$h);
 
   var lib$i = createCommonjsModule(function (module, exports) {
+=======
+  var syntaxOptionalCatchBinding$2 = unwrapExports(lib$i);
+
+  var lib$j = createCommonjsModule(function (module, exports) {
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -90800,7 +93848,11 @@
   exports["default"] = _default;
   });
 
+<<<<<<< HEAD
   var syntaxOptionalChaining$1 = unwrapExports(lib$i);
+=======
+  var syntaxOptionalChaining$1 = unwrapExports(lib$j);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   var transformAsyncArrowsInClass = createCommonjsModule(function (module, exports) {
 
@@ -91036,7 +94088,13 @@
     "proposal-async-generator-functions": proposalAsyncGeneratorFunctions,
     "proposal-class-properties": proposalClassProperties,
     "proposal-dynamic-import": proposalDynamicImport,
+<<<<<<< HEAD
     "proposal-json-strings": proposalJsonStrings,
+=======
+    "proposal-export-namespace-from": proposalExportNamespaceFrom,
+    "proposal-json-strings": proposalJsonStrings,
+    "proposal-logical-assignment-operators": proposalLogicalAssignmentOperators,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     "proposal-nullish-coalescing-operator": proposalNullishCoalescingOperator,
     "proposal-numeric-separator": proposalNumericSeparator,
     "proposal-object-rest-spread": proposalObjectRestSpread,
@@ -91047,7 +94105,13 @@
     "syntax-async-generators": syntaxAsyncGenerators$2,
     "syntax-class-properties": syntaxClassProperties,
     "syntax-dynamic-import": syntaxDynamicImport$1,
+<<<<<<< HEAD
     "syntax-json-strings": syntaxJsonStrings$1,
+=======
+    "syntax-export-namespace-from": syntaxExportNamespaceFrom$1,
+    "syntax-json-strings": syntaxJsonStrings$1,
+    "syntax-logical-assignment-operators": syntaxLogicalAssignmentOperators,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     "syntax-nullish-coalescing-operator": syntaxNullishCoalescingOperator$1,
     "syntax-numeric-separator": syntaxNumericSeparator,
     "syntax-object-rest-spread": syntaxObjectRestSpread$2,
@@ -91297,7 +94361,11 @@
       rawVersion = corejs;
     }
 
+<<<<<<< HEAD
     var version = rawVersion ? semver_42(String(rawVersion)) : false;
+=======
+    var version = rawVersion ? semver_40(String(rawVersion)) : false;
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
     if (!useBuiltIns && version) {
       console.log("\nThe `corejs` option only has an effect when the `useBuiltIns` option is not `false`\n");
@@ -91339,7 +94407,11 @@
     };
   }
 
+<<<<<<< HEAD
   var proposalPlugins = new Set(["proposal-class-properties", "proposal-numeric-separator", "proposal-private-methods"]);
+=======
+  var proposalPlugins = new Set(["proposal-class-properties", "proposal-private-methods"]);
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   var pluginSyntaxObject = {
     "proposal-async-generator-functions": "syntax-async-generators",
     "proposal-class-properties": "syntax-class-properties",
@@ -102269,6 +105341,10 @@
         transformations = _ref.transformations,
         shouldTransformESM = _ref.shouldTransformESM,
         shouldTransformDynamicImport = _ref.shouldTransformDynamicImport,
+<<<<<<< HEAD
+=======
+        shouldTransformExportNamespaceFrom = _ref.shouldTransformExportNamespaceFrom,
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
         shouldParseTopLevelAwait = _ref.shouldParseTopLevelAwait;
     var modulesPluginNames = [];
 
@@ -102290,6 +105366,15 @@
       modulesPluginNames.push("syntax-dynamic-import");
     }
 
+<<<<<<< HEAD
+=======
+    if (shouldTransformExportNamespaceFrom) {
+      modulesPluginNames.push("proposal-export-namespace-from");
+    } else {
+      modulesPluginNames.push("syntax-export-namespace-from");
+    }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     if (shouldParseTopLevelAwait) {
       modulesPluginNames.push("syntax-top-level-await");
     }
@@ -102356,6 +105441,13 @@
     return !!(caller == null ? void 0 : caller.supportsDynamicImport);
   }
 
+<<<<<<< HEAD
+=======
+  function supportsExportNamespaceFrom(caller) {
+    return !!(caller == null ? void 0 : caller.supportsExportNamespaceFrom);
+  }
+
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
   function supportsTopLevelAwait(caller) {
     return !!(caller == null ? void 0 : caller.supportsTopLevelAwait);
   }
@@ -102408,14 +105500,30 @@
     var include = transformIncludesAndExcludes(optionsInclude);
     var exclude = transformIncludesAndExcludes(optionsExclude);
     var transformTargets = forceAllTransforms || hasUglifyTarget ? {} : targets;
+<<<<<<< HEAD
+=======
+    var compatData = getPluginList(shippedProposals, bugfixes);
+    var shouldSkipExportNamespaceFrom = modules === "auto" && (api.caller == null ? void 0 : api.caller(supportsExportNamespaceFrom)) || modules === false && !isRequired("proposal-export-namespace-from", transformTargets, {
+      compatData: compatData,
+      includes: include.plugins,
+      excludes: exclude.plugins
+    });
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
     var modulesPluginNames = getModulesPluginNames({
       modules: modules,
       transformations: moduleTransformations,
       shouldTransformESM: modules !== "auto" || !(api.caller == null ? void 0 : api.caller(supportsStaticESM$1)),
       shouldTransformDynamicImport: modules !== "auto" || !(api.caller == null ? void 0 : api.caller(supportsDynamicImport)),
+<<<<<<< HEAD
       shouldParseTopLevelAwait: !api.caller || api.caller(supportsTopLevelAwait)
     });
     var pluginNames = filterItems(getPluginList(shippedProposals, bugfixes), include.plugins, exclude.plugins, transformTargets, modulesPluginNames, getOptionSpecificExcludesFor({
+=======
+      shouldTransformExportNamespaceFrom: !shouldSkipExportNamespaceFrom,
+      shouldParseTopLevelAwait: !api.caller || api.caller(supportsTopLevelAwait)
+    });
+    var pluginNames = filterItems(compatData, include.plugins, exclude.plugins, transformTargets, modulesPluginNames, getOptionSpecificExcludesFor({
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
       loose: loose
     }), shippedProposals_1);
     removeUnnecessaryItems(pluginNames, overlappingPlugins$2);
@@ -102906,7 +106014,11 @@
     typescript: presetTypescript,
     flow: presetFlow
   });
+<<<<<<< HEAD
   var version$7 = "7.10.5";
+=======
+  var version$7 = "7.11.0";
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01
 
   function onDOMContentLoaded() {
     transformScriptTags();
@@ -102938,4 +106050,8 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
+<<<<<<< HEAD
 })));
+=======
+})));
+>>>>>>> f2edf95ad76375148099437a4081315024da4f01

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>引入JavaScript的三种方式</title>
+    <!-- 第一种页面引入JavaScript的方式：外链式，推荐使用 -->
+    <script src="./js/Hello.js"></script>
+    <!-- 第一种页面引入JavaScript的方式：内嵌式，部分推荐 -->
+    <script>alert('Hello JavaScript again!')</script>
+</head>
+<body>
+    <!-- 第一种页面引入JavaScript的方式：行间事件，不推荐使用 -->
+    <div onclick="alert('Hello JavaScript!')">这是一个div</div>
+    <!-- 还可以将js代码写在超链接的href属性中，这样当点击超链接时，会执行js代码 -->
+    <a href="javascript:alert('让你点你就点吗？')">请点击我一下</a>
+</body>
+</html>

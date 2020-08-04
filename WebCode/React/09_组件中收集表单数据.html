@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组件中收集表单数据</title>
+</head>
+
+<body>
+    <div id="example"></div>
+    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/prop-types@15.6.2/prop-types.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script type="text/babel">
+        /* 
+            需求：自定义包含表单的组件
+            1. 输入用户名和密码后，点击登录提示输入信息
+            3. 不提交表单
+        */
+        class LoginForm extends React.Component {
+            constructor(props) {
+                super(props)
+                this.state = {
+                    passwd: '',
+                    test:'xxx'
+                }
+                this.handleSubmit = this.handleSubmit.bind(this)
+                this.handleChange = this.handleChange.bind(this)
+            }
+            handleSubmit(event) {
+                const name = this.nameInput.value
+                // const pwd = this.state.passwd
+                // const testx = this.state.test
+                // alert(`准备提交的用户名为${name}，密码为${pwd}，test为${testx}`)
+                const {passwd} = this.state
+                const {test} = this.state
+                alert(`准备提交的用户名为${name}，密码为${passwd}，test为${test}`)
+                // 阻止事件的默认行为(提交)
+                event.preventDefault()
+            }
+            handleChange(event) {
+                // 读取输入的值
+                const passwd = event.target.value
+                // 更新pwd状态
+                this.setState({passwd})
+            }
+            render() {
+                return(
+                    <form action='/test' onSubmit={this.handleSubmit}>
+                        用户名: <input type='text' ref={input => this.nameInput = input} />
+                        密码:   <input type='password' value={this.state.passwd} onChange={this.handleChange} />
+                        <input type="submit" value='登陆' />
+                    </form>
+                )
+            }
+        }
+        ReactDOM.render(<LoginForm />, document.getElementById('example'))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Table</title>
+</head>
+<body>
+    <!-- 
+        在网页中通过table标签来创建一个表格
+     -->
+    <table border="1" width='50%' align='center'>
+        <!--
+            在table中使用tr表示表格中的一行，有几个tr就有几行
+            在tr中使用td表示一个单元格
+            如果要一个单元格占两个格子，需要指定其colspan属性
+         -->
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <!-- rowspan 纵向合并单元格 -->
+            <td rowspan="2">D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <!-- 
+                colspan 横向合并单元格
+             -->
+            <td colspan="2">C4</td>
+        </tr>
+    </table>
+</body>
+</html>

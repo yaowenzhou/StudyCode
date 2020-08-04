@@ -1,0 +1,19 @@
+/* css注释风格，此种写法的注释会被解析到css文件中 */
+body {
+  background-color: #bbffaa;
+}
+.box5 {
+  width: 100px;
+}
+.box6 {
+  width: 100px;
+  background-color: url("box6/1.png");
+}
+div {
+  width: 115px;
+  height: 335px;
+}
+div {
+  width: 300px;
+  height: 300px;
+}
