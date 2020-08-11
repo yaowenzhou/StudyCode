@@ -1,11 +1,32 @@
 <html>
 
-    <head>
-        <title>head 中的所有内容都不会出现在页面上，title 中的内容会出现在标签上，而不是网页中</title>
-    </head>
+<head>
+    <title>head 中的所有内容都不会出现在页面上，title 中的内容会出现在标签上，而不是网页中</title>
+</head>
 
-    <body>
-
+<body>
+    <script type="text/javascript" src="./js/babel.js"></script>
+    <script type="text/babel">
+        // JavaScript 中的JSON字符串内部的字符串表示必须使用双引号比如下面的单引号字符串
+        // 单引号字符串
+        // console.log(JSON.parse('{name: "xiaoyao", age: 25, sex: "male", }'));
+        // 反单引号字符串
+        // console.log(JSON.parse(`{name: "xiaoyao", age: 25, sex: "male", }`));
+        // 内部双引号转义的双引号字符串
+        // console.log(JSON.parse("{name: \"xiaoyao\", age: 25, sex: \"male\", }"));
+        // 双引号字符串
+        // console.log(JSON.parse("{name: 'xiaoyao', age: 25, sex: 'male', }"));
+        // JSON.stringify 解析过的双引号字符串(实质上是将双引号字符串当做JavaScript对象解析成JSON字符串)
+        // console.log(JSON.parse(JSON.stringify("{name:'xiaoyao',age:25,sex:'male',}")));
+        // JavaScript 对象和JSON字符串互转
+        // var obj = {
+        //     name: "xiaoyao",
+        //     age: 25,
+        //     sex: "male"
+        // }
+        // console.log(JSON.stringify(obj))
+        // console.log(JSON.parse(JSON.stringify(obj)))
+    </script>
     <font face="NSimSun">
         <h1>回乡偶书（二首）</h1>
         <h2>其一</h2>
@@ -14,7 +35,7 @@
         <p>乡音无改鬓毛衰；</p>
         <p>儿童相见不相识；</p>
         <p>笑问客从何处来。</p>
-        </font>
-    </body>
+    </font>
+</body>
 
 </html>
