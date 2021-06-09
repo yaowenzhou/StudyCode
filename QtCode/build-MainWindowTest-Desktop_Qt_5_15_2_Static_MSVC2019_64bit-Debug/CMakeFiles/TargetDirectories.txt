@@ -1,0 +1,5 @@
+E:/Code/StudyCode/QtCode/build-MainWindowTest-Desktop_Qt_5_15_2_Static_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+E:/Code/StudyCode/QtCode/build-MainWindowTest-Desktop_Qt_5_15_2_Static_MSVC2019_64bit-Debug/CMakeFiles/MainWindowTest.dir
+E:/Code/StudyCode/QtCode/build-MainWindowTest-Desktop_Qt_5_15_2_Static_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+E:/Code/StudyCode/QtCode/build-MainWindowTest-Desktop_Qt_5_15_2_Static_MSVC2019_64bit-Debug/CMakeFiles/MainWindowTest_autogen_timestamp_deps.dir
+E:/Code/StudyCode/QtCode/build-MainWindowTest-Desktop_Qt_5_15_2_Static_MSVC2019_64bit-Debug/CMakeFiles/MainWindowTest_autogen.dir

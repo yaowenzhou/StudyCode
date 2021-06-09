@@ -1,0 +1,23 @@
+# ninja log v5
+2	178	6419082656181641	MainWindowTest_autogen/timestamp	6ef6f0b80448e61b
+206	1674	6419082670897556	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin_Import.cpp.obj	9ab889199fbe82f8
+237	1678	6419082671027574	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin_Import.cpp.obj	136ca6c00c9c46c9
+230	1680	6419082670987605	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin_Import.cpp.obj	3ecc92882e080f57
+179	2193	6419082671647558	CMakeFiles/MainWindowTest.dir/MainWindowTest_autogen/mocs_compilation.cpp.obj	232bc5e63aebaab7
+212	2194	6419082672797571	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin_Import.cpp.obj	2cfd0a0d0a2e57fe
+223	2197	6419082671547572	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin_Import.cpp.obj	164d84d7a2c4b3c9
+184	2198	6419082671617568	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin_Import.cpp.obj	93b4975a01649ca7
+248	2199	6419082672127565	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin_Import.cpp.obj	cf76b16825f6801a
+218	2200	6419082671927569	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin_Import.cpp.obj	701a7765d37ec8ec
+195	2200	6419082672337554	CMakeFiles/MainWindowTest.dir/main.cpp.obj	49025d636e78c125
+200	2201	6419082673557560	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin_Import.cpp.obj	f97bd3808d727d2c
+243	2202	6419082673227540	CMakeFiles/MainWindowTest.dir/E_/Qt/5.15.2/static_msvc2019_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin_Import.cpp.obj	4147e2edc7f460f5
+189	2203	6419082674507968	CMakeFiles/MainWindowTest.dir/mainwindow.cpp.obj	ae7a5749ad61d451
+2203	4957	6419082702987657	MainWindowTest.exe	7a10de0d22a5021a
+5	146	6419168643205773	MainWindowTest_autogen/timestamp	6ef6f0b80448e61b
+147	1270	6419168654409420	CMakeFiles/MainWindowTest.dir/MainWindowTest_autogen/mocs_compilation.cpp.obj	232bc5e63aebaab7
+1270	1731	6419168658565499	MainWindowTest.exe	7a10de0d22a5021a
+4	113	6419169286276668	MainWindowTest_autogen/timestamp	6ef6f0b80448e61b
+114	970	6419169294821609	CMakeFiles/MainWindowTest.dir/MainWindowTest_autogen/mocs_compilation.cpp.obj	232bc5e63aebaab7
+119	977	6419169294861597	CMakeFiles/MainWindowTest.dir/mainwindow.cpp.obj	ae7a5749ad61d451
+978	2245	6419169306487674	MainWindowTest.exe	7a10de0d22a5021a

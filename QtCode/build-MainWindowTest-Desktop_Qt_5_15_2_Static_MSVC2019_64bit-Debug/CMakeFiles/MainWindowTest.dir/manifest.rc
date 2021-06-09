@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "E:/Code/StudyCode/QtCode/build-MainWindowTest-Desktop_Qt_5_15_2_Static_MSVC2019_64bit-Debug/CMakeFiles/MainWindowTest.dir/embed.manifest"
